@@ -1,0 +1,17 @@
+{
+  "name": "vips",
+  "version": "1.0.0",
+  "description": "By using the YouTube-8M labeled video dataset, create an extensible microservice-based platform able to perform processing tasks such as browsing, smart faceted searching & filtering, etc.",
+  "author": "Buzdugan Alexandru, Daniel Toncu, Andrei Pricop",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "body-parser": "1.18.3",
+    "express": "^4.16.1",
+    "mongodb": "3.1.8",
+    "mongoose": "^5.3.3",
+    "request": "2.88.0"
+  }
+}
