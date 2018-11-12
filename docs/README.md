@@ -7,3 +7,8 @@ The documents folder contains:
 - A Scholarly HTML technical report (its digital content will be equivalent to a minimum of four A4 printed pages) consisting of preliminary considerations about the internal data structures/models to be used and the external data sources – e.g., public Web services and/or APIs – managed by the Web application to be developed.
 
 - A public blog, wiki and/or personal Web site recording the project progress. The content should be available in English language and minimally tagged with project, infoiasi, wade, and web.
+
+Usefull documents:
+
+- https://schema.org/video - the schema for video objects
+- A tutorial for open api https://idratherbewriting.com/learnapidoc/pubapis_openapi_tutorial_overview  
