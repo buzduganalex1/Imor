@@ -1,0 +1,25 @@
+# Participantii comuni la 2 evenimente privitoare la Web-ul semantic,
+# cu obtinerea afilierilor aferente, 
+# pe baza datelor RDF disponibile la adresa <http://data.semanticweb.org/>
+# Ca punct terminal SPARQL se poate folosi <http://data.semanticweb.org/sparql>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX swrc: <http://swrc.ontoware.org/ontology#>
+
+SELECT DISTINCT ?nume ?afiliere
+FROM NAMED <http://data.semanticweb.org/workshop/vissw/2009/complete>
+FROM NAMED <http://data.semanticweb.org/conference/eswc/2009/complete>
+WHERE {
+   GRAPH ?g1 { 
+     ?pers a foaf:Person ; 
+           foaf:name ?nume ; 
+           swrc:affiliation ?afiliere 
+   }
+   GRAPH ?g2 { 
+     ?pers a foaf:Person ; 
+           foaf:name ?nume ; 
+           swrc:affiliation ?afiliere 
+   }
+   FILTER ( ?g1 != ?g2 ) .
+}
+ORDER BY ?afiliere 
+LIMIT 10

@@ -1,0 +1,25 @@
+# laureatii Nobel nascuti in Romania 
+# (varianta initiala: 
+#  nu luam in consideratie faptul ca unele persoane au decedat)
+# via punctul terminal SPARQL de la <http://data.nobelprize.org/sparql>
+
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+# laureatii Nobel nascuti in Romania
+SELECT DISTINCT ?nume ?varsta 
+WHERE {
+  ?laureat foaf:name ?nume ;
+           foaf:birthday ?dataNastere ;
+           dbo:birthPlace <http://data.nobelprize.org/resource/country/Romania> .
+  # varsta curenta
+  BIND(YEAR(NOW()) - YEAR(?dataNastere) -
+    IF(MONTH(NOW()) < MONTH(?dataNastere) ||
+      (MONTH(NOW()) = MONTH(?dataNastere) &&
+       DAY(NOW()) < DAY(?dataNastere)), 1, 0 ) AS ?varsta )
+}
+ORDER BY DESC(?varsta)
+LIMIT 5

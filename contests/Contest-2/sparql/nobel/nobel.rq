@@ -1,0 +1,24 @@
+# date despre premiile Nobel acordate dupa 1990 din categorii diferite 
+# de pace, literatura si chimie, in ordinea descrescatoare a anilor
+# via punctul terminal SPARQL de la <http://data.nobelprize.org/sparql>
+# (vezi 'sparql-nobel-rezultate.json' pentru rezultatele oferite)
+
+# interfata de interogare e disponibila la <http://data.nobelprize.org/snorql/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX nobel: <http://data.nobelprize.org/terms/>
+
+SELECT ?premiu ?an ?desc ?url 
+WHERE {
+  ?premiu a nobel:AwardFile ;
+     rdfs:label ?desc ;
+     nobel:category ?cat ;
+     nobel:year ?an .
+  OPTIONAL { ?premiu rdfs:seeAlso ?url . }
+  # operatorul "(NOT) IN" e specific SPARQL 1.1
+  FILTER (?an > 1990 && ?cat NOT IN (<http://data.nobelprize.org/resource/category/Peace>, 
+                                     <http://data.nobelprize.org/resource/category/Literature>, 
+                                     <http://data.nobelprize.org/resource/category/Chemistry>))
+}
+ORDER BY DESC(?an) 
+LIMIT 7

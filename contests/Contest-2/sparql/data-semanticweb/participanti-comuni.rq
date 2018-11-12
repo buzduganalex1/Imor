@@ -1,0 +1,22 @@
+# Participantii comuni la conferintele ISWC 2011 si ESWC 2010
+# al caror nume incepe cu litera M, pe baza datelor RDF disponibile 
+# la adresa <http://data.semanticweb.org/>
+# Ca punct terminal SPARQL se poate folosi <http://data.semanticweb.org/sparql>
+# exemplu inspirat de (Corno & Farinetti, 2009)
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+
+SELECT DISTINCT ?nume
+FROM NAMED <http://data.semanticweb.org/conference/iswc/2011/complete>
+FROM NAMED <http://data.semanticweb.org/conference/eswc/2010/complete>
+WHERE {
+  GRAPH ?g1 { 
+    ?pers a foaf:Person ; 
+          foaf:name ?nume 
+  }
+  GRAPH ?g2 { 
+    ?pers a foaf:Person ; 
+          foaf:name ?nume 
+  }
+  FILTER ( ?g1 != ?g2 && regex (?nume, "^M") ) .
+}
+LIMIT 7

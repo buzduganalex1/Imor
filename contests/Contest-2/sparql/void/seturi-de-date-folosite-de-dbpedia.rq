@@ -1,0 +1,15 @@
+# obtinerea unor informatii privind seturile de date ce recurg la DBpedia
+# via punctul terminal SPARQL oferit de initiativa voiD: 
+# http://void.rkbexplorer.com/sparql/
+
+PREFIX rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX void:     <http://rdfs.org/ns/void#>
+
+SELECT DISTINCT ?dataset ?url ?voc
+WHERE {
+  ?dataset a void:Dataset .
+  ?dataset void:subset ?set .
+  ?set void:objectsTarget <http://dbpedia.org/void.ttl#DBpedia> .
+  ?dataset void:sparqlEndpoint ?url .  
+  ?dataset void:vocabulary ?voc .  
+}

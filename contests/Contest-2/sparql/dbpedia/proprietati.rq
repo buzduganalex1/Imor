@@ -1,0 +1,7 @@
+# descoperirea tuturor predicatelor (proprietatilor) distincte
+# specificate intre subiect si obiect (nu ne intereseaza identitatea lor)
+# (aceasta interogare poate fi folosita in mod generic)
+SELECT DISTINCT ?predicat
+WHERE {
+  _:subiect ?predicat _:obiect .
+}

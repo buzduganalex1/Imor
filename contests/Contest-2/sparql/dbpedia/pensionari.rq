@@ -1,0 +1,10 @@
+# obtinerea de informatii privind persoanele pensionate
+# (eventual, decedate intre timp) pe baza DBpedia <http://dbpedia.org/sparql>
+PREFIX d: <http://dbpedia.org/ontology/>
+
+SELECT distinct ?personalitate ?dataMoarte
+WHERE {
+  ?personalitate d:status "retired"@en .
+  OPTIONAL { ?personalitate d:deathDate ?dataMoarte . }
+} 
+LIMIT 20

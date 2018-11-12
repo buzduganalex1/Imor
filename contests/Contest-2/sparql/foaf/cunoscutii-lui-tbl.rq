@@ -1,0 +1,21 @@
+# extragerea tuturor informatiilor despre persoanele cunoscute 
+# de Sir Tim Berners-Lee, pe baza mai multor documente FOAF (RDF)
+# disponibile pe Web cuprinzind date despre personalitati ale Web-ului semantic
+# adaptare dupa (J. Hebeler et al., 2009)
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+
+SELECT ?numePers ?predicat ?obiect
+FROM <http://www.w3.org/People/Berners-Lee/card>
+FROM <http://www.dajobe.org/foaf.rdf>
+FROM <http://www.ivan-herman.net/foaf.rdf>
+FROM <http://www.lassila.org/ora.rdf>
+WHERE {
+  tbl:i foaf:knows ?persoana .
+  ?persoana foaf:name ?numePers ;
+            rdfs:seeAlso 	?iri .
+  ?iri foaf:primaryTopic ?persoana2 .
+  ?persoana2 foaf:name ?numePers2 ;
+           	 ?predicat ?obiect .
+  FILTER (?numePers = ?numePers2) .
+}

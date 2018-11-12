@@ -1,0 +1,16 @@
+# exemplificarea clauzei MINUS (SPARQL 1.1)
+# datele despre premiile Nobel, fara cele privitoare la premiile pentru pace
+# si laureati nascuti in Canada
+# (via punctul terminal SPARQL de la <http://data.nobelprize.org/sparql>)
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX nobel: <http://data.nobelprize.org/terms/>
+
+SELECT * {
+  ?s ?p ?o . 
+  MINUS { [ ] nobel:category 
+     <http://data.nobelprize.org/resource/category/Peace> } 
+  MINUS { [ ] dbo:birthPlace 
+     <http://data.nobelprize.org/resource/country/Canada> }
+}
+LIMIT 5

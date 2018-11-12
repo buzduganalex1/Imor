@@ -1,0 +1,10 @@
+# obtinerea de informatii privitoare la entitatea Linus Torvalds
+# pe baza serviciului SPARQL oferit de DBpedia
+# a se experimenta http://dbpedia.org/isparql/
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT DISTINCT *
+WHERE {  
+  <http://dbpedia.org/resource/Linus_Torvalds> rdf:type ?val
+}
+LIMIT 20

@@ -1,0 +1,13 @@
+# obtinerea ocupatiei persoanelor cu sufixul 'escu' al numelui
+# prin interogarea DBpedia: <http://dbpedia.org/sparql> 
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dbp: <http://dbpedia.org/property/>
+
+SELECT ?nume ?ocupatie WHERE { 
+   ?persoana foaf:name ?nume ;
+             dbp:occupation ?ocupatie .  
+   FILTER regex (?nume, "escu$")
+}
+ORDER BY ?nume
+LIMIT 7

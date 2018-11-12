@@ -1,0 +1,15 @@
+# obtinerea autorilor cu lucrari prezentate la ESWC 2011
+# avand ca tema ingineria ontologica, pe baza interogarii serviciului SPARQL
+# disponibil la <http://data.semanticweb.org/sparql>
+# adaptare dupa (Olaf Hartig et al., 2009)
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX swc: <http://data.semanticweb.com/ns/swc/ontology#>
+
+SELECT DISTINCT ?autor 
+WHERE {
+   <http://data.semanticweb.org/conference/eswc/2011/proceedings> swc:hasPart ?lucr .
+   ?lucr swc:hasTopic ?tema .
+   ?tema rdfs:label ?etichetaTema .
+   FILTER regex (str (?etichetaTema), "ontology engineering", "i") .
+   ?lucr swc:hasAuthor ?autor .
+}

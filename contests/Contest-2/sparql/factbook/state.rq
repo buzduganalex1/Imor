@@ -1,0 +1,11 @@
+# obtinerea datelor privind la anumite state ale lumii
+# prin interogarea CIA Factbook via serviciul SPARQL 
+# de la <http://www4.wiwiss.fu-berlin.de/factbook/sparql>
+PREFIX factbook: <http://www4.wiwiss.fu-berlin.de/factbook/ns#>
+
+SELECT ?country
+WHERE { 
+  ?country a factbook:Country .
+}
+ORDER BY DESC(?country) 
+LIMIT 7

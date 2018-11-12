@@ -1,0 +1,16 @@
+# interogarea DBpedia <http://dbpedia.org/sparql> folosind ASK
+# pentru aflarea raspunsului la intrebarea
+# "Fluviul Amazon este mai lung decit Nilul?"
+# exemplu dat de (Lee Feigenbaum, 2009)
+PREFIX dbp: <http://dbpedia.org/property/> 
+
+ASK { 
+  <http://dbpedia.org/resource/Amazon_River> dbp:length ?lungAmazon . 
+  <http://dbpedia.org/resource/Nile> dbp:length ?lungNil .
+  FILTER (?lungAmazon > ?lungNil) . 
+}
+
+# rezultatul in format Turtle este:
+# @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+# @prefix rs: <http://www.w3.org/2005/sparql-results#> .
+# [] rdf:type rs:results ; rs:boolean false .

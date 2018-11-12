@@ -1,0 +1,21 @@
+﻿<?xml version="1.0"?>
+<sparql xmlns="http://www.w3.org/2005/sparql-results#">
+  <head>
+    <variable name="?eticheta"/>
+    <variable name="?comentariu"/>
+    <variable name="?punctaj"/>
+  </head>
+  <results ordered="false" distinct="false">
+    <result>
+      <binding name="?eticheta"><literal>Time Without Consequence - Alexi Murdoch</literal></binding>
+      <binding name="?comentariu"><literal>I first heard of Alexi Murdoch through his set on KCRW Morning Becomes Eclectic in 2002. In just over 20 minutes of music he really captured my imagination. After a long wait, Time Without Consequence puts many of these tracks onto CD. After the KCRW set, my expectations were high, and maybe too high. On hearing the album I felt intense disappointment; the songs had been re-recorded in the studio, and in too many cases  it felt that what made them really special on KCRW had been lost in the studio. After listening again and again, the album versions of the songs has grown on me, to the point where highlights such as Breathe sound almost as good.  There is no doubt this is a great album, it just feels like it could have been even better. </literal></binding>
+      <binding name="?punctaj"><literal>4</literal></binding>
+    </result>
+    <result>
+      <binding name="?eticheta"><literal>Borat: Cultural Learnings of America for Make Benefit Glorious Nation of Kazakhstan</literal></binding>
+      <binding name="?comentariu"><literal>I found the Borat film quite a disappointment. Being a long-time fan of Sacha Baron Cohen in all his different guises, I was left with the feeling that he hadn't done the character, or himself, justice. The genius of Borat is in using his bigotry to expose bigotry in others - that's what makes it funny. Unfortunately there was very little of this in the film. Instead it felt that his prejudices were the main source of the humour, and aside from nervous laughter, these sorts of things just aren't that funny. Instead of poking fun at real-life small minded people, he ended up just poking fun at his fictional Kazakh outlook on life. The best laughs came from the slapstick moments in the film, and in the opening scenes greeting people on the streets of New York. While these were funny, the memorabilia shop scene didn't feel like anything that Frank Spencer wasn't doing years ago.</literal></binding>
+      <binding name="?punctaj"><literal>3</literal></binding>
+    </result>
+  </results>
+
+</sparql>

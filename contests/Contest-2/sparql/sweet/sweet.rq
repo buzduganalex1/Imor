@@ -1,0 +1,20 @@
+# Obtinerea listei de instrumente software cu licenta deschisa, din categoria
+# sistemelor de baze de date (relationale/RDF), implementate in limbajul PHP
+# sau in orice limbaj de programare al carui nume e prefixat de litera 'C',
+# pe baza datelor stocate in documentul 'sweet.rdf'.
+# Fisierul 'sweet.rdf' reprezinta un fragment din documentul RDF/XML continind
+# informatii referitoare la instrumentele Web-ului semantic (Sweet Tools)
+# a se vizita adresa <http://www.mkbergman.com/new-version-sweet-tools-sem-web/>
+# Interogarea se poate experimenta in cadrul aplicatiei Twinkle
+# disponibila la <http://www.ldodds.com/projects/twinkle/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX g: <http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/property#>
+SELECT ?nume ?url ?limbaj
+WHERE {
+   [ g:label ?nume ;
+     g:URL ?url ;
+     g:FOSS ?foss ;
+     g:Category ?categ ;
+     g:Language ?limbaj ] .
+  FILTER (?foss = 'Yes' && ?categ = 'Database/Datastore' && (?limbaj = 'PHP' || regex (?limbaj, "^C"))) .
+} ORDER BY ?limbaj

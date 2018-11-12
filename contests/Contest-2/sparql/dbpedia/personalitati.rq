@@ -1,0 +1,20 @@
+# obtinerea datelor despre personalitati (persoane cu o anumita ocupatie,
+# eventual monarhi) ce au numele prefixat cu "Ad"
+# de experimentat interogarea direct in YASGUI: http://yasgui.org/short/rk1Mo6pR-
+PREFIX db: <http://dbpedia.org/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?personalitate ?nume ?dataMoarte
+WHERE {
+  ?personalitate a 
+       <http://umbel.org/umbel/rc/PersonWithOccupation> .
+  OPTIONAL { ?personalitate a dbo:Monarch . }
+  ?personalitate dbp:deathDate ?dataMoarte .
+  ?personalitate rdfs:label ?nume .
+  FILTER (lang (?nume) = "en" && regex (?nume, "^Ad")) .
+} 
+ORDER BY desc (?nume) ?dataMoarte 
+LIMIT 10

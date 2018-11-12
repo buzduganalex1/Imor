@@ -1,0 +1,12 @@
+# informatii referitoare la enclavele cu o populatie mai mare de 15 milioane
+# de locuitori, ce pot fi accesate via DBpedia <http://dbpedia.org/sparql>
+# exemplu oferit de Lee Feigenbaum, 2009
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX type: <http://dbpedia.org/class/yago/> 
+PREFIX dbp: <http://dbpedia.org/property/> 
+SELECT ?numeStat ?pop WHERE { 
+	?stat a type:LandlockedCountries ; 
+        rdfs:label ?numeStat ; 
+        dbp:populationEstimate ?pop . 
+	FILTER (?pop > 15000000) . 
+}

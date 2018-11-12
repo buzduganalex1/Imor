@@ -1,0 +1,9 @@
+# informatii privitoare la papii nascuti in Roma 
+# obtinute interogind DBpedia: <http://dbpedia.org/sparql>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT * WHERE { 
+  ?papa a <http://dbpedia.org/ontology/Pope> ;              
+        <http://dbpedia.org/property/birthPlace> <http://dbpedia.org/resource/Rome> ;   
+        rdfs:label ?nume .
+} 
+LIMIT 3

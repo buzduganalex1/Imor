@@ -1,0 +1,13 @@
+# Titlul lucrarilor in limba franceza ce au fost traduse in romana 
+SELECT DISTINCT ?titlu ?data ?editor ?nume WHERE {
+  [ ] foaf:focus ?lucrare .
+  ?lucrare rdarelationships:expressionOfWork ?exp .
+  ?lucrare dcterms:language <http://id.loc.gov/vocabulary/iso639-2/fre> . 
+  ?manif rdarelationships:expressionManifested ?exp .
+  OPTIONAL { ?exp bnfroles:r680 ?trad ;
+       dcterms:language <http://id.loc.gov/vocabulary/iso639-2/rum> .  
+       ?trad foaf:name ?nume }
+  OPTIONAL { ?manif dcterms:date ?data }
+  OPTIONAL { ?manif dcterms:title ?titlu }
+  OPTIONAL { ?manif dcterms:publisher ?editor }
+} ORDER BY ?nume LIMIT 10

@@ -1,0 +1,54 @@
+@prefix rdfa: <http://www.w3.org/ns/rdfa#> .
+@prefix schema: <http://schema.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<https://rdfa.info/play/>
+   rdfa:usesVocabulary schema:;
+   schema:food _:1 .
+_:1 
+   rdf:type schema:Food;
+   schema:name "Food";
+   schema:serving_size "2";
+   schema:price "5";
+   schema:discount "10%";
+   schema:Romania "Romania";
+   schema:Brand "OurBrand";
+   schema:Picture "Milk.jpg";
+   schema:ExpirationData "10/31/2018";
+   schema:category _:2;
+   schema:nutrient _:3;
+   schema:vitamin _:4;
+   schema:ingredient _:5;
+   schema:label _:6;
+   schema:store _:7 .
+_:2 
+   rdf:type schema:Category;
+   schema:name "Dessert" .
+_:3 
+   rdf:type schema:Nutrient;
+   schema:name "sugar";
+   schema:quantity "low" .
+_:4 
+   rdf:type schema:Vitamin;
+   schema:name "Vitamin C" .
+_:5 
+   rdf:type schema:Ingredient;
+   schema:name "Rice";
+   schema:name "Milk";
+   schema:name "Sugar" .
+_:6 
+   rdf:type schema:Label;
+   schema:name "Sugar";
+   schema:size "100g";
+   schema:percent "7%" .
+_:7 
+   rdf:type schema:Store;
+   schema:name "Kaufland";
+   schema:adress "";
+   schema:adress _:8;
+   schema:storeDiscount "5%";
+   schema:Logo "Kauflanlogo.jpg" .
+_:8 
+   rdf:type schema:Adress;
+   schema:street "Razoarelor";
+   schema:number "25" .

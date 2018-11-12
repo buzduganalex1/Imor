@@ -1,0 +1,15 @@
+# obtinerea de informatii referitoare la un producator de muzica si albumele respective
+# pe baza DBpedia: <http://dbpedia.org/sparql>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX dbr: <http://dbpedia.org/resource/>
+
+SELECT ?artistName ?albumName 
+WHERE {
+  ?album dbo:producer dbr:Bono .
+  ?album dbo:musicalArtist ?artist . 
+  ?album rdfs:label ?albumName . 
+  ?artist rdfs:label ?artistName . 
+  FILTER ( lang(?artistName) = "en" AND lang(?albumName) = "en")
+}

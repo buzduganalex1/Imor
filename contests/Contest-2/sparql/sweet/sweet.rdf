@@ -1,0 +1,1517 @@
+<?xml version='1.0'?>
+<!-- Fragment din documentul RDF/XML continand informatii referitoare la
+     instrumentele Web-ului semantic (Sweet Tools)
+
+     detalii la http://www.mkbergman.com/sweet-tools/
+-->
+<rdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'
+	xmlns:exhibit='http://simile.mit.edu/2006/11/exhibit#'
+	xmlns:a='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/property#'
+	xmlns:b='http://www.w3.org/1999/02/22-rdf-syntax-ns#'
+	xmlns:c='http://simile.mit.edu/2006/11/exhibit#'>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#%2Ffacet'>
+	<a:label>/facet</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://slashfacet.semanticweb.org/</a:URL>
+	<a:description>/facet (pronounced "slashfacet") is a generic browser for heterogeneous semantic web repositories. The browser works on any RDFS dataset without any additional configuration. It has some unique features.</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Browser (RDF, OWL or semantic)</a:Category>
+	<a:Language>Prolog</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>6/19/2007</a:Posted>
+	<a:Updated></a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#%2Ffacet</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#3store'>
+	<a:label>3store</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://www.aktors.org/technologies/3store/</a:URL>
+	<a:description>A core C library that uses MySQL to store its raw RDF data and caches, forming an important part of the infrastructure required to support a range of knowledgeable services</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Database/Datastore</a:Category>
+	<a:Language>C / C++</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>8/12/2006</a:Posted>
+	<a:Updated>3/11/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#3store</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#4Suite%204RDF'>
+	<a:label>4Suite 4RDF</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://4suite.org/</a:URL>
+	<a:description>The 4Suite 4RDF an open-source platform for XML and RDF processing implemented in Python with C extensions</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Programming Environment</a:Category>
+	<a:Language>Python</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>8/12/2006</a:Posted>
+	<a:Updated>3/11/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#4Suite%204RDF</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#ACE%20Annotation%20Toolkit'>
+	<a:label>ACE Annotation Toolkit</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://projects.ldc.upenn.edu/ace/tools/2005Toolkit.html</a:URL>
+	<a:description>The ACE Program is developing extraction technology to support automatic processing of natural text, including classification, filtering, and selection, with specific emphasis on the detection and characterization of Entities, Relations, and Events</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Information Extraction</a:Category>
+	<a:Language>C / C++</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>3/11/2007</a:Posted>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#ACE%20Annotation%20Toolkit</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#ACUITy'>
+	<a:label>ACUITy</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://acuity.sourceforge.net/</a:URL>
+	<a:description>ACUITy (Adaptive Work-Centered User Interface Technology) is an open-source framework and architecture for developing semantically-enabled mixed initiative user interfaces</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Miscellaneous</a:Category>
+	<a:Language>Java</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>6/19/2007</a:Posted>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#ACUITy</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#AIDA%20Toolkit'>
+	<a:label>AIDA Toolkit</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://adaptivedisclosure.org/AIDAToolkit/index.html</a:URL>
+	<a:description>The Adaptive Information Disclosure (AID) project is part of a larger effort that aims at the creation of a so-called Virtual Lab environment for e-science . AID includes a suite of dynamic, model-driven information and knowledge extraction tools on top of an architecture for grid-based distributed data analysis, slated for completion in 2008. The AIDA Toolkit is based off of Taverna</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Information Extraction</a:Category>
+	<a:Language>Java</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>11/18/2007</a:Posted>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#AIDA%20Toolkit</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#AJAR%20RDF%20Library'>
+	<a:label>AJAR RDF Library</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://dig.csail.mit.edu/2005/ajar/ajaw/Developer.html</a:URL>
+	<a:description>This library provides data handling for AJAX applications, including web access, store, and query</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>RDF (general)</a:Category>
+	<a:Language>JavaScript</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>3/11/2007</a:Posted>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#AJAR%20RDF%20Library</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#AJAX%20Client%20for%20SPARQL'>
+	<a:label>AJAX Client for SPARQL</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://xmlarmyknife.org/docs/rdf/sparql/ajax.html</a:URL>
+	<a:description>AJAX Client for SPARQL is a simple AJAX client that can be used for running SELECT queries against a service and then integrating them with client-side JavaScript code</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Query Language or Service</a:Category>
+	<a:Language>JavaScript</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>8/12/2006</a:Posted>
+	<a:Updated>3/11/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#AJAX%20Client%20for%20SPARQL</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#AKT%20Research%20Map'>
+	<a:label>AKT Research Map</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://www.aktors.org/technologies/researchmap/</a:URL>
+	<a:description>A competence map for members of the AKT project; it is an informal modelling method that is based on a specialisation of Entity Relational Data Modelling method</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Miscellaneous</a:Category>
+	<a:Language>Other</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>9/22/2006</a:Posted>
+	<a:Updated>1/22/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#AKT%20Research%20Map</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#Alembic'>
+	<a:label>Alembic</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://www.mitre.org/tech/alembic-workbench/</a:URL>
+	<a:description>The Alembic Workbench project from Mitre has as its goal the creation of a natural language engineering environment for the development of tagged corpora</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>NLP/Language Processor</a:Category>
+	<a:Language>Tcl/Tk</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>9/22/2006</a:Posted>
+	<a:Updated>3/11/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#Alembic</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#AllegroGraph'>
+	<a:label>AllegroGraph</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://www.franz.com/products/allegrograph/</a:URL>
+	<a:description>Franz Inc's AllegroGraph is a system to load, store and query RDF data. It includes a SPARQL interface and RDFS reasoning. It has a Java and a Prolog interface</a:description>
+	<a:FOSS>No</a:FOSS>
+	<a:Category>Database/Datastore</a:Category>
+	<a:Language>Java</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>8/12/2006</a:Posted>
+	<a:Updated>1/22/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#AllegroGraph</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#Almo'>
+	<a:label>Almo</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://ontoware.org/projects/almo</a:URL>
+	<a:description>An ontology-based workflow engine in Java supporting the ARTEMIS project; part of the OntoWare initiative</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Ontology (general)</a:Category>
+	<a:Language>Java</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>9/22/2006</a:Posted>
+	<a:Updated>3/11/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#Almo</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#Altova%20SemanticWorks'>
+	<a:label>Altova SemanticWorks</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://www.altova.com/products_semanticworks.html</a:URL>
+	<a:description>Visual RDF and OWL editor that auto-generates RDF/XML or nTriples based on visual ontology design</a:description>
+	<a:FOSS>No</a:FOSS>
+	<a:Category>Ontology Editor</a:Category>
+	<a:Language>Java</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>8/12/2006</a:Posted>
+	<a:Updated>3/11/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#Altova%20SemanticWorks</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#Alvis'>
+	<a:label>Alvis</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://www.alvis.info/alvis/</a:URL>
+	<a:description>ALVIS aims to provide a free, standalone semantic-based search system in order to enable application-domain experts to readily build topic-specific search sites (prototype)</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Search Engine</a:Category>
+	<a:Language>Perl</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>1/4/2007</a:Posted>
+	<a:Updated>3/11/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#Alvis</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#AMALGAM'>
+	<a:label>AMALGAM</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://www.scs.leeds.ac.uk/amalgam/amalgam/amalghome.htm</a:URL>
+	<a:description>The AMALGAM (Automatic Mapping Among Lexico-Grammatical Annotation Models) project is an attempt to create a set of mapping algorithms to map between the main tagsets and phrase structure grammar schemes used in various research corpora.  Software has been developed to tag text with up to 8 annotation schemes. May be abandoned.</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>NLP/Language Processor</a:Category>
+	<a:Language>Java</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>10/4/2006</a:Posted>
+	<a:Updated>1/22/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#AMALGAM</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#Amilcare'>
+	<a:label>Amilcare</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://www.aktors.org/technologies/amilcare/</a:URL>
+	<a:description>An adaptive information extraction tool designed to support document annotation for the Semantic Web.</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Information Extraction</a:Category>
+	<a:Language>Java</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>9/22/2006</a:Posted>
+	<a:Updated>1/22/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#Amilcare</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#Amine'>
+	<a:label>Amine</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://amine-platform.sourceforge.net/</a:URL>
+	<a:description>Amine is a Multi-Layer Platform implemented in Java. It provides various Engines and GUIs to build a wide variety of Ontology-based applications, Conceptual Graph based applications, Intelligent Systems and Multi-Agents Systems</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Composite App/Framework</a:Category>
+	<a:Language>Java</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>10/4/2006</a:Posted>
+	<a:Updated>3/11/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#Amine</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#ANNIE%20-%20Open%20Source%20Information%20Extraction'>
+	<a:label>ANNIE - Open Source Information Extraction</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://www.aktors.org/technologies/annie/</a:URL>
+	<a:description>An open-source robust information extraction system.  GATE is distributed with ANNIE, A Nearly-New IE system.  ANNIE relies on ﬁnite state algorithms and the JAPE language</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Information Extraction</a:Category>
+	<a:Language>Java</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>9/22/2006</a:Posted>
+	<a:Updated>1/22/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#ANNIE%20-%20Open%20Source%20Information%20Extraction</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#Annotea'>
+	<a:label>Annotea</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://www.w3.org/2001/Annotea/</a:URL>
+	<a:description>An annotation framework for browser pages (plug-in); Annotea enhances collaboration via shared metadata based Web annotations, bookmarks, and their combinations</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Annotator</a:Category>
+	<a:Language>Multiple</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>1/4/2007</a:Posted>
+	<a:Updated>3/11/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#Annotea</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#Annozilla'>
+	<a:label>Annozilla</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://annozilla.mozdev.org/installation/</a:URL>
+	<a:description>The Annozilla project has been established to create a Web annotation tool for Mozilla Web browsers such as Firefox</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Annotator</a:Category>
+	<a:Language>JavaScript</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>1/9/2007</a:Posted>
+	<a:Updated>3/11/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#Annozilla</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#Anthracite'>
+	<a:label>Anthracite</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://metafy.com/</a:URL>
+	<a:description>Metafy's Anthracite Web Mining Desktop toolkit gives you the tools you need to build powerful data processing systems with an easy-to-use visual interface that makes complex manipulations quickly possible. Anthracite is built for people who need to transform internet sources and/or large data sets into integrated information quickly and easily without scripting.  Mac OS X only</a:description>
+	<a:FOSS>No</a:FOSS>
+	<a:Category>Wrapper (Web data extractor)</a:Category>
+	<a:Language>Don't Know</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>3/11/2007</a:Posted>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#Anthracite</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#ANTLR'>
+	<a:label>ANTLR</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://www.antlr.org/</a:URL>
+	<a:description>ANTLR, ANother Tool for Language Recognition, (formerly PCCTS) is a language tool that provides a framework for constructing recognizers, compilers, and translators from grammatical descriptions containing Java, C#, C++, or Python actions.</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>NLP/Language Processor</a:Category>
+	<a:Language>Java</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>1/4/2007</a:Posted>
+	<a:Updated>3/11/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#ANTLR</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#any23'>
+	<a:label>any23</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://code.google.com/p/any23/</a:URL>
+	<a:description>Anything To Triples (any23) is a library and web service that extracts structured data in RDF format from a variety of Web documents. Currently it supports the following input formats: RDF/XML, Turtle, Notation 3, RDFa; and the microformats ofAdr, Geo, hCalendar, hCard, hListing, hResume, hReview, License, XFN</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Wrapper (Web data extractor)</a:Category>
+	<a:Language>Java</a:Language>
+	<a:Existing>New</a:Existing>
+	<a:Posted>1/31/2009</a:Posted>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#any23</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#Anzo'>
+	<a:label>Anzo</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://www.openanzo.org/</a:URL>
+	<a:description>Anzo is an open source enterprise-featured RDF store and middleware platform that provides support for multiple users, distributed clients, offline work, real-time notification, named-graph modularization, versioning, access controls, and transactions with preconditions.  Open Anzo works with the underlying relational databases of IBM DB/2, Oracle, MySQL, PostGres and Apache Derby</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Composite App/Framework</a:Category>
+	<a:Language>Java</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>11/18/2007</a:Posted>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#Anzo</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#Aperture'>
+	<a:label>Aperture</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://aperture.sourceforge.net/</a:URL>
+	<a:description>Aperture is a Java framework for extracting and querying full-text content and metadata from various information systems (e.g. file systems, web sites, mail boxes) and the file formats (e.g. documents, images) occurring in these systems</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Harvester</a:Category>
+	<a:Language>Java</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>9/22/2006</a:Posted>
+	<a:Updated>3/11/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#Aperture</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#APEX'>
+	<a:label>APEX</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://aboutapex.org/apex/index.php?n=Main.Homepage</a:URL>
+	<a:description>Adaptable Presentation and Embedded-data eXtensions (APEX) Data Widgets are small pieces of code that are placed inside web pages. Once the code has been placed in a page, some minor configuration changes are made and the page is instantly data-enabled.  Both a Tester and Viewer are available</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Miscellaneous</a:Category>
+	<a:Language>PHP</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>6/19/2007</a:Posted>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#APEX</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#Apolda'>
+	<a:label>Apolda</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://apolda.sourceforge.net/</a:URL>
+	<a:description>Apolda (Automated Processing of Ontologies with Lexical Denotations for Annotation) is a plugin (processing resource) for GATE (http://gate.ac.uk/). The Apolda processing resource (PR) annotates a document like a gazetteer, but takes the terms from an (OWL) ontology rather than from a list.</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Annotator</a:Category>
+	<a:Language>Java</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>11/18/2007</a:Posted>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#Apolda</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#Applications%20of%20FCA%20in%20AKT'>
+	<a:label>Applications of FCA in AKT</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://www.aktors.org/technologies/fca/</a:URL>
+	<a:description>Formal Concept Analysis (FCA) is used in a variety of application scenarios in AKT in order to perform concept-based domain analysis and automatically deduce a taxonomy lattice of that domain.</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Description or Formal Logics</a:Category>
+	<a:Language>Definition / Specification</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>9/22/2006</a:Posted>
+	<a:Updated>1/22/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#Applications%20of%20FCA%20in%20AKT</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#AquaBrowser'>
+	<a:label>AquaBrowser</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://www.medialab.nl/index.asp?page=aquabrowserlibrary/howitworks</a:URL>
+	<a:description>AquaBrowser is a faceted browser specifically designed for libraries and works off of its own local content index.  Faceted search and graphical relatedness dispalys are included.  Interfaces are quite attractive</a:description>
+	<a:FOSS>No</a:FOSS>
+	<a:Category>Browser (RDF, OWL or semantic)</a:Category>
+	<a:Language>Don't Know</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>6/19/2007</a:Posted>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#AquaBrowser</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#Aqualog'>
+	<a:label>Aqualog</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://kmi.open.ac.uk/technologies/aqualog/</a:URL>
+	<a:description>Aqualog is a system which answer questions written in English. It combines several technologies Natural Language Processing, Logic, Information Retrieval and Ontologies.</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>NLP/Language Processor</a:Category>
+	<a:Language>Java</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>1/22/2007</a:Posted>
+	<a:Updated>3/11/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#Aqualog</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#ARC'>
+	<a:label>ARC</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://arc.semsol.org/</a:URL>
+	<a:description>ARC is a lightweight, SPARQL-enabled RDF system for mainstream Web projects. It is written in PHP and has been optimized for shared Web environments</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>RDF (general)</a:Category>
+	<a:Language>PHP</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>8/12/2006</a:Posted>
+	<a:Updated>3/23/2008</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#ARC</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#Ariel'>
+	<a:label>Ariel</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://ariel.rubyforge.org/index.html</a:URL>
+	<a:description>Ariel is a Ruby library that allows you to extract information from semi-structured documents (such as websites). It is different to existing tools because rather than expecting the developer to write rules to extract the desired information, Ariel will use a small number of labeled examples to generate and learn effective extraction rules</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Information Extraction</a:Category>
+	<a:Language>Ruby</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>1/4/2007</a:Posted>
+	<a:Updated>3/11/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#Ariel</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#Armadillo'>
+	<a:label>Armadillo</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://nlp.shef.ac.uk/wig/armadillo_home.html</a:URL>
+	<a:description>Exploits the redundancies apparent in the Internet, combining many information sources to perform document annotation with minimal human intervention.</a:description>
+	<a:FOSS>Don't Know</a:FOSS>
+	<a:Category>Information Extraction</a:Category>
+	<a:Language>Java</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>9/22/2006</a:Posted>
+	<a:Updated>3/11/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#Armadillo</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#ARP'>
+	<a:label>ARP</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://www.hpl.hp.com/personal/jjc/arp/</a:URL>
+	<a:description>ARP is Another RDF Parser, used for Jena RDF/XML.  It is Java-based and  compliant with many standards</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Parser or Converter</a:Category>
+	<a:Language>Java</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>2/6/2007</a:Posted>
+	<a:Updated>3/11/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#ARP</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#ARQ'>
+	<a:label>ARQ</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://jena.sourceforge.net/ARQ/</a:URL>
+	<a:description>ARQ is a query engine for Jena that supports the SPARQL RDF Query language. SPARQL is the query language developed by the W3C RDF Data Access Working Group</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Query Language or Service</a:Category>
+	<a:Language>Java</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>3/11/2007</a:Posted>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#ARQ</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#ArtEquAkt'>
+	<a:label>ArtEquAkt</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://www.artequakt.ecs.soton.ac.uk/</a:URL>
+	<a:description>A system that automatically extracts information about artists from the web, populates an ontology, then uses the knowledge to generate personalised biographies.</a:description>
+	<a:FOSS>Don't Know</a:FOSS>
+	<a:Category>Information Extraction</a:Category>
+	<a:Language>Java</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>9/22/2006</a:Posted>
+	<a:Updated>1/22/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#ArtEquAkt</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#ArtificialMemory'>
+	<a:label>ArtificialMemory</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://www.artificialmemory.net/</a:URL>
+	<a:description>ArtificialMemory is an innovative personal and enterprise knowledge management system integrating Wiki, Personal Information-, Weblog-, and Document Management System (DMS).</a:description>
+	<a:FOSS>Don't Know</a:FOSS>
+	<a:Category>Wiki- or blog-related</a:Category>
+	<a:Language>C#</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>3/11/2007</a:Posted>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#ArtificialMemory</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#Asio'>
+	<a:label>Asio</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://asio.bbn.com/</a:URL>
+	<a:description>The Asio Tool Suite supports information discovery via W3C Semantic Web standards and provides for data accessibility via queries posed in a user’s own ontology.  It includes Asio Parliament for storage, Asio Cartographer for ontology mapping and Asio Scout for federated queryinig and bridging to relational data stores.</a:description>
+	<a:FOSS>No</a:FOSS>
+	<a:Category>Composite App/Framework</a:Category>
+	<a:Language>Java</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>11/18/2007</a:Posted>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#Asio</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#ASIS%20for%20GNAT'>
+	<a:label>ASIS for GNAT</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://gnat-asis.sourceforge.net/</a:URL>
+	<a:description>ASIS (Ada Semantic Interface Specification) for GNAT on gcc. ASIS is a published international ISO standard (ISO/IEC 15291:1999). ASIS based tools are available as well</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Programming Environment</a:Category>
+	<a:Language>Other</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>10/4/2006</a:Posted>
+	<a:Updated>1/22/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#ASIS%20for%20GNAT</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#ASMOV'>
+	<a:label>ASMOV</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://support.infotechsoft.com/integration/ASMOV/index.html</a:URL>
+	<a:description>ASMOV, which stands for Automated Semantic Mapping of Ontologies with Validation, is an automatic ontology matching tool which has been designed in order to facilitate the integration of heterogeneous systems, using their data source ontologies.</a:description>
+	<a:FOSS>No</a:FOSS>
+	<a:Category>Ontology Mapper/Mediator</a:Category>
+	<a:Language>Java</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>11/18/2007</a:Posted>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#ASMOV</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#ATLAS%20%2F%20jATLAS'>
+	<a:label>ATLAS / jATLAS</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://www.nist.gov/speech/atlas/</a:URL>
+	<a:description>ATLAS (Architecture and Tools for Linguistic Analysis Systems) is a joint initiative of NIST, MITRE and the LDC to build a general purpose annotation architecture and a data interchange format. The starting point is the annotation graph model, with some significant generalizations.  Download now available from jATLAS - http://sourceforge.net/projects/jatlas/</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>NLP/Language Processor</a:Category>
+	<a:Language>Java</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>10/4/2006</a:Posted>
+	<a:Updated>3/11/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#ATLAS%20%2F%20jATLAS</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#AutoFocus'>
+	<a:label>AutoFocus</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://www.aduna-software.com/products/autofocus/overview.view</a:URL>
+	<a:description>Aduna AutoFocus helps you to search and find information on your PC, network disks, mail boxes, websites and AutoFocus Server sources.  Presentation is done via cluster maps.  There is a server-side complement; the system runs on Windows, though other download options are available.</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Browser (RDF, OWL or semantic)</a:Category>
+	<a:Language>Java</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>3/23/2008</a:Posted>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#AutoFocus</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#Automatic%20Support%20for%20Enterprise%20Modelling%20and%20Workflow'>
+	<a:label>Automatic Support for Enterprise Modelling and Workflow</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://www.aktors.org/technologies/workflow/</a:URL>
+	<a:description>Knowledge management using multi-modelling techniques and how modelling activities may be assisted with automation based on formal methods.</a:description>
+	<a:FOSS>No</a:FOSS>
+	<a:Category>Miscellaneous</a:Category>
+	<a:Language>Other</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>9/22/2006</a:Posted>
+	<a:Updated>1/22/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#Automatic%20Support%20for%20Enterprise%20Modelling%20and%20Workflow</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#AutoSemantix'>
+	<a:label>AutoSemantix</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://autosemantix.sourceforge.net/</a:URL>
+	<a:description>AutoSemantix is a round-trip code generation tool designed to streamline the creation of Semantic Web applications for the Java platform</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Programming Environment</a:Category>
+	<a:Language>Java</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>10/4/2006</a:Posted>
+	<a:Updated>1/22/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#AutoSemantix</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#BAAGZ'>
+	<a:label>BAAGZ</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://www.baagz.com/</a:URL>
+	<a:description>BAAGZ is plug-in assisted online service that brings together search and social networking.  BAAGZ uses its semantic description of every Web site stored in localized repositories to determine what that "baag" is about whether or not a given Web site is specifically tagged by a user.  The system then uses this knowledge for search and retrieval.  Baagz is currently available for Firefox 2+ only</a:description>
+	<a:FOSS>Online</a:FOSS>
+	<a:Category>Search Engine</a:Category>
+	<a:Language>Don't Know</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>11/18/2007</a:Posted>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#BAAGZ</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#Babel'>
+	<a:label>Babel</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://simile.mit.edu/babel/</a:URL>
+	<a:description>Babel can be used to convert between various data formats including Excel, RDF, JSON, N3, etc.</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Parser or Converter</a:Category>
+	<a:Language>Java</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>1/22/2007</a:Posted>
+	<a:Updated>3/11/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#Babel</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#BaseVISor'>
+	<a:label>BaseVISor</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://www.vistology.com/basevisor/basevisor.html</a:URL>
+	<a:description>BaseVISor is a forward-chaining inference engine specialized to handle facts in the form of RDF triples with support for RuleML, R-Entailment and XML Schema Datatypes. BaseVISor is a Java application and API.</a:description>
+	<a:FOSS>Mixed</a:FOSS>
+	<a:Category>Reasoner/Inference Engine</a:Category>
+	<a:Language>Java</a:Language>
+	<a:Existing>New</a:Existing>
+	<a:Posted>1/31/2009</a:Posted>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#BaseVISor</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#BibSonomy'>
+	<a:label>BibSonomy</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://www.bibsonomy.org/group/ckc2007</a:URL>
+	<a:description>BibSonomy is a Web-based social resource sharing system that allows users to organize and share bookmarks and publications collaboratively</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Annotator</a:Category>
+	<a:Language>Don't Know</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>6/19/2007</a:Posted>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#BibSonomy</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#Bibster'>
+	<a:label>Bibster</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://bibster.semanticweb.org/</a:URL>
+	<a:description>Bibster is a Java-based semantics system which assists researchers in managing, searching, and sharing bibliographic metadata (e.g. from BibTeX files) in a peer-to-peer networked bibliographic peer-to-peer system</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Miscellaneous</a:Category>
+	<a:Language>Java</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>9/22/2006</a:Posted>
+	<a:Updated>3/11/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#Bibster</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#BigBlogZoo'>
+	<a:label>BigBlogZoo</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://www.syndicatescape.com/</a:URL>
+	<a:description>Metasearcher that clusters results into the DMOZ categorization structure</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Browser (RDF, OWL or semantic)</a:Category>
+	<a:Language>Java</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>1/22/2007</a:Posted>
+	<a:Updated>3/11/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#BigBlogZoo</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#Blacklight'>
+	<a:label>Blacklight</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://blacklight.rubyforge.org/</a:URL>
+	<a:description>Blacklight is an open source OPAC (online public access catalog). That means libraries (or anyone else) can use it to allow people to search and browse their collections online. Blacklight uses Solr to index and search, and it has a highly configurable Ruby on Rails front-end.</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Browser (RDF, OWL or semantic)</a:Category>
+	<a:Language>Ruby</a:Language>
+	<a:AI3_Post>http://www.mkbergman.com/?p=424</a:AI3_Post>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>3/23/2008</a:Posted>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#Blacklight</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#blinx'>
+	<a:label>blinx</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://www.blinkx.com/</a:URL>
+	<a:description>blinkx is a video search service that uses speech-to-text technology, advanced video analytics, and other information extraction to process as much information as possible for search and automatic hyperlinking of related content or implicit query</a:description>
+	<a:FOSS>Online</a:FOSS>
+	<a:Category>Search Engine</a:Category>
+	<a:Language>Don't Know</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>11/18/2007</a:Posted>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#blinx</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#blueorganizer'>
+	<a:label>blueorganizer</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://www.adaptiveblue.com/</a:URL>
+	<a:description>The blueorganizer is smart browsing and personalization technology using limited semantic technology</a:description>
+	<a:FOSS>No</a:FOSS>
+	<a:Category>Browser (RDF, OWL or semantic)</a:Category>
+	<a:Language>JavaScript</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>1/9/2007</a:Posted>
+	<a:Updated>1/22/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#blueorganizer</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#Boca'>
+	<a:label>Boca</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://sourceforge.net/project/showfiles.php?group_id=181986&amp;package_id=210881</a:URL>
+	<a:description>IBM's Boca is an enterprise-featured RDF store that provides support for multiple users, distributed clients, offline work, real-time notification, named-graph modularization, versioning, access controls, and transactions with preconditions; see SLRP</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Database/Datastore</a:Category>
+	<a:Language>Java</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>1/4/2007</a:Posted>
+	<a:Updated>3/11/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#Boca</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#Boost%20Graph%20Library'>
+	<a:label>Boost Graph Library</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://www.boost.org/libs/graph/doc/index.html</a:URL>
+	<a:description>The Boost Graph Library is a generic interface that allows access to a graph's structure, but hides the details of the implementation. This is an ``open'' interface in the sense that any graph library that implements this interface will be interoperable with the BGL generic algorithms and with other algorithms that also use this interface. The BGL provides some general purpose graph classes that conform to this interface</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Visualization</a:Category>
+	<a:Language>C / C++</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>9/17/2007</a:Posted>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#Boost%20Graph%20Library</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#BOR'>
+	<a:label>BOR</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://www.ontotext.com/bor/</a:URL>
+	<a:description>A description logic (DL) reasoner that can be integrated into Sesame. BOR is a SHQ(D) reasoner (SHQ(D) is SHOQ(D) without nominals). It provides comprehensive DAML+OIL support and is compliant with the latest OWL specifications.  For performance reasons, it is recommended to choose OWLIM instead</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Reasoner/Inference Engine</a:Category>
+	<a:Language>Java</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>2/6/2007</a:Posted>
+	<a:Updated>3/11/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#BOR</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#Bossam'>
+	<a:label>Bossam</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://bossam.wordpress.com/</a:URL>
+	<a:description>Bossam, a rule-based OWL reasoner (free, well-documented, closed-source).  For downloads, see http://projects.semwebcentral.org/projects/bossam/</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Reasoner/Inference Engine</a:Category>
+	<a:Language>Java</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>9/22/2006</a:Posted>
+	<a:Updated>3/11/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#Bossam</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#Brahms'>
+	<a:label>Brahms</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://lsdis.cs.uga.edu/projects/semdis/brahms/</a:URL>
+	<a:description>Brahms is a fast main-memory RDF/S storage, capable of storing, accessing and querying large ontologies. It is implemented as a set of C++ classes</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Database/Datastore</a:Category>
+	<a:Language>C / C++</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>8/12/2006</a:Posted>
+	<a:Updated>3/11/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#Brahms</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#Brainlets'>
+	<a:label>Brainlets</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://www.dbin.org/</a:URL>
+	<a:description>Brainlets are "domain specific applications" that run inside DBin. Brainlets provide your local DBin installation with the proper user interface, ontologies (domain vocabularies), rules, annotation types, domain queries to comfortably interact with the topic of choice.</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Miscellaneous</a:Category>
+	<a:Language>Other</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>3/11/2007</a:Posted>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#Brainlets</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#BrownSauce'>
+	<a:label>BrownSauce</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://brownsauce.sourceforge.net/</a:URL>
+	<a:description>The BrownSauce RDF browser is a project to aggregate and present arbitrary RDF data in as pleasing a manner as possible, that is a 'semantic web browser'. Brownsauce is a local http server; however it should be trivial to add other front-ends</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Browser (RDF, OWL or semantic)</a:Category>
+	<a:Language>Java</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>10/4/2006</a:Posted>
+	<a:Updated>3/11/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#BrownSauce</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#BrowseRDF'>
+	<a:label>BrowseRDF</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://browserdf.org/</a:URL>
+	<a:description>BrowseRDF.com allows you to navigate arbitrary RDF datasets using an exploration technique called "faceted browsing". This technique lets you easily navigate through unfamiliar datasets</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Browser (RDF, OWL or semantic)</a:Category>
+	<a:Language>Ruby</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>6/19/2007</a:Posted>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#BrowseRDF</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#BuddyFinder%20(CORDER)'>
+	<a:label>BuddyFinder (CORDER)</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://kmi.open.ac.uk/projects/buddyspace/userguide/buddyfinder.html</a:URL>
+	<a:description>BuddyFinder-CORDER can automatically produce a ranked list of buddies to match a user's search requirements specified in a term-based query, even in the absence of stored user-profiles.</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Search Engine</a:Category>
+	<a:Language>Java</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>1/22/2007</a:Posted>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#BuddyFinder%20(CORDER)</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#BuddySpace'>
+	<a:label>BuddySpace</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://buddyspace.sourceforge.net/</a:URL>
+	<a:description>Instant messaging with custom map visualizations, semantics of presence (beyond 'offline'/'online'/'away' status) and value-added web services (group alerts, bots, inferences via personal profiles)</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Miscellaneous</a:Category>
+	<a:Language>Java</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>9/22/2006</a:Posted>
+	<a:Updated>3/11/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#BuddySpace</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#Calais'>
+	<a:label>Calais</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://opencalais.mashery.com/</a:URL>
+	<a:description>Open Calais is free limited API web service to automatically attach semantic metadata to content, based on either entities (people, places, organizations, etc.), facts (person ‘x’ works for company ‘y’), or events (person ‘z’ was appointed chairman of company ‘y’ on date ‘x’). The metadata results are stored centrally and returned to you as industry-standard RDF constructs accompanied by a Globally Unique Identifier (GUID).  It is an update of the earlier ClearForest SWS</a:description>
+	<a:FOSS>Yes/No</a:FOSS>
+	<a:Category>Information Extraction</a:Category>
+	<a:Language>Java</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>3/23/2008</a:Posted>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#Calais</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#Callisto'>
+	<a:label>Callisto</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://callisto.mitre.org/</a:URL>
+	<a:description>The Callisto annotation tool was developed to support linguistic annotation of textual sources for any Unicode-supported language with annotation support from jATLAS</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Annotator</a:Category>
+	<a:Language>Java</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>9/22/2006</a:Posted>
+	<a:Updated>1/22/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#Callisto</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#CARA'>
+	<a:label>CARA</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://cara.sourceforge.net/</a:URL>
+	<a:description>CARA (*CA*RMEN *R*DF *A*PI) provides an API for the Resource Description Framework (RDF) written in Perl. The API is based on the graph model of RDF, supports in-memory and persistant storage and includes an RDF Parser</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Programming Environment</a:Category>
+	<a:Language>Perl</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>10/4/2006</a:Posted>
+	<a:Updated>3/11/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#CARA</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#Carp'>
+	<a:label>Carp</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://www.semanticplanet.com/library/Carp/HomePage</a:URL>
+	<a:description>Carp (Convenient API for RDF) is a simple API for RDF programming; password required for access</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>RDF (general)</a:Category>
+	<a:Language>C#</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>6/19/2007</a:Posted>
+	<a:Updated>11/18/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#Carp</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#Carrot2%20Framework'>
+	<a:label>Carrot2 Framework</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://project.carrot2.org/</a:URL>
+	<a:description>Automatic document clustering engine that works with Lucene and Lucene derivatives.  Also now available as standalone, online and Firefox plugin versions.</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>NLP/Language Processor</a:Category>
+	<a:Language>Java</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>1/9/2007</a:Posted>
+	<a:Updated>3/11/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#Carrot2%20Framework</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#CASD'>
+	<a:label>CASD</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://www.aktors.org/technologies/casd/</a:URL>
+	<a:description>A tool for producing system architecture diagrams from service and data descriptions.</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Programming Environment</a:Category>
+	<a:Language>C / C++</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>9/22/2006</a:Posted>
+	<a:Updated>1/22/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#CASD</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#Cashew'>
+	<a:label>Cashew</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://kmi.open.ac.uk/technologies/cashew/</a:URL>
+	<a:description>The Cashew project concerns the description and composition of semantic web-services, unlike most efforts from the semantic web community, the primary flavour of semantics concentrated on is behavioural semantics. The Cashew project is inspired by both OWL-S and WSMO, as well as by BPEL, Workflow Patterns and UML.</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Programming Environment</a:Category>
+	<a:Language>Haskell</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>1/22/2007</a:Posted>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#Cashew</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#CASheW-s%20Engine'>
+	<a:label>CASheW-s Engine</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://savannah.nongnu.org/projects/cashew-s-engine</a:URL>
+	<a:description>The purpose of this project is to facilitate the composition of semantic web services. It consists of two parts, of which this is one</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Miscellaneous</a:Category>
+	<a:Language>Haskell</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>10/4/2006</a:Posted>
+	<a:Updated>1/22/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#CASheW-s%20Engine</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#CCM'>
+	<a:label>CCM</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://ccm-web.sourceforge.net/</a:URL>
+	<a:description>Content-Based Cross-Site Mining (CCM) of Web Data Records algorithm combines techniques of extracting data records based on the structure of documents (HTML tags) with an analysis of the semantics of the content for better data record extraction</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Wrapper (Web data extractor)</a:Category>
+	<a:Language>Perl</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>10/4/2006</a:Posted>
+	<a:Updated>3/11/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#CCM</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#Cerebra%20Server'>
+	<a:label>Cerebra Server</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://www.webmethods.com/cerebra</a:URL>
+	<a:description>A technology platform that is used by enterprises to build model-driven applications and highly adaptive information integration infrastructure; company recently bought by webMethods</a:description>
+	<a:FOSS>No</a:FOSS>
+	<a:Category>Composite App/Framework</a:Category>
+	<a:Language>Don't Know</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>8/12/2006</a:Posted>
+	<a:Updated>1/22/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#Cerebra%20Server</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#chickenfoot'>
+	<a:label>chickenfoot</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://groups.csail.mit.edu/uid/chickenfoot/</a:URL>
+	<a:description>Chickenfoot is a Firefox extension that puts a programming environment in the browser's sidebar so you can write scripts to manipulate web pages and automate web browsing</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Wrapper (Web data extractor)</a:Category>
+	<a:Language>JavaScript</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>1/9/2007</a:Posted>
+	<a:Updated>3/11/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#chickenfoot</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#Chimaera'>
+	<a:label>Chimaera</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://www-ksl-svc.stanford.edu:5915/doc/chimaera/chimaera-docs.html</a:URL>
+	<a:description>Chimaera is a software system that supports users in creating and maintaining distributed ontologies on the web. Two major functions it supports are merging multiple ontologies together and diagnosing individual or multiple ontologies.</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Ontology Mapper/Mediator</a:Category>
+	<a:Language>JavaScript</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>6/19/2007</a:Posted>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#Chimaera</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#ClassAKT'>
+	<a:label>ClassAKT</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://www.aktors.org/technologies/classakt/</a:URL>
+	<a:description>A text classification web service for classifying documents according to the ACM Computing Classification System.</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Ontology (general)</a:Category>
+	<a:Language>Java</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>9/22/2006</a:Posted>
+	<a:Updated>3/11/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#ClassAKT</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#ClioPatria'>
+	<a:label>ClioPatria</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://e-culture.multimedian.nl/software/ClioPatria.shtml</a:URL>
+	<a:description>A platform for semantic Web applications with a SeRQL/SPARQL query engine, interface to the The Yahoo! User Interface Library (YUI) and libraries that support semantic search. The platform combines a high performance in-core RDF store with flexible reasoning in Prolog, query optimization. Prolog's interactive usage and capabilities of recompiling modified source code while the system remains alive greatly speedup development</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Composite App/Framework</a:Category>
+	<a:Language>Prolog</a:Language>
+	<a:Existing>New</a:Existing>
+	<a:Posted>1/31/2009</a:Posted>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#ClioPatria</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#Clipmarks'>
+	<a:label>Clipmarks</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://clipmarks.com/</a:URL>
+	<a:description>Clipmarks lets you clip and tag pieces of web pages, viewed through the Clipmarks Web site</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Annotator</a:Category>
+	<a:Language>JavaScript</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>1/9/2007</a:Posted>
+	<a:Updated>1/22/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#Clipmarks</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#Clustybar'>
+	<a:label>Clustybar</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://clusty.com/search?v%3aproject=clusty-toolbar&amp;page=download&amp;</a:URL>
+	<a:description>Clustybar enables search and cluster results from several search engines and get dictionary and encyclopedia definitions for any term</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Miscellaneous</a:Category>
+	<a:Language>JavaScript</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>1/9/2007</a:Posted>
+	<a:Updated>1/22/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#Clustybar</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#CMS'>
+	<a:label>CMS</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://projects.semwebcentral.org/projects/ontologymapping/</a:URL>
+	<a:description>CMS (CROSI Mapping System) is a structure matching system that capitalizes on the rich semantics of the OWL constructs found in source ontologies and on its modular architecture that allows the system to consult external linguistic resources</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Ontology Mapper/Mediator</a:Category>
+	<a:Language>Java</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>2/6/2007</a:Posted>
+	<a:Updated>3/11/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#CMS</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#COCKATOO'>
+	<a:label>COCKATOO</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://www.aktors.org/technologies/cockatoo/</a:URL>
+	<a:description>A knowledge acquisition tool which can be used to produce a set of cases for use with a Case-Based Reasoning system.</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Data Language</a:Category>
+	<a:Language>Definition / Specification</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>9/22/2006</a:Posted>
+	<a:Updated>3/11/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#COCKATOO</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#COE'>
+	<a:label>COE</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://cmap.ihmc.us/coe</a:URL>
+	<a:description>COE (CmapTools Ontology Editor) is a specialized version of the CmapTools from IMHC. COE -- and its CmapTools parent -- is based on the idea of concept maps.  A concept map is a graph diagram that shows the relationships among concepts. Concepts are connected with labeled arrows, with the relations manifesting in a downward-branching hierarchical structure.  COE is an integrated suite of software tools for constructing, sharing and viewing OWL encoded ontologies based on these constructs.</a:description>
+	<a:FOSS>Mixed</a:FOSS>
+	<a:Category>Ontology Editor</a:Category>
+	<a:Language>Java</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>9/17/2007</a:Posted>
+	<a:Updated>9/17/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#COE</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#CognitionSearch'>
+	<a:label>CognitionSearch</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://www.cognitionsearch.com/</a:URL>
+	<a:description>CognitionSearch , with beta examples for wikis (Wikipedia), health, case studies, and government, is a lininguistic search technology.  It uses semi-supervised word disambiguation and a verly large dictionary</a:description>
+	<a:FOSS>Online</a:FOSS>
+	<a:Category>Search Engine</a:Category>
+	<a:Language>C / C++</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>3/23/2008</a:Posted>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#CognitionSearch</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#COHSE%20-%20Conceptual%20Open%20Hypermedia%20Services%20Environment'>
+	<a:label>COHSE - Conceptual Open Hypermedia Services Environment</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://cohse.cs.manchester.ac.uk/</a:URL>
+	<a:description>COHSE researches methods to improve significantly the quality, consistency and breadth of linking of WWW documents at retrieval and authoring time.</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Annotator</a:Category>
+	<a:Language>Java</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>9/22/2006</a:Posted>
+	<a:Updated>1/22/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#COHSE%20-%20Conceptual%20Open%20Hypermedia%20Services%20Environment</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#Collex'>
+	<a:label>Collex</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://www.nines.org/collex</a:URL>
+	<a:description>Collex is the social-software component of NINES, a collections and exhibits builder that operates with NINES peer-reviewed resources. With Collex, you can collect digital objects, and annotate and tag them. Coming in 2007 is a custom online exhibit builder</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Browser (RDF, OWL or semantic)</a:Category>
+	<a:Language>JavaScript</a:Language>
+	<a:AI3_Post>http://www.mkbergman.com/?p=331</a:AI3_Post>
+	<a:Jewel>Yes</a:Jewel>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>2/6/2007</a:Posted>
+	<a:Updated>3/11/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#Collex</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#COMA%2B%2B'>
+	<a:label>COMA++</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://dbs.uni-leipzig.de/Research/coma.html</a:URL>
+	<a:description>COMA++ is a schema and ontology matching tool with a comprehensive infrastructure.  Its graphical interface supports a variety of interaction</a:description>
+	<a:FOSS>Yes/No</a:FOSS>
+	<a:Category>Ontology Mapper/Mediator</a:Category>
+	<a:Language>Java</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>11/18/2007</a:Posted>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#COMA%2B%2B</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#Compendium'>
+	<a:label>Compendium</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://www.compendiuminstitute.org/</a:URL>
+	<a:description>Compendium is a semantic, visual hypertext tool for supporting collaborative domain modelling and real time meeting capture</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Miscellaneous</a:Category>
+	<a:Language>Java</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>9/22/2006</a:Posted>
+	<a:Updated>3/11/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#Compendium</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#ConcepTool'>
+	<a:label>ConcepTool</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://www.aktors.org/technologies/conceptool/</a:URL>
+	<a:description>A system to model, analyse, verify, validate, share, combine, and reuse domain knowledge bases and ontologies, reasoning about their implication.</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Ontology Mapper/Mediator</a:Category>
+	<a:Language>Java</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>9/22/2006</a:Posted>
+	<a:Updated>3/11/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#ConcepTool</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#confoto'>
+	<a:label>confoto</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://www.confoto.org/home</a:URL>
+	<a:description>CONFOTO is an online service which facilitates browsing, annotating and re-purposing of photo, conference, and people descriptions</a:description>
+	<a:FOSS>Online</a:FOSS>
+	<a:Category>Browser (RDF, OWL or semantic)</a:Category>
+	<a:Language>PHP</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>11/18/2007</a:Posted>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#confoto</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#ConRef'>
+	<a:label>ConRef</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://www.aktors.org/technologies/conref/</a:URL>
+	<a:description>A service discovery system which uses ontology mapping techniques to support different user vocabularies</a:description>
+	<a:FOSS>Don't Know</a:FOSS>
+	<a:Category>Ontology Mapper/Mediator</a:Category>
+	<a:Language>Lisp</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>9/22/2006</a:Posted>
+	<a:Updated>3/11/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#ConRef</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#ConsVISor'>
+	<a:label>ConsVISor</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://www.vistology.com/consvisor/</a:URL>
+	<a:description>OWL consistency checker from VIStology; input language options include OWL Full, OWL DL, OWL Lite, RDFand DAML (deprecated)</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Validator</a:Category>
+	<a:Language>Java</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>1/4/2007</a:Posted>
+	<a:Updated>1/22/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#ConsVISor</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#ConverterFromRDF'>
+	<a:label>ConverterFromRDF</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://esw.w3.org/topic/ConverterFromRdf</a:URL>
+	<a:description>Still under formulation (Danny Ayers):  A Converter from RDF is a tool which converts RDF into an application-specific format for use with existing tools and integration with other data. Typically this will appear as part of a running system which provides a domain-specific facet view of a given RDF application's data</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Parser or Converter</a:Category>
+	<a:Language>Other</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>3/11/2007</a:Posted>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#ConverterFromRDF</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#ConverterToRDF'>
+	<a:label>ConverterToRDF</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://esw.w3.org/topic/ConverterToRdf</a:URL>
+	<a:description>Converter to RDF is a tool which converts application data from an application-specific format into RDF for use with RDF tools and integration with other data. This site is a listing of RDF converters; see also the RDFizers list below</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Parser or Converter</a:Category>
+	<a:Language>Other</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>1/9/2007</a:Posted>
+	<a:Updated>1/22/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#ConverterToRDF</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#ConWeaver'>
+	<a:label>ConWeaver</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://www.conweaver.de/CW_14_03_07/software_en.html</a:URL>
+	<a:description>ConWeaver comprises modules for the extraction and integration of information as well as search. Information is extracted from distributed, heterogeneous data sources and represented in a multilingual semantic knowledge network. ConWeaver is also able to associate and classify documents with similar content or formal similarities.</a:description>
+	<a:FOSS>No</a:FOSS>
+	<a:Category>Search Engine</a:Category>
+	<a:Language>Java</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>11/18/2007</a:Posted>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#ConWeaver</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#Conzilla'>
+	<a:label>Conzilla</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://www.conzilla.org/wiki/Overview/Main</a:URL>
+	<a:description>Conzilla2 is a second generation concept browser and knowledge management tool with many purposes.  It can be used as a visual designer and manager of RDF classes and ontologies, since its native storage is in RDF.  It also has an online collaboration server.</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Ontology Editor</a:Category>
+	<a:Language>Java</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>9/17/2007</a:Posted>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#Conzilla</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#CORDER'>
+	<a:label>CORDER</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://kmi.open.ac.uk/projects/corder/</a:URL>
+	<a:description>CORDER (COmmunity Relation Discovery by named Entity Recognition) is an un-supervised machine learning algorithm that exploits named entity recognition and co-occurrence data to associate individuals in a community with their expertise and associates.</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Information Extraction</a:Category>
+	<a:Language>Java</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>1/22/2007</a:Posted>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#CORDER</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#Corese'>
+	<a:label>Corese</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://www-sop.inria.fr/acacia/soft/corese/</a:URL>
+	<a:description>Corese stands for Conceptual Resource Search Engine. It is an RDF engine based on Conceptual Graphs (CG) and written in Java. It enables the processing of RDF Schema and RDF statements within the CG formalism, provides a rule engine and a query engine accepting the SPARQL syntax</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Composite App/Framework</a:Category>
+	<a:Language>Java</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>8/12/2006</a:Posted>
+	<a:Updated>3/11/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#Corese</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#Cortex%20Intelligence'>
+	<a:label>Cortex Intelligence</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://www.cortex-intelligence.com/tech/</a:URL>
+	<a:description>Online demo showing text mining, specifically entity and action extractions.  Results are linked to Wikipedia for definitions and other relationships (also in Portuguese)</a:description>
+	<a:FOSS>Online</a:FOSS>
+	<a:Category>Information Extraction</a:Category>
+	<a:Language>Don't Know</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>3/23/2008</a:Posted>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#Cortex%20Intelligence</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#COW'>
+	<a:label>COW</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://www.informatik.uni-freiburg.de/cgnm/software/cow/index_en.html</a:URL>
+	<a:description>COW is a semantic wiki using KAON as backend that supports collaborative evolution of ontologies by means of versioning, transactions, and management of simultaneous modifications.</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Wiki- or blog-related</a:Category>
+	<a:Language>Java</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>3/11/2007</a:Posted>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#COW</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#Crowbar'>
+	<a:label>Crowbar</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://simile.mit.edu/wiki/Crowbar</a:URL>
+	<a:description>Crowbar is a web scraping environment based on the use of a server-side headless mozilla-based browser.  It is used as a research prototype to investigate how to enable the running of Piggy Bank JavaScript scrapers from the command line and thus automating web sites scraping.</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Wrapper (Web data extractor)</a:Category>
+	<a:Language>JavaScript</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>3/11/2007</a:Posted>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#Crowbar</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#CS%20AKTiveSpace'>
+	<a:label>CS AKTiveSpace</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://www.aktors.org/technologies/csaktivespace/</a:URL>
+	<a:description>CS AKTiveSpace is a smart browser interface for a Semantic Web application that provides ontologically motivated information about the UK computer science research community.</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Browser (RDF, OWL or semantic)</a:Category>
+	<a:Language>Multiple</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>9/22/2006</a:Posted>
+	<a:Updated>1/22/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#CS%20AKTiveSpace</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#cURL'>
+	<a:label>cURL</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://curl.haxx.se/</a:URL>
+	<a:description>curl is a command line tool for transferring files with URL syntax, supporting FTP, FTPS, HTTP, HTTPS, SCP, SFTP, TFTP, TELNET, DICT, FILE and LDAP. curl supports SSL certificates, HTTP POST, HTTP PUT, FTP uploading, HTTP form based upload, proxies, cookies, user+password authentication (Basic, Digest, NTLM, Negotiate, kerberos...), file transfer resume, proxy tunneling and a busload of other useful tricks.  According to http://dowhatimean.net/2007/02/debugging-semantic-web-sites-with-curl, use cURL to test Semantic Web URIs and to diagnose some common problems</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Miscellaneous</a:Category>
+	<a:Language>C / C++</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>2/6/2007</a:Posted>
+	<a:Updated>3/11/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#cURL</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#CustomRDFDialects'>
+	<a:label>CustomRDFDialects</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://esw.w3.org/topic/CustomRdfDialects</a:URL>
+	<a:description>This is a listing of more than a dozen XSL transformations for embedded HTML dialects into RDF using GRDDL.  GRDDL is a technique for using XML/XHTML dialects (especially microformats) as custom RDF syntaxes by having each document point, directly or indirectly, to a transformation to an RDF graph. RDFa is a design for mixing RDF syntax into HTML. GRDDL accomodates a wider variety of dialects at the expense of asking consumers to execute potentially untrusted code. RDFa allows one parser to work for data from a variety of domains and provides a direct relationship between the RDF data and the HTML document structure, which provides better support for copy-and-paste.</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Parser or Converter</a:Category>
+	<a:Language>XSLT</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>11/18/2007</a:Posted>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#CustomRDFDialects</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#cwm'>
+	<a:label>cwm</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://www.w3.org/2000/10/swap/doc/cwm.html</a:URL>
+	<a:description>The Closed World Machine (CWM) data manipulator, rules processor and query system mostly using using the Notation 3 textual RDF syntax. It also has an incomplete OWL Full and a SPARQL access.  It is written in Python</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Data Language</a:Category>
+	<a:Language>Python</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>8/12/2006</a:Posted>
+	<a:Updated>3/11/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#cwm</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#d2p-bridge'>
+	<a:label>d2p-bridge</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://sites.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/d2p/index.htm</a:URL>
+	<a:description>The D2P Database-to-Piggy-Bank Bridge is an extension to the Piggy Bank Semantic Web browser which makes information stored in relational databases accessible to Piggy Bank using D2RQ mappings</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Database/Datastore</a:Category>
+	<a:Language>Java</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>1/9/2007</a:Posted>
+	<a:Updated>3/11/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#d2p-bridge</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#D2R%20MAP%20Processor'>
+	<a:label>D2R MAP Processor</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://www.wiwiss.fu-berlin.de/suhl/bizer/d2rmap/D2Rmap.htm</a:URL>
+	<a:description>D2R MAP is a declarative language to describe mappings between relational database schemata and OWL ontologies. This D2R processor implements the D2R mapping language and exports data from a relational database as RDF, N3, N-TRIPLES or as Jena models</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Programming Environment</a:Category>
+	<a:Language>Java</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>10/4/2006</a:Posted>
+	<a:Updated>3/11/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#D2R%20MAP%20Processor</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#D2R%20Server'>
+	<a:label>D2R Server</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://www.wiwiss.fu-berlin.de/suhl/bizer/d2r-server/</a:URL>
+	<a:description>D2R Server is a tool for publishing relational databases on the Semantic Web. The server enables RDF and HTML browsers to navigate the content of non-RDF databases, and allows applications to query the database using the SPARQL query language</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Database/Datastore</a:Category>
+	<a:Language>Java</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>8/12/2006</a:Posted>
+	<a:Updated>3/11/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#D2R%20Server</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#DartGrid'>
+	<a:label>DartGrid</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://ccnt.zju.edu.cn/projects/dartgrid/intro.html</a:URL>
+	<a:description>DartGrid is an application development framework together with a set of practical semantic tools to facilitate the integration of heterogenous relational databases using semantic web technologies; download requires registration</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Miscellaneous</a:Category>
+	<a:Language>Java</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>2/6/2007</a:Posted>
+	<a:Updated>3/11/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#DartGrid</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#Delphi4Sesame'>
+	<a:label>Delphi4Sesame</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://www.cs.vu.nl/~borys/tools/delphi4sesame/</a:URL>
+	<a:description>A Delphi unit that incorporates the HTTP interface to Sesame. It uses the Indy http library that is shipped with Delphi 6</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Parser or Converter</a:Category>
+	<a:Language>Other</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>2/6/2007</a:Posted>
+	<a:Updated>3/11/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#Delphi4Sesame</exhibit:origin>
+</rdf:Description>
+<rdf:Description rdf:about='http://spreadsheets.google.com/feeds/cells/o18233457329750206197.1790652366446948707/od6/public/item#Disco'>
+	<a:label>Disco</a:label>
+	<b:type>Item</b:type>
+	<a:URL>http://sites.wiwiss.fu-berlin.de/suhl/bizer/ng4j/disco/</a:URL>
+	<a:description>The Disco - Hyperdata Browser is a simple browser for navigating the Semantic Web as an unbound set of data sources. The browser renders all information, that it can find on the Semantic Web about a specific resource, as an HTML page; it is also available as a Firefox bookmarklet</a:description>
+	<a:FOSS>Yes</a:FOSS>
+	<a:Category>Browser (RDF, OWL or semantic)</a:Category>
+	<a:Language>JavaScript</a:Language>
+	<a:Existing>Existing</a:Existing>
+	<a:Posted>1/22/2007</a:Posted>
+	<a:Updated>3/11/2007</a:Updated>
+	<a:thumbnail></a:thumbnail>
+	<exhibit:origin>http://www.mkbergman.com/new-version-sweet-tools-sem-web/#Disco</exhibit:origin>
+</rdf:Description>
+
+</rdf:RDF>

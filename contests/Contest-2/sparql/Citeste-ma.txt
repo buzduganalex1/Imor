@@ -1,0 +1,39 @@
+Acest director contine o serie de exemplificari privind realizarea 
+de interogari SPARQL, fie pe baza datelor RDF locale 
+-- vezi directoarele 'infoiasi-wade' si 'sweet' --, 
+fie disponibile via diverse puncte terminale (servicii) SPARQL.
+
+A se studia fisierele .rq din fiecare director corespunzator.
+
+Drept editor-client SPARQL se poate utiliza unul dintre urmatoarele:
+* YASGUI -- aplicatie Web disponibila public la adresa <http://yasgui.org/>
+* SPARQL Playground -- aplicatie Web online <http://sparql-playground.sib.swiss/>
+* SparqlGUI -- parte a proiectului dotnetRDF (.NET) <http://www.dotnetrdf.org/>
+  vezi si <https://bitbucket.org/dotnetrdf/dotnetrdf>
+
+De asemenea, se poate recurge direct la interfetele fiecaruia dintre serviciile 
+precizate mai sus -- iata si o serie de exemplificari (a se parcurge prelegerea de la curs):
+* http://dbpedia.org/sparql -- detalii la http://wiki.dbpedia.org/OnlineAccess
+* https://collection.britishmuseum.org/sparql
+* http://data.bnf.fr/sparql -- detalii la http://data.bnf.fr/semanticweb
+* https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service
+
+Pentru vizualizarea grafurilor RDF rezultate in urma interogarilor SPARQL, 
+se pot consulta resursele:
+* Sgvizler <http://mgskjaeveland.github.io/sgvizler/>
+* d3sparql.js <https://github.com/ktym/d3sparql>
+
+Disponibilitatea punctelor terminale SPARQL publice poate fi verificata 
+vizitand <http://sparqles.ai.wu.ac.at/>.
+
+A se urmari si blog-ul lui Bob DuCharme <http://www.snee.com/bobdc.blog/>
+si tutorialul de la <https://en.wikibooks.org/wiki/SPARQL>.
+
+Aceste resurse pot fi utilizate sub auspiciile prevazute de
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0 License: 
+<https://creativecommons.org/licenses/>.
+
+Exceptand cazurile in care se mentioneaza alt autor, exemplele 
+sunt concepute de Dr. Sabin Buraga <https://profs.info.uaic.ro/~busaco/>.
+
+Ultima actualizare: 04 noiembrie 2018

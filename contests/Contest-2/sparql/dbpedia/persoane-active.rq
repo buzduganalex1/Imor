@@ -1,0 +1,15 @@
+# obtinerea de informatii referitoare la personalitati cu activitate (via UMBEL)
+# care ar putea fi monarhi; datele sunt filtrare dupa nume si limba
+# serviciul de interogare e DBpedia: <http://dbpedia.org/sparql>
+PREFIX d: <http://dbpedia.org/ontology/>
+
+SELECT distinct ?personalitate ?nume ?dataMoarte
+WHERE {
+  ?personalitate rdf:type <http://umbel.org/umbel/rc/PersonWithOccupation> .
+  OPTIONAL { ?personalitate rdf:type d:Monarch . }
+  ?personalitate d:deathDate ?dataMoarte .
+  ?personalitate rdfs:label ?nume .
+  FILTER (lang (?nume) = "en" AND regex (?nume, "^A"))
+} 
+ORDER BY ?dataMoarte 
+LIMIT 10

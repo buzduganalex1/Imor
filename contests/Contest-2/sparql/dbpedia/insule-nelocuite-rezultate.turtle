@@ -1,0 +1,15 @@
+@prefix res: <http://www.w3.org/2005/sparql-results#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+_:_ a res:ResultSet .
+_:_ res:resultVariable "stat" , "suprafata" .
+@prefix dbr:	<http://dbpedia.org/resource/> .
+@prefix xsd:	<http://www.w3.org/2001/XMLSchema#> .
+_:_ res:solution [
+      res:binding [ res:variable "stat" ; res:value dbr:Ushi_Island ] ;
+      res:binding [ res:variable "suprafata" ; res:value 1000.0 ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "stat" ; res:value dbr:Cominotto ] ;
+      res:binding [ res:variable "suprafata" ; res:value 647497.02758400002494 ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "stat" ; res:value dbr:Furugelm_Island ] ;
+      res:binding [ res:variable "suprafata" ; res:value 1900000.0 ] ] .

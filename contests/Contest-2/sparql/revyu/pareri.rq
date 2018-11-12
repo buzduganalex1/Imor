@@ -1,0 +1,17 @@
+# aflarea entitatilor (resurse) cu anumite review-uri (cu comentarii incluzind 
+# termenul 'disappointment', avind punctaj>=3) disponibile la Revyu.com
+# pe baza serviciului SPARQL disponibil la <http://revyu.com/sparql/queryform>
+# rezultatul intors va fi in format XML, conform specificatiei "SPARQL Query 
+# Results XML Format" de la <http://www.w3.org/TR/rdf-sparql-XMLres/>
+PREFIX rev: <http://purl.org/stuff/rev#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?eticheta ?comentariu ?punctaj
+WHERE {
+ ?subiect rdfs:label ?eticheta ; 
+          rev:hasReview ?parere .
+ ?parere rev:text ?comentariu .
+ ?parere rev:rating ?punctaj .
+ FILTER regex (?comentariu, "disappointment") && (?punctaj >= 3) .
+}
+LIMIT 2

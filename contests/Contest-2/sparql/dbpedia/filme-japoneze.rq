@@ -1,0 +1,18 @@
+# Lista filmelor vorbite in limba japoneza, regizate si
+# -- totodata -- scrise de persoane nascute dupa anul 1960
+# a se experimenta http://dbpedia.org/isparql/
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX dbprop: <http://dbpedia.org/property/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+
+SELECT ?film ?nume ?regizor ?dataNastere WHERE { 
+   ?film a dbo:Film ;
+         dbo:language <http://dbpedia.org/resource/Japanese_language> ;
+         dbprop:director ?regizor ;
+         dbprop:writer ?scenarist ;
+         foaf:name ?nume .
+   ?regizor dbprop:dateOfBirth ?dataNastere .
+   FILTER ((?dataNastere >= 1960) && ?regizor = ?scenarist) .
+}
+ORDER BY ?nume
+LIMIT 7

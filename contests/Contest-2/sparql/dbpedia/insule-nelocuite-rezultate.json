@@ -1,0 +1,6 @@
+
+{ "head": { "link": [], "vars": ["stat", "suprafata"] },
+  "results": { "distinct": false, "ordered": true, "bindings": [
+    { "stat": { "type": "uri", "value": "http://dbpedia.org/resource/Ushi_Island" }	, "suprafata": { "type": "typed-literal", "datatype": "http://www.w3.org/2001/XMLSchema#double", "value": "1000.0" }},
+    { "stat": { "type": "uri", "value": "http://dbpedia.org/resource/Cominotto" }	, "suprafata": { "type": "typed-literal", "datatype": "http://www.w3.org/2001/XMLSchema#double", "value": "647497.0" }},
+    { "stat": { "type": "uri", "value": "http://dbpedia.org/resource/Furugelm_Island" }	, "suprafata": { "type": "typed-literal", "datatype": "http://www.w3.org/2001/XMLSchema#double", "value": "1.9e+06" }} ] } }

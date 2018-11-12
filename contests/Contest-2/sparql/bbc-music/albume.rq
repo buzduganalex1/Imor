@@ -1,0 +1,14 @@
+# obtinerea titlurilor a 3 albume ale formatiei 'Pink Floyd' prin interogarea
+# serviciului SPARQL oferit de BBC Music
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo>
+
+SELECT ?title WHERE {
+  ?group a mo:MusicGroup;
+         foaf:name "Pink Floyd";
+         foaf:made ?album .  
+         ?album dc:title ?title .
+}
+ORDER BY ?title 
+LIMIT 3

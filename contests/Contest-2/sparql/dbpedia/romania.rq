@@ -1,0 +1,10 @@
+# informatii despre Romania
+# obtinute interogand DBpedia via punctul terminal SPARQL
+# disponibil la adresa <http://dbpedia.org/sparql>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+
+SELECT ?info
+WHERE {
+  <http://dbpedia.org/resource/Romania> rdfs:comment ?info .
+}

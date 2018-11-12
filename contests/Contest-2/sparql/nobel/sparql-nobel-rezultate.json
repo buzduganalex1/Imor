@@ -1,0 +1,51 @@
+{
+  "head": {
+    "vars": [ "premiu" , "an" , "desc" , "url" ]
+  } ,
+  "results": {
+    "bindings": [
+      {
+        "premiu": { "type": "uri" , "value": "http://data.nobelprize.org/resource/awardfile/5699" } ,
+        "an": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "2017" } ,
+        "desc": { "type": "literal" , "value": "Banquet Speech Richard H. Thaler" } ,
+        "url": { "type": "uri" , "value": "http://nobelprize.org/nobel_prizes/economic-sciences/laureates/2017/thaler-speech.html" }
+      } ,
+      {
+        "premiu": { "type": "uri" , "value": "http://data.nobelprize.org/resource/awardfile/5661" } ,
+        "an": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "2017" } ,
+        "desc": { "type": "literal" , "value": "Interview Richard H. Thaler" } ,
+        "url": { "type": "uri" , "value": "http://nobelprize.org/nobel_prizes/economic-sciences/laureates/2017/thaler-interview.html" }
+      } ,
+      {
+        "premiu": { "type": "uri" , "value": "http://data.nobelprize.org/resource/awardfile/5693" } ,
+        "an": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "2017" } ,
+        "desc": { "type": "literal" , "value": "Nobel Diploma Richard H. Thaler" } ,
+        "url": { "type": "uri" , "value": "http://nobelprize.org/nobel_prizes/economic-sciences/laureates/2017/thaler-diploma.html" }
+      } ,
+      {
+        "premiu": { "type": "uri" , "value": "http://data.nobelprize.org/resource/awardfile/5666" } ,
+        "an": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "2017" } ,
+        "desc": { "type": "literal" , "value": "Nobel Lecture Richard H. Thaler" } ,
+        "url": { "type": "uri" , "value": "http://nobelprize.org/nobel_prizes/economic-sciences/laureates/2017/thaler-lecture.html" }
+      } ,
+      {
+        "premiu": { "type": "uri" , "value": "http://data.nobelprize.org/resource/awardfile/5660" } ,
+        "an": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "2017" } ,
+        "desc": { "type": "literal" , "value": "Other Resources Richard H. Thaler" } ,
+        "url": { "type": "uri" , "value": "http://nobelprize.org/nobel_prizes/economic-sciences/laureates/2017/thaler-or.html" }
+      } ,
+      {
+        "premiu": { "type": "uri" , "value": "http://data.nobelprize.org/resource/awardfile/5662" } ,
+        "an": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "2017" } ,
+        "desc": { "type": "literal" , "value": "Photo Gallery Richard H. Thaler" } ,
+        "url": { "type": "uri" , "value": "http://nobelprize.org/nobel_prizes/economic-sciences/laureates/2017/thaler-photo.html" }
+      } ,
+      {
+        "premiu": { "type": "uri" , "value": "http://data.nobelprize.org/resource/awardfile/5721" } ,
+        "an": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "2017" } ,
+        "desc": { "type": "literal" , "value": "Prize Presentation Richard H. Thaler" } ,
+        "url": { "type": "uri" , "value": "http://nobelprize.org/nobel_prizes/economic-sciences/laureates/2017/thaler-prize-present.html" }
+      }
+    ]
+  }
+}

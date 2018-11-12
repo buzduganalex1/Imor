@@ -1,0 +1,15 @@
+# o interogare simpla a DBpedia <http://dbpedia.org/sparql>
+# pentru a obtine primele 10 insule nelocuite, in ordinea suprafetei
+# (se utilizeaza ontologia YAGO, una dintre ontologiile folosite de
+# modelul conceptual al DBpedia)
+# vezi rezultatele obtinute in diverse formate: insule-nelocuite-rezultate.*
+PREFIX dbo: <http://dbpedia.org/ontology/>
+
+SELECT distinct ?stat ?suprafata
+WHERE {
+  ?stat rdf:type <http://dbpedia.org/class/yago/UninhabitedIslands> .
+  ?stat dbo:areaTotal ?suprafata .
+  FILTER (?suprafata < 50000000)
+} 
+ORDER BY (?suprafata)
+LIMIT 10

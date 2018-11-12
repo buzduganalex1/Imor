@@ -1,0 +1,20 @@
+# utilizarea SPARQL pentru a detecta erori in cadrul DBpedia:
+# aici, detectarea literalilor (rdf:Literal) in locul URI-urilor (rdf:Resource)
+# in cazul precizarii adresei unui sit Web
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX dbp: <http://dbpedia.org/property/>
+
+SELECT ?subiect ?url
+WHERE {
+  ?subiect dbp:siteweb ?url .
+  FILTER (isLITERAL (?url))
+} ORDER BY DESC (?url)
+LIMIT 7
+
+# o varianta mai 'complexa' ar fi (exemplu de folosire a clauzei UNION):
+SELECT ?subiect ?url
+WHERE {
+  { ?subiect foaf:page ?url . } UNION { ?subiect dbp:siteweb ?url . }
+  FILTER (isLITERAL (?url))
+}
+LIMIT 7

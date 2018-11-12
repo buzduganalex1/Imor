@@ -1,0 +1,22 @@
+# laureatii Nobel nascuti in Romania
+# via punctul terminal SPARQL de la <http://data.nobelprize.org/sparql>
+
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?nume ?varsta ?dataNastere ?dataMoarte
+WHERE {
+  ?laureat rdfs:label ?nume ;
+           dbp:dateOfBirth ?dataNastere ;
+           dbo:birthPlace <http://data.nobelprize.org/resource/country/Romania> .
+  OPTIONAL { ?laureat dbp:dateOfDeath ?dataMoarte } .
+  # varsta curenta
+  BIND(IF(BOUND(?dataMoarte), ?dataMoarte, NOW()) AS ?final)
+  BIND(YEAR(?final) - YEAR(?dataNastere) -
+    IF(MONTH(?final) < MONTH(?dataNastere) ||
+      (MONTH(?final) = MONTH(?dataNastere) &&
+       DAY(?final) < DAY(?dataNastere)), 1, 0 ) AS ?varsta )
+}
+ORDER BY DESC(?varsta)
+LIMIT 5

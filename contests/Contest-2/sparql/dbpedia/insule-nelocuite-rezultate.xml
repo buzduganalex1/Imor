@@ -1,0 +1,20 @@
+<sparql xmlns="http://www.w3.org/2005/sparql-results#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/sw/DataAccess/rf1/result2.xsd">
+ <head>
+  <variable name="stat"/>
+  <variable name="suprafata"/>
+ </head>
+ <results distinct="false" ordered="true">
+  <result>
+   <binding name="stat"><uri>http://dbpedia.org/resource/Ushi_Island</uri></binding>
+   <binding name="suprafata"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1000.0</literal></binding>
+  </result>
+  <result>
+   <binding name="stat"><uri>http://dbpedia.org/resource/Cominotto</uri></binding>
+   <binding name="suprafata"><literal datatype="http://www.w3.org/2001/XMLSchema#double">647497.0</literal></binding>
+  </result>
+  <result>
+   <binding name="stat"><uri>http://dbpedia.org/resource/Furugelm_Island</uri></binding>
+   <binding name="suprafata"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.9e+06</literal></binding>
+  </result>
+ </results>
+</sparql>

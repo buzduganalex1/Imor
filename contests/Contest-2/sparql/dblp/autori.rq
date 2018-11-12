@@ -1,0 +1,9 @@
+# obtinerea primilor 7 autori din lista celor avind lucrari catalogate de DBLP
+# via punctul terminal SPARQL disponibil la <http://dblp.rkbexplorer.com>
+PREFIX akt: <http://www.aktors.org/ontology/portal#>
+SELECT ?name
+WHERE {
+  [ a akt:Person ;                 
+    akt:full-name ?name ]
+}
+LIMIT 7
