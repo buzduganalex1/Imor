@@ -1,0 +1,7 @@
+{
+    "model": "LogisticModel",
+    "feature_sizes": "1024",
+    "feature_names": "mean_rgb",
+    "frame_features": false,
+    "label_loss": "CrossEntropyLoss"
+}

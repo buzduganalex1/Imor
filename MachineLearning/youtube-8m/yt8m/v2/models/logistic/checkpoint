@@ -1,0 +1,2 @@
+model_checkpoint_path: "C:\\GitRepositories\\youtube-8m\\yt8m\\v2\\models\\logistic\\model.ckpt-10"
+all_model_checkpoint_paths: "C:\\GitRepositories\\youtube-8m\\yt8m\\v2\\models\\logistic\\model.ckpt-10"
