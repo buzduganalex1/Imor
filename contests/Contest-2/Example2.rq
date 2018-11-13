@@ -1,0 +1,43 @@
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?country ?continent (count(?person) as ?number)  
+WHERE {
+  ?person a <http://dbpedia.org/ontology/Person>;
+          dbo:
+          dbo:birthPlace ?birthPlace .
+  
+  ?birthPlace a <http://dbpedia.org/ontology/PopulatedPlace> ;
+              dbp:country ?country .
+  
+  optional{ ?birthPlace dbp:continent ?continent }
+}
+group by ?continent ?country
+
+LIMIT 100
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?populatedPlace ?label
+where{
+  ?populatedPlace a <http://dbpedia.org/ontology/PopulatedPlace> ;
+	   rdfs:label ?label.
+  
+  OPTIONAL { FILTER (langMatches(lang(?name), "Argentina")). }
+} 
+order by ?label 
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX dbpediaowl: <http://dbpedia.org/ontology/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?label
+where {
+  ?country a dbpediaowl:Country;
+            owl:sameAs ?label .       
+}
+LIMIT 10
