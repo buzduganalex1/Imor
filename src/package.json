@@ -5,13 +5,18 @@
   "author": "Buzdugan Alexandru, Daniel Toncu, Andrei Pricop",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node sparql.js"
   },
   "dependencies": {
     "body-parser": "1.18.3",
+    "browserify": "^16.2.3",
+    "chart.js": "^2.7.3",
+    "chartjs": "^0.3.24",
     "express": "^4.16.1",
     "mongodb": "3.1.8",
     "mongoose": "^5.3.3",
-    "request": "2.88.0"
+    "request": "2.88.0",
+    "sparql-client-2": "^0.6.3",
+    "sparqljs": "^2.1.0"
   }
 }
