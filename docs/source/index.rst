@@ -6,6 +6,10 @@
 Welcome to Vips's documentation!
 ================================
 
+===============
+ Section Title
+===============
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
