@@ -1,20 +1,15 @@
-.. Vips documentation master file, created by
-   sphinx-quickstart on Sat Nov 17 22:18:11 2018.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
 Welcome to Vips's documentation!
 ================================
+
+By using the YouTube-8M labeled video dataset, create an extensible microservice-based platform able to perform processing tasks such as browsing, smart faceted searching & filtering, etc. Adopting both machine learning (or deep learning) techniques and semantic Web technologies, the system will be able to make various visualizations (e.g., semantic zoom), correlations, classifications, and recommendations exposed via a SPARQL endpoint. Also, a comparison study will be provided to explain the obtained results.
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
 
-
-Indices and tables
+Updates
 ==================
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+* 11/17/2018 - Created the overview microservices architecture
+* 11/17/2018 - Created documentation page 
