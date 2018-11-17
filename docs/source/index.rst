@@ -1,14 +1,10 @@
 .. Vips documentation master file, created by
-   sphinx-quickstart on Sat Nov 17 21:56:41 2018.
+   sphinx-quickstart on Sat Nov 17 22:18:11 2018.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
 Welcome to Vips's documentation!
 ================================
-
-===============
- Section Title
-===============
 
 .. toctree::
    :maxdepth: 2

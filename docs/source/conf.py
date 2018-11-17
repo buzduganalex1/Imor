@@ -20,8 +20,8 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Vips'
-copyright = '2018, Buzdugan Alexandru'
-author = 'Buzdugan Alexandru'
+copyright = '2018, Alexandru Buzdugan'
+author = 'Alexandru Buzdugan'
 
 # The short X.Y version
 version = ''
@@ -39,7 +39,6 @@ release = ''
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinx.ext.autodoc',
     'sphinx.ext.doctest',
     'sphinx.ext.intersphinx',
     'sphinx.ext.todo',
@@ -138,7 +137,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'Vips.tex', 'Vips Documentation',
-     'Buzdugan Alexandru', 'manual'),
+     'Alexandru Buzdugan', 'manual'),
 ]
 
 
