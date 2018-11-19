@@ -1,6 +1,21 @@
 const Video = require('../models/video.model');
 
-//Simple version, without validation or sanitation
+
+/**
+ * @api {get} /vips/videos/test Tests the api
+ * @apiName testVideo
+ * @apiGroup videos
+ * @apiVersion 0.1.0
+ * 
+ * @apiSuccess {String} success message the controller works
+ * 
+ * @apiSuccessExample Example data on success
+ * {
+ *  Greetings from the Video contdroller!
+ * }
+ * @apiError NameEmptyError The name was empty. 
+ * 
+ */
 exports.test = function (req, res) {
     res.send('Greetings from the Video contdroller!');
 };
