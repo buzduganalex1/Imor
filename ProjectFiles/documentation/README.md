@@ -12,3 +12,5 @@ Usefull documents:
 
 - https://schema.org/video - the schema for video objects
 - A tutorial for open api https://idratherbewriting.com/learnapidoc/pubapis_openapi_tutorial_overview  
+
+Read about GraphDb and NeoJS

@@ -1,6 +1,5 @@
 const Video = require('../models/video.model');
 
-
 /**
  * @api {get} /vips/videos/test Tests the api
  * @apiName testVideo
@@ -58,3 +57,17 @@ exports.video_delete = function (req, res) {
         res.send('Deleted successfully!');
     })
 };
+
+exports.video_sparql_endpoint =function (req, res){
+    const {SparqlClient, SPARQL} = require('sparql-client-2');
+
+    const client =
+      new SparqlClient('http://data.nobelprize.org/sparql')
+        .register({
+          db: 'http://dbpedia.org/resource/',
+          dbo: 'http://dbpedia.org/ontology/',
+          dbpediaowl: 'http://dbpedia.org/ontology/'
+        });
+        
+        client.query(req.params.queryString).execute().then(queryResult => res.send(queryResult))
+}

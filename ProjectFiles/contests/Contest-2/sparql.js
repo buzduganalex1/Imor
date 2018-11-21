@@ -1,4 +1,5 @@
 const {SparqlClient, SPARQL} = require('sparql-client-2');
+
 const client =
   new SparqlClient('http://data.nobelprize.org/sparql')
     .register({
