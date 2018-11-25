@@ -14,3 +14,5 @@ Updates
 * 11/17/2018 - Created the overview microservices architecture
 * 11/17/2018 - Created documentation page 
 * 11/18/2018 - Added mockup for vips home page
+* 11/25/2018 - Added videos api
+* 11/25/2018 - Added videos api documentation (apidoc, swagger, openapi)
