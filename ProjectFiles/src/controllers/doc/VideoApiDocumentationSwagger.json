@@ -1,0 +1,195 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0",
+    "title": "NodeJsTutorial",
+    "description": "TODO: Add Description",
+    "contact": {}
+  },
+  "host": "localhost:5500",
+  "basePath": "/vips/videos",
+  "schemes": [
+    "http"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/create": {
+      "post": {
+        "description": "TODO: Add Description",
+        "summary": "CreateVideo",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "CreatePost",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/CreateVideoRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/5bfa58032a017c4448df6288": {
+      "get": {
+        "description": "TODO: Add Description",
+        "summary": "GetVidoe",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "5bfa58032a017c4448df6288Get",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/5bfa58032a017c4448df6288/update": {
+      "put": {
+        "description": "TODO: Add Description",
+        "summary": "UpdateVideo",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "5bfa58032a017c4448df6288UpdatePut",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/UpdateVideoRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/5bfa58032a017c4448df6288/delete": {
+      "delete": {
+        "description": "TODO: Add Description",
+        "summary": "DeleteVideo",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "5bfa58032a017c4448df6288DeleteDelete",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "CreateVideoRequest": {
+      "title": "CreateVideoRequest",
+      "example": {
+        "name": "apples",
+        "duration": "100",
+        "thumbnail": "test",
+        "description": "test"
+      },
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "duration": {
+          "type": "string"
+        },
+        "thumbnail": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "duration",
+        "thumbnail",
+        "description"
+      ]
+    },
+    "UpdateVideoRequest": {
+      "title": "UpdateVideoRequest",
+      "example": {
+        "name": "apples",
+        "thumbnail": "test2",
+        "description": "test"
+      },
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "thumbnail": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "thumbnail",
+        "description"
+      ]
+    }
+  },
+  "tags": [
+    {
+      "name": "Misc",
+      "description": ""
+    }
+  ]
+}

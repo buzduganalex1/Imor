@@ -1,0 +1,216 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "NodeJsTutorial",
+    "description": "TODO: Add Description",
+    "contact": {},
+    "version": "1.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:5500/vips/videos",
+      "variables": {}
+    }
+  ],
+  "paths": {
+    "/create": {
+      "post": {
+        "tags": [
+          "Misc"
+        ],
+        "summary": "CreatePost",
+        "description": "TODO: Add Description",
+        "operationId": "CreatePost",
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateVideoRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/5bfa58032a017c4448df6288": {
+      "get": {
+        "tags": [
+          "Misc"
+        ],
+        "summary": "5bfa58032a017c4448df6288Get",
+        "description": "TODO: Add Description",
+        "operationId": "5bfa58032a017c4448df6288get",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/5bfa58032a017c4448df6288/update": {
+      "put": {
+        "tags": [
+          "Misc"
+        ],
+        "summary": "5bfa58032a017c4448df6288UpdatePut",
+        "description": "TODO: Add Description",
+        "operationId": "5bfa58032a017c4448df6288updateput",
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateVideoRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/5bfa58032a017c4448df6288/delete": {
+      "delete": {
+        "tags": [
+          "Misc"
+        ],
+        "summary": "5bfa58032a017c4448df6288DeleteDelete",
+        "description": "TODO: Add Description",
+        "operationId": "5bfa58032a017c4448df6288deletedelete",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "CreateVideoRequest": {
+        "title": "CreateVideoRequest",
+        "required": [
+          "name",
+          "duration",
+          "thumbnail",
+          "description"
+        ],
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "duration": {
+            "type": "string"
+          },
+          "thumbnail": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          }
+        },
+        "example": {
+          "name": "apples",
+          "duration": "100",
+          "thumbnail": "test",
+          "description": "test"
+        }
+      },
+      "UpdateVideoRequest": {
+        "title": "UpdateVideoRequest",
+        "required": [
+          "name",
+          "thumbnail",
+          "description"
+        ],
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "thumbnail": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          }
+        },
+        "example": {
+          "name": "apples",
+          "thumbnail": "test2",
+          "description": "test"
+        }
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "Misc",
+      "description": ""
+    }
+  ]
+}

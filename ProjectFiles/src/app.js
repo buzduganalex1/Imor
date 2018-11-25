@@ -25,7 +25,7 @@ app.use('/products', product);
 app.use('/vips/videos', video);
 
 app.use('/api-docs', function (req, res) {
-    res.sendfile(__dirname + '/controllers/doc/index.html')
+    res.sendFile(__dirname + '/controllers/doc/index.html')
   })
 
 let port = 5500;
