@@ -1,0 +1,314 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "ImagesApi",
+    "description": "This is an api for managing and querying images",
+    "contact": {},
+    "version": "1.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:5500/vips/images",
+      "variables": {}
+    },
+    {
+      "url": "http://example.com",
+      "variables": {}
+    }
+  ],
+  "paths": {
+    "/create": {
+      "post": {
+        "tags": [
+          "Misc"
+        ],
+        "summary": "CreateImage",
+        "description": "Creates an image\r\n",
+        "operationId": "CreateImage",
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "example": {
+                  "type": "ImageObject",
+                  "name": "Beach in Mexico",
+                  "description": "I took this picture while on vacation last year.",
+                  "datePublished": "2018-01-25",
+                  "contentLocation": "Puerto Vallarta, Mexico",
+                  "author": "Jane Doe",
+                  "contentUrl": "mexico-beach.jpg"
+                },
+                "$ref": "#/components/schemas/CreateImageRequest"
+              },
+              "example": "{\"type\":\"ImageObject\",\"name\":\"Beach in Mexico\",\"description\":\"I took this picture while on vacation last year.\",\"datePublished\":\"2018-01-25\",\"contentLocation\":\"Puerto Vallarta, Mexico\",\"author\":\"Jane Doe\",\"contentUrl\":\"mexico-beach.jpg\"}"
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "example": {
+                    "Id": "5bfe4df6b8d0290b904710e4"
+                  },
+                  "$ref": "#/components/schemas/CreateImageExample"
+                },
+                "example": {
+                  "Id": "5bfe4df6b8d0290b904710e4"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "oauth2": []
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/5bfe4ce90d61243bdc56555f": {
+      "get": {
+        "tags": [
+          "Misc"
+        ],
+        "summary": "GetImage",
+        "description": "Retrieves an image",
+        "operationId": "GetImage",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "oauth2": []
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/5bfe4ce90d61243bdc56555f/update": {
+      "put": {
+        "tags": [
+          "Misc"
+        ],
+        "summary": "UpdateImage",
+        "description": "Updates an Image",
+        "operationId": "UpdateImage",
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "example": {
+                  "name": "Beach in Mexico 2"
+                },
+                "$ref": "#/components/schemas/UpdateImageRequest"
+              },
+              "example": "{\"name\":\"Beach in Mexico 2\"}"
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "oauth2": []
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/5bfe4ce90d61243dc5655f/delete": {
+      "delete": {
+        "tags": [
+          "Misc"
+        ],
+        "summary": "DeleteImage",
+        "description": "Deletes an image\n",
+        "operationId": "DeleteImage",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "oauth2": []
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "CreateImageRequest": {
+        "title": "CreateImageRequest",
+        "required": [
+          "type",
+          "name",
+          "description",
+          "datePublished",
+          "contentLocation",
+          "author",
+          "contentUrl"
+        ],
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "datePublished": {
+            "type": "string"
+          },
+          "contentLocation": {
+            "type": "string"
+          },
+          "author": {
+            "type": "string"
+          },
+          "contentUrl": {
+            "type": "string"
+          }
+        },
+        "example": {
+          "type": "ImageObject",
+          "name": "Beach in Mexico",
+          "description": "I took this picture while on vacation last year.",
+          "datePublished": "2018-01-25",
+          "contentLocation": "Puerto Vallarta, Mexico",
+          "author": "Jane Doe",
+          "contentUrl": "mexico-beach.jpg"
+        }
+      },
+      "CreateImageExample": {
+        "title": "CreateImageExample",
+        "required": [
+          "Id"
+        ],
+        "type": "object",
+        "properties": {
+          "Id": {
+            "type": "string"
+          }
+        },
+        "example": {
+          "Id": "5bfe4df6b8d0290b904710e4"
+        }
+      },
+      "UpdateImageRequest": {
+        "title": "UpdateImageRequest",
+        "required": [
+          "name"
+        ],
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          }
+        },
+        "example": {
+          "name": "Beach in Mexico 2"
+        }
+      }
+    },
+    "securitySchemes": {
+      "oauth2": {
+        "type": "oauth2",
+        "flows": {
+          "implicit": {
+            "authorizationUrl": "http://localhost:5500/vips/images/auth",
+            "scopes": {}
+          }
+        }
+      }
+    }
+  },
+  "security": [
+    {
+      "oauth2": []
+    }
+  ],
+  "tags": [
+    {
+      "name": "Misc",
+      "description": ""
+    }
+  ]
+}
