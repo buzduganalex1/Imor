@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>imor – Image Smart Processor</title>
+
+    <link rel="stylesheet" href="public/css/scholarly.css">
+    <link rel="stylesheet" href="public/js/prismjs/themes/prism-coy.css">
+
+    <script src="public/js/prismjs/prism.js" defer></script>
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+    <style>
+        p {
+            text-align: justify;
+        }
+    </style>
+
+</head>
+
+<body prefix="schema: http://schema.org/ xsd: http://www.w3.org/2001/XMLSchema# sa: https://ns.science.ai/">
+
+    <header>
+        <p class="title">Image Smart Processor</p>
+        <p class="subtitle">imor</p>
+    </header>
+
+    <article id="what" typeof="schema:ScholarlyArticle" resource="#">
+
+        <h1>What is imor?</h1>
+
+        <section>
+            <ol>
+                <li property="schema:contributor" typeof="sa:ContributorRole">
+                    <a property="schema:contributor" href="https://github.com/daniel-toncu" typeof="schema:Person">
+                        <span property="schema:givenName">Daniel</span>
+                        <span property="schema:familyName">Țoncu</span>
+                    </a>
+                </li>
+                <li property="schema:contributor" typeof="sa:ContributorRole">
+                    <a property="schema:contributor" href="https://github.com/buzduganalex1" typeof="schema:Person">
+                        <span property="schema:givenName">Alexandru</span>
+                        <span property="schema:familyName">Buzdugan</span>
+                    </a>
+                </li>
+                <li property="schema:contributor" typeof="sa:ContributorRole">
+                    <a property="schema:contributor" href="" typeof="schema:Person">
+                        <span property="schema:givenName">Andrei</span>
+                        <span property="schema:familyName">Pricop</span>
+                    </a>
+                </li>
+            </ol>
+            <ol>
+                <li id="scienceai">
+                    <a href="http://www.info.uaic.ro/" typeof="schema:Corporation">
+                        <span property="schema:name">Faculty of Computer Science</span>
+                    </a>
+                </li>
+            </ol>
+        </section>
+
+        <section typeof="sa:Abstract" id="abstract">
+
+            <h2>Abstract</h2>
+
+            <p><strong>imor (Image Smart Processor)</strong> is an extensible microservice-based system able to perform
+                processing tasks such as browsing, smart faceted searching & filtering, etc. Adopting Deep Learning and
+                Machine Learning techniques, and Semantic Web technologies, the platform is able to generate various
+                visualizations (e.g., semantic zoom), correlations, classifications, and recommendations exposed via a
+                SPARQL Endpoint.
+            </p>
+        </section>
+
+        <section typeof="sa:Materials" id="technologies">
+
+            <h2>Technologies</h2>
+
+            <ul>
+                <li>
+                    <p><a href="https://nodejs.org/en/">NodeJS</a> is an open-source server side runtime environment
+                        built on Chrome's V8 JavaScript engine. It provides an event driven, non-blocking
+                        (asynchronous) I/O and cross-platform runtime environment for building highly scalable
+                        server-side application using JavaScript.</p>
+                </li>
+                <li>
+                    <p><a href="https://azure.microsoft.com/">Microsoft Azure</a> is a cloud computing service created
+                        by Microsoft for building, testing, deploying, and managing applications and services through a
+                        global network of Microsoft-managed data centers. It provides software as a service (SaaS),
+                        platform as a service (PaaS) and infrastructure as a service (IaaS) and supports many different
+                        programming languages, tools and frameworks, including both Microsoft-specific and third-party
+                        software and systems.</p>
+                </li>
+                <li>
+                    <p><a href="https://angular.io/">Angular</a> is a structural framework for dynamic web apps. It
+                        lets you use HTML as your template language and lets you extend HTML's syntax to express your
+                        application's components clearly and succinctly. AngularJS's data binding and dependency
+                        injection eliminate much of the code you would otherwise have to write. And it all happens
+                        within the browser, making it an ideal partner with any server technology.</p>
+                </li>
+                <li>
+                    <p><a href="https://jwt.io">JWT (JSON Web Tokens)</a> is an open standard (RFC 7519) that defines a
+                        compact and self-contained way for securely transmitting information between parties as a JSON
+                        object. This information can be verified and trusted because it is digitally signed. JWTs can
+                        be signed using a secret (with the HMAC algorithm) or a public/private key pair using
+                        RSA.</p>
+                </li>
+                <li>
+                    <p><a href="https://azure.microsoft.com/en-us/services/cognitive-services/">Microsoft Cognitive
+                            Services</a> is a collection of APIs that enables natural and contextual interaction with
+                        tools that augment users' experiences via the power of machine learning models from Microsoft.
+                        Microsoft Cognitive Services expands on Microsoft’s evolving portfolio of machine learning APIs
+                        and enables developers to easily add intelligent features - such as emotion and video
+                        detection; facial, speech and vision recognition, speech and language understanding - into
+                        their Applications.</p>
+                </li>
+                <li>
+                    <p><a href="https://neo4j.com/">Neo4j</a> is a graph database management system developed by Neo4j,
+                        Inc. Described by its developers as an ACID-compliant transactional database with native graph
+                        storage and processing. Neo4j is implemented in Java and accessible from software written in
+                        other languages using the Cypher Query Language through a transactional HTTP endpoint, or
+                        through the binary "bolt" protocol.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section typeof="sa:Methods" id="architecture">
+
+            <h2>Architecture</h2>
+
+            <figure typeof="sa:Image">
+                <img src="public/resources/general-architecture.png" width="880" height="655">
+                <figcaption>
+                    <center>imor - General Architecture</center>
+                </figcaption>
+            </figure>
+
+            <section id="serverless-side">
+
+                <h3>Serverless Side</h3>
+
+                <aside typeof="schema:WPSideBar">
+                    <center>The two main paradigms used in the design of <strong>imor</strong> are Serverless and
+                        Microservices.</center>
+                </aside>
+
+                <p>
+                    <strong>Serverless</strong> states that the functionalities of the application should not depend
+                    on any server entity and they should run unknowingly 'anywhere' (e.g. cloud). The Node module
+                    'serverless' toolkit helps us describe and deploy the mechanisms of our application in the Azure
+                    Functions, the cloud service used to 'host' the main workhorses.
+                </p>
+
+                <p>
+                    <strong>Microservices</strong> architectural style represents a distinctive method of conceiving
+                    software systems. Each functionality or service is independent, deployable, small and modular,
+                    meaning that each one is as decoupled as possible from another. Combining this concept with the
+                    'serverless' concept, each microservice in our application runs in a separate Azure Function,
+                    unified by a central API Management. This one respects the REST API concepts and it will expose
+                    different paths for each microservice.
+
+                    <ul>
+                    </ul>
+                    <strong>An OpenAPI specification</strong> has been developed that describes the API paths and
+                    behaviour as you can see here:
+                    <a href="file:///C:/GitRepos/Imor/ProjectFiles/src/controllers/doc/index.html">Imor Swaggerhub -
+                        OpenAPI</a>.
+                    Each microservice interrogates RDF datasources - WikiData and DBPedia and stores them into
+                    Imor's RDF storage implemented with NeoJs.
+                </p>
+
+                <p>
+                    <strong>Authentication</strong> component relies on the JSON Web Token technology that is used
+                    by an 'authorizer' represented by an Azure function. Each call of the REST API exposed by
+                    Imor requires the auth token and the access is forbidden if it is invalid or missing.
+                </p>
+            </section>
+
+            <section id="client-side">
+                <h3>Client-side</h3>
+
+                <p>
+                    The <strong>User Interface</strong> of the application will be created with the help of Angular as
+                    the foundation client-side framework and Cordova as the main development
+                    environment which supports mobile devices and plugins for a whole suite of services and features.
+                </p>
+                <ul>
+
+                    <li>
+                        <figure typeof="sa:Image">
+                            <img src="public/resources/mocks/ImorHomePageMock.png" width="880" height="655">
+                            <figcaption>
+                                <center>imor - Dashboard</center>
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="design-details">
+                <h3>Design Details</h3>
+                <ul>
+                    <li>
+                        <p>
+                            Being a 'microservices-serverless-oriented' application, each functionality will dwell into
+                            a Azure Function. Each of it will interrogate different datasources upon the search request
+                            of
+                            an entity. After the result will be returned successfully, the entity instance will be
+                            saved in the Imor's RDF storage and interlinked with other entities.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            The user must register and generate a JWT before using the REST API exposed by Imor. Every
+                            subsequent call of the API will require the token.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            The 'preferred' data transfer MIME type of Imor is <code>application/json</code> for the
+                            ease of use and the nice integration with Javascript and NodeJS.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            Each instance's view for an entity type will smartly suggest
+                            other instances of the same entity type taking into consideration different aspects related
+                            to it: type, author period, preferences etc.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            Images can be accessed via a SPARQL endpoint that will provide a way of accessing the
+                            data from the RDF Storage (NeoJs). They can also be imported into / exported from Imor
+                            under the JSPF format.
+                        </p>
+                    </li>
+                </ul>
+
+                <figure typeof="sa:Image">
+                    <img src="public/resources/sequence-get-images-by-filters.png" width="880" height="655">
+                    <figcaption>
+                        <center>Sequence diagram - get images by filters</center>
+                    </figcaption>
+                </figure>
+
+                <figure typeof="sa:Image">
+                    <img src="public/resources/sequence-upload-image.png" width="880" height="655">
+                    <figcaption>
+                        <center>Sequence diagram - upload image</center>
+                    </figcaption>
+                </figure>
+
+                <section id="data-modelling">
+                    <h4>Data Modelling</h4>
+
+                    <p>The Imor's main storage is the RDF solution <strong>NeoJs</strong>. Every entity is saved in
+                        the graph (see the diagram above) by interconnecting the relationship with other entities and
+                        properties.</p>
+
+                    <p>By using the ontology / RDF concepts, Imor is able to suggest smartly entities based on the
+                        relationships between instances.
+                    </p>
+
+                    <figure typeof="sa:Image">
+                        <img src="public/resources/mocks/ImageSchemaRDF.PNG" width="880" height="655">
+                        <figcaption>
+                            <center>Image entity data model</center>
+                        </figcaption>
+                    </figure>
+
+                </section><!-- data-modelling -->
+            </section>
+
+            <section id="conclusion">
+                <h2>Conclusion & Future considerations</h2>
+                <p>
+                    Imor has been created to ease up the search of images by providing an
+                    intuitive platform that uses semantic Web concepts to enhance the
+                    way of visualizing the relationships between various entities. The
+                    application can be extended and improved in different ways by conceiving new mechanisms and
+                    architectural ideas.
+                </p>
+                <aside typeof="schema:WPSideBar">
+                    <center>
+                        All of these can be integrated in the current version of the design resulting in a modern,
+                        evolved Imor, an user-friendly image searcher a.k.a image smart processor.
+                    </center>
+                </aside>
+            </section>
+
+            <section typeof="sa:ReferenceList" id="references">
+                <h2>References</h2>
+                <dl>
+                    <dt>NodeJS, 2017</dt>
+                    <dd id="ref-ionic" typeof="schema:CreativeWork" resource="https://nodejs.org/en/">
+                        <cite property="schema:name">
+                            <a href="https://nodejs.org/en/">NodeJS</a>
+                        </cite>,
+                        by
+                        <span property="schema:author" typeof="schema:Organization">
+                            <span property="schema:name">Joyent, Inc.</span>
+                        </span>
+                    </dd>
+
+                    <dt>Angular Framework, 2017</dt>
+                    <dd id="ref-angular" typeof="schema:CreativeWork" resource="https://angular.io/">
+                        <cite property="schema:name">
+                            <a href="https://angular.io/">Angular</a>
+                        </cite>,
+                        by
+                        <span property="schema:author" typeof="schema:Organization">
+                            <span property="schema:name">Google</span>
+                        </span>
+                    </dd>
+
+                    <dt>serverless, 2017</dt>
+                    <dd id="ref-serverless" typeof="schema:CreativeWork" resource="https://serverless.com/">
+                        <cite property="schema:name">
+                            <a href="https://serverless.com/">serverless</a>
+                        </cite>,
+                        by
+                        <span property="schema:author" typeof="schema:Organization">
+                            <span property="schema:name">The Serverless Team</span>
+                        </span>
+                    </dd>
+
+                    <dt>Microsoft Azure</dt>
+                    <dd id="ref-ionic" typeof="schema:CreativeWork" resource="https://azure.microsoft.com/en-us/free/">
+                        <cite property="schema:name">
+                            <a href="https://azure.microsoft.com/en-us/free/">Microsoft</a>
+                        </cite>,
+                        by
+                        <span property="schema:author" typeof="schema:Organization">
+                            <span property="schema:name">Azure</span>
+                        </span>
+                    </dd>
+
+                    <dt>NeoJs, 2017</dt>
+                    <dd id="ref-ionic" typeof="schema:CreativeWork" resource="https://ontotext.com/products/NeoJs/">
+                        <cite property="schema:name">
+                            <a href="https://ontotext.com/products/NeoJs/">NeoJs</a>
+                        </cite>,
+                        by
+                        <span property="schema:author" typeof="schema:Organization">
+                            <span property="schema:name">Ontotext</span>
+                        </span>
+                    </dd>
+
+                    <dt>SwaggerHub - OpenAPI, 2017</dt>
+                    <dd id="ref-ionic" typeof="schema:CreativeWork" resource="https://app.swaggerhub.com/">
+                        <cite property="schema:name">
+                            <a href="https://app.swaggerhub.com/">SwaggerHub</a>
+                        </cite>,
+                        by
+                        <span property="schema:author" typeof="schema:Organization">
+                            <span property="schema:name">SmartBear Software</span>
+                        </span>
+                    </dd>
+
+                </dl>
+            </section>
+
+        </section>
+    </article>
+    <footer>
+        <p>
+            Image Smart Processor
+            •
+            <a href="https://www.info.uaic.ro/bin/Main/">
+                <img src="https://www.info.uaic.ro/skins/fii/logo_fii3.png" height="20px">
+            </a>
+            •
+            <a href="https://github.com/buzduganalex1/Imor">Imor @ Github</a>
+        </p>
+    </footer>
+</body>
+
+</html>
