@@ -1,38 +1,38 @@
-const Video = require('../models/video.model');
+const Image = require('../models/image.model');
 const mongoose = require('mongoose')
 
 /**
- * @api {get} /vips/videos/test Tests the api
- * @apiName testVideo
- * @apiGroup videos
+ * @api {get} /vips/images/test Tests the api
+ * @apiName testimage
+ * @apiGroup Images
  * @apiVersion 0.1.0
  * 
  * @apiSuccess {String} success message the controller works
  * 
  * @apiSuccessExample Example data on success
  * {
- *  Greetings from the Video contdroller!
+ *  Greetings from the Images contdroller!
  * }
  * @apiError NameEmptyError The name was empty. 
  * 
  */
 exports.test = function (req, res) {
-    res.send('Greetings from the Video contdroller!');
+    res.send('Greetings from the Images contdroller!');
 };
 
 /**
- * @api {create} /vips/create/ Create a video
- * @apiName createVideo
- * @apiGroup videos
+ * @api {create} /vips/create/ Create an image
+ * @apiName createImage
+ * @apiGroup Images
  * @apiVersion 0.1.0
  * 
- * @apiParam {String} name Name of the video
- * @apiParam {String} duration Duration of the video
- * @apiParam {String} thumbnail Thumbnail of the video 
- * @apiParam {String} description Description of the video
+ * @apiParam {String} name Name of the image
+ * @apiParam {String} duration Duration of the image
+ * @apiParam {String} thumbnail Thumbnail of the image 
+ * @apiParam {String} description Description of the image
  * @apiPermission admin
  * 
- * @apiSuccess {Id} Id The id of the created video
+ * @apiSuccess {Id} Id The id of the created image
  * 
  * @apiSuccessExample Example data on success
  *      HTTP/1.1 200 OK
@@ -59,23 +59,23 @@ exports.test = function (req, res) {
  *                   "value": ""
  *               }
  *           },
- *           "_message": "Video validation failed",
- *           "message": "Video validation failed: name: Path `name` is required.",
+ *           "_message": "image validation failed",
+ *           "message": "image validation failed: name: Path `name` is required.",
  *           "name": "ValidationError"
  *      }
  */
-exports.video_create = function (req, res) {
-    var videoId = mongoose.Types.ObjectId();
+exports.image_create = function (req, res) {
+    var imageId = mongoose.Types.ObjectId();
 
-    let video = new Video({
-        _id : videoId,
+    let image = new Image({
+        _id : imageId,
         name: req.body.name,
         duration: req.body.duration,
         thumbnail: req.body.thumbnail,
         description: req.body.description
     });
 
-    video.save(function (err) {
+    image.save(function (err) {
         res.set('Content-Type', 'application/json');
         
         if (err) {
@@ -83,24 +83,24 @@ exports.video_create = function (req, res) {
         }
         
         res.send({
-            'Id' : videoId
+            'Id' : imageId
         })
     })
 };
 
 /**
- * @api {getVideoDetails} /vips/videos/id Get a video details
- * @apiName getVideoDetails
- * @apiGroup videos
+ * @api {getImageDetails} /vips/images/id Get details of an image
+ * @apiName getImageDetails
+ * @apiGroup Images
  * @apiVersion 0.1.0
  * 
- * @apiParam {String} Id Id of the video that will be returned
+ * @apiParam {String} Id Id of the image that will be returned
  * @apiPermission none
  * 
- * @apiSuccess {String} name Name of the video
- * @apiSuccess {String} duration Duration of the video
- * @apiSuccess {String} thumbnail Thumbnail of the video 
- * @apiSuccess {String} description Description of the video
+ * @apiSuccess {String} name Name of the image
+ * @apiSuccess {String} duration Duration of the image
+ * @apiSuccess {String} thumbnail Thumbnail of the image 
+ * @apiSuccess {String} description Description of the image
  * 
  * @apiSuccessExample Example data on success
  *      HTTP/1.1 200 OK
@@ -112,17 +112,17 @@ exports.video_create = function (req, res) {
  *           "__v": 0
  *       }
  * 
- * @apiError VideoWasNotFound The id of the User was not found.
- * @apiErrorExample MissingVideo:
+ * @apiError ImageWasNotFound The id of the User was not found.
+ * @apiErrorExample MissingImage:
  *      HTTP/1.1 400 Bad request
  *      {
- *          "message": "Video not found"
+ *          "message": "Image not found"
  *      }
  * @apiErrorExample InternalError:
  *      HTTP/1.1 500 Internal error
  *      {  
  *          "message": {
- *                      "Cast to ObjectId failed for value \"test\" at path \"_id\" for model \"Video\"",
+ *                      "Cast to ObjectId failed for value \"test\" at path \"_id\" for model \"Image\"",
  *                      "name": "CastError",
  *                      "stringValue": "\"test\"",
  *                      "kind": "ObjectId",
@@ -131,11 +131,11 @@ exports.video_create = function (req, res) {
  *                     }
  *      }
  */
-exports.video_details = function (req, res) {
-    Video.findById(req.params.id, function (err, video) {
-        if(video == null || video === ""){
+exports.image_details = function (req, res) {
+    Image.findById(req.params.id, function (err, image) {
+        if(image == null || image === ""){
             return res.status(400).send({
-                'message' : 'Video not found'
+                'message' : 'Image not found'
             }); 
         }
 
@@ -144,23 +144,23 @@ exports.video_details = function (req, res) {
                 'message' : err
             });
         } 
-        res.send(video);
+        res.send(image);
     })
 };
 
 /**
- * @api {updateVideo} /vips/videos/id/update Update a video
- * @apiName updateVideo
- * @apiGroup videos
+ * @api {updateImage} /vips/images/id/update Update an image
+ * @apiName updateImage
+ * @apiGroup Images
  * @apiVersion 0.1.0
  * 
- * @apiParam {String} Id Id of the video that will be updated
+ * @apiParam {String} Id Id of the Image that will be updated
  * @apiPermission admin
  * 
- * @apiSuccess {String} name Name of the video
- * @apiSuccess {String} duration Duration of the video
- * @apiSuccess {String} thumbnail Thumbnail of the video 
- * @apiSuccess {String} description Description of the video
+ * @apiSuccess {String} name Name of the image
+ * @apiSuccess {String} duration Duration of the image
+ * @apiSuccess {String} thumbnail Thumbnail of the image 
+ * @apiSuccess {String} description Description of the image
  * 
  * @apiSuccessExample Example data on success
  *      HTTP/1.1 200 OK
@@ -172,17 +172,17 @@ exports.video_details = function (req, res) {
  *           "__v": 0
  *       }
  * 
- * @apiError VideoWasNotFound The id of the User was not found.
- * @apiErrorExample MissingVideo:
+ * @apiError ImageWasNotFound The id of the User was not found.
+ * @apiErrorExample Missingimage:
  *      HTTP/1.1 400 Bad request
  *      {
- *          "message": "Video not found"
+ *          "message": "image not found"
  *      }
  * @apiErrorExample InternalError:
  *      HTTP/1.1 500 Internal error
  *      {  
  *          "message": {
- *                      "Cast to ObjectId failed for value \"test\" at path \"_id\" for model \"Video\"",
+ *                      "Cast to ObjectId failed for value \"test\" at path \"_id\" for model \"image\"",
  *                      "name": "CastError",
  *                      "stringValue": "\"test\"",
  *                      "kind": "ObjectId",
@@ -191,32 +191,32 @@ exports.video_details = function (req, res) {
  *                     }
  *      }
  */
-exports.video_update = function (req, res) {
-    Video.findById(req.params.id, function(err, video){
-        if(video == null){
+exports.image_update = function (req, res) {
+    Image.findById(req.params.id, function(err, image){
+        if(image == null){
             return res.status(400).send({
-                'message' : 'Video not found'
+                'message' : 'image not found'
             });
         }
 
-        video.set(req.body);
-        video.save(function (err, updatedVideo) {
+        image.set(req.body);
+        image.save(function (err, updatedimage) {
             if (err) {
                 return res.status(500).send(err);
             }
 
-            res.send(updatedVideo);
+            res.send(updatedimage);
           });
     })
 };
 
 /**
- * @api {delete} /vips/videos/id/delete Deletes an video
- * @apiName deleteVideo
- * @apiGroup videos
+ * @api {delete} /vips/images/id/delete Deletes an image
+ * @apiName deleteimage
+ * @apiGroup Images
  * @apiVersion 0.1.0
  * 
- * @apiParam {String} Id Id of the video that will be deleted
+ * @apiParam {String} Id Id of the image that will be deleted
  * @apiPermission admin
  * 
  * @apiSuccess {String} message An informative message
@@ -232,7 +232,7 @@ exports.video_update = function (req, res) {
  *      HTTP/1.1 400 Bad request
  *      {  
  *          "message": {
- *                      "Cast to ObjectId failed for value \"test\" at path \"_id\" for model \"Video\"",
+ *                      "Cast to ObjectId failed for value \"test\" at path \"_id\" for model \"image\"",
  *                      "name": "CastError",
  *                      "stringValue": "\"test\"",
  *                      "kind": "ObjectId",
@@ -241,11 +241,11 @@ exports.video_update = function (req, res) {
  *                     }
  *      }
  */
-exports.video_delete = function (req, res) {
-    Video.findByIdAndRemove(req.params.id, function (err) {
+exports.image_delete = function (req, res) {
+    Image.findByIdAndRemove(req.params.id, function (err) {
         if (err) {
             res.status(400).send({
-                'message' : "Video was not found"
+                'message' : "image was not found"
             });
         }
 

@@ -30,9 +30,9 @@ define({ "api": [
   {
     "type": "create",
     "url": "/vips/create/",
-    "title": "Create a video",
-    "name": "createVideo",
-    "group": "videos",
+    "title": "Create an image",
+    "name": "createImage",
+    "group": "Images",
     "version": "0.1.0",
     "parameter": {
       "fields": {
@@ -42,28 +42,28 @@ define({ "api": [
             "type": "String",
             "optional": false,
             "field": "name",
-            "description": "<p>Name of the video</p>"
+            "description": "<p>Name of the image</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
             "field": "duration",
-            "description": "<p>Duration of the video</p>"
+            "description": "<p>Duration of the image</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
             "field": "thumbnail",
-            "description": "<p>Thumbnail of the video</p>"
+            "description": "<p>Thumbnail of the image</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
             "field": "description",
-            "description": "<p>Description of the video</p>"
+            "description": "<p>Description of the image</p>"
           }
         ]
       }
@@ -81,7 +81,7 @@ define({ "api": [
             "type": "Id",
             "optional": false,
             "field": "Id",
-            "description": "<p>The id of the created video</p>"
+            "description": "<p>The id of the created image</p>"
           }
         ]
       },
@@ -107,20 +107,20 @@ define({ "api": [
       "examples": [
         {
           "title": "Error-Response:",
-          "content": "HTTP/1.1 400 Bad request\n{\n     \"errors\": {\n         \"name\": {\n             \"message\": \"Path `name` is required.\",\n             \"name\": \"ValidatorError\",\n             \"properties\": {\n                 \"message\": \"Path `name` is required.\",\n                 \"type\": \"required\",\n                 \"path\": \"name\",\n                 \"value\": \"\"\n             },\n             \"kind\": \"required\",\n             \"path\": \"name\",\n             \"value\": \"\"\n         }\n     },\n     \"_message\": \"Video validation failed\",\n     \"message\": \"Video validation failed: name: Path `name` is required.\",\n     \"name\": \"ValidationError\"\n}",
+          "content": "HTTP/1.1 400 Bad request\n{\n     \"errors\": {\n         \"name\": {\n             \"message\": \"Path `name` is required.\",\n             \"name\": \"ValidatorError\",\n             \"properties\": {\n                 \"message\": \"Path `name` is required.\",\n                 \"type\": \"required\",\n                 \"path\": \"name\",\n                 \"value\": \"\"\n             },\n             \"kind\": \"required\",\n             \"path\": \"name\",\n             \"value\": \"\"\n         }\n     },\n     \"_message\": \"image validation failed\",\n     \"message\": \"image validation failed: name: Path `name` is required.\",\n     \"name\": \"ValidationError\"\n}",
           "type": "json"
         }
       ]
     },
-    "filename": "./video.controller.js",
-    "groupTitle": "videos"
+    "filename": "./image.controller.js",
+    "groupTitle": "Images"
   },
   {
     "type": "delete",
-    "url": "/vips/videos/id/delete",
-    "title": "Deletes an video",
-    "name": "deleteVideo",
-    "group": "videos",
+    "url": "/vips/images/id/delete",
+    "title": "Deletes an image",
+    "name": "deleteimage",
+    "group": "Images",
     "version": "0.1.0",
     "parameter": {
       "fields": {
@@ -130,7 +130,7 @@ define({ "api": [
             "type": "String",
             "optional": false,
             "field": "Id",
-            "description": "<p>Id of the video that will be deleted</p>"
+            "description": "<p>Id of the image that will be deleted</p>"
           }
         ]
       }
@@ -174,20 +174,20 @@ define({ "api": [
       "examples": [
         {
           "title": "Error-Response:",
-          "content": "HTTP/1.1 400 Bad request\n{  \n    \"message\": {\n                \"Cast to ObjectId failed for value \\\"test\\\" at path \\\"_id\\\" for model \\\"Video\\\"\",\n                \"name\": \"CastError\",\n                \"stringValue\": \"\\\"test\\\"\",\n                \"kind\": \"ObjectId\",\n                \"value\": \"test\",\n                \"path\": \"_id\"\n               }\n}",
+          "content": "HTTP/1.1 400 Bad request\n{  \n    \"message\": {\n                \"Cast to ObjectId failed for value \\\"test\\\" at path \\\"_id\\\" for model \\\"image\\\"\",\n                \"name\": \"CastError\",\n                \"stringValue\": \"\\\"test\\\"\",\n                \"kind\": \"ObjectId\",\n                \"value\": \"test\",\n                \"path\": \"_id\"\n               }\n}",
           "type": "json"
         }
       ]
     },
-    "filename": "./video.controller.js",
-    "groupTitle": "videos"
+    "filename": "./image.controller.js",
+    "groupTitle": "Images"
   },
   {
-    "type": "getVideoDetails",
-    "url": "/vips/videos/id",
-    "title": "Get a video details",
-    "name": "getVideoDetails",
-    "group": "videos",
+    "type": "getImageDetails",
+    "url": "/vips/images/id",
+    "title": "Get details of an image",
+    "name": "getImageDetails",
+    "group": "Images",
     "version": "0.1.0",
     "parameter": {
       "fields": {
@@ -197,7 +197,7 @@ define({ "api": [
             "type": "String",
             "optional": false,
             "field": "Id",
-            "description": "<p>Id of the video that will be returned</p>"
+            "description": "<p>Id of the image that will be returned</p>"
           }
         ]
       }
@@ -215,28 +215,28 @@ define({ "api": [
             "type": "String",
             "optional": false,
             "field": "name",
-            "description": "<p>Name of the video</p>"
+            "description": "<p>Name of the image</p>"
           },
           {
             "group": "Success 200",
             "type": "String",
             "optional": false,
             "field": "duration",
-            "description": "<p>Duration of the video</p>"
+            "description": "<p>Duration of the image</p>"
           },
           {
             "group": "Success 200",
             "type": "String",
             "optional": false,
             "field": "thumbnail",
-            "description": "<p>Thumbnail of the video</p>"
+            "description": "<p>Thumbnail of the image</p>"
           },
           {
             "group": "Success 200",
             "type": "String",
             "optional": false,
             "field": "description",
-            "description": "<p>Description of the video</p>"
+            "description": "<p>Description of the image</p>"
           }
         ]
       },
@@ -254,33 +254,33 @@ define({ "api": [
           {
             "group": "Error 4xx",
             "optional": false,
-            "field": "VideoWasNotFound",
+            "field": "ImageWasNotFound",
             "description": "<p>The id of the User was not found.</p>"
           }
         ]
       },
       "examples": [
         {
-          "title": "MissingVideo:",
-          "content": "HTTP/1.1 400 Bad request\n{\n    \"message\": \"Video not found\"\n}",
+          "title": "MissingImage:",
+          "content": "HTTP/1.1 400 Bad request\n{\n    \"message\": \"Image not found\"\n}",
           "type": "json"
         },
         {
           "title": "InternalError:",
-          "content": "HTTP/1.1 500 Internal error\n{  \n    \"message\": {\n                \"Cast to ObjectId failed for value \\\"test\\\" at path \\\"_id\\\" for model \\\"Video\\\"\",\n                \"name\": \"CastError\",\n                \"stringValue\": \"\\\"test\\\"\",\n                \"kind\": \"ObjectId\",\n                \"value\": \"test\",\n                \"path\": \"_id\"\n               }\n}",
+          "content": "HTTP/1.1 500 Internal error\n{  \n    \"message\": {\n                \"Cast to ObjectId failed for value \\\"test\\\" at path \\\"_id\\\" for model \\\"Image\\\"\",\n                \"name\": \"CastError\",\n                \"stringValue\": \"\\\"test\\\"\",\n                \"kind\": \"ObjectId\",\n                \"value\": \"test\",\n                \"path\": \"_id\"\n               }\n}",
           "type": "json"
         }
       ]
     },
-    "filename": "./video.controller.js",
-    "groupTitle": "videos"
+    "filename": "./image.controller.js",
+    "groupTitle": "Images"
   },
   {
     "type": "get",
-    "url": "/vips/videos/test",
+    "url": "/vips/images/test",
     "title": "Tests the api",
-    "name": "testVideo",
-    "group": "videos",
+    "name": "testimage",
+    "group": "Images",
     "version": "0.1.0",
     "success": {
       "fields": {
@@ -297,7 +297,7 @@ define({ "api": [
       "examples": [
         {
           "title": "Example data on success",
-          "content": "{\n Greetings from the Video contdroller!\n}",
+          "content": "{\n Greetings from the Images contdroller!\n}",
           "type": "json"
         }
       ]
@@ -314,15 +314,15 @@ define({ "api": [
         ]
       }
     },
-    "filename": "./video.controller.js",
-    "groupTitle": "videos"
+    "filename": "./image.controller.js",
+    "groupTitle": "Images"
   },
   {
-    "type": "updateVideo",
-    "url": "/vips/videos/id/update",
-    "title": "Update a video",
-    "name": "updateVideo",
-    "group": "videos",
+    "type": "updateImage",
+    "url": "/vips/images/id/update",
+    "title": "Update an image",
+    "name": "updateImage",
+    "group": "Images",
     "version": "0.1.0",
     "parameter": {
       "fields": {
@@ -332,7 +332,7 @@ define({ "api": [
             "type": "String",
             "optional": false,
             "field": "Id",
-            "description": "<p>Id of the video that will be updated</p>"
+            "description": "<p>Id of the Image that will be updated</p>"
           }
         ]
       }
@@ -350,28 +350,28 @@ define({ "api": [
             "type": "String",
             "optional": false,
             "field": "name",
-            "description": "<p>Name of the video</p>"
+            "description": "<p>Name of the image</p>"
           },
           {
             "group": "Success 200",
             "type": "String",
             "optional": false,
             "field": "duration",
-            "description": "<p>Duration of the video</p>"
+            "description": "<p>Duration of the image</p>"
           },
           {
             "group": "Success 200",
             "type": "String",
             "optional": false,
             "field": "thumbnail",
-            "description": "<p>Thumbnail of the video</p>"
+            "description": "<p>Thumbnail of the image</p>"
           },
           {
             "group": "Success 200",
             "type": "String",
             "optional": false,
             "field": "description",
-            "description": "<p>Description of the video</p>"
+            "description": "<p>Description of the image</p>"
           }
         ]
       },
@@ -389,25 +389,25 @@ define({ "api": [
           {
             "group": "Error 4xx",
             "optional": false,
-            "field": "VideoWasNotFound",
+            "field": "ImageWasNotFound",
             "description": "<p>The id of the User was not found.</p>"
           }
         ]
       },
       "examples": [
         {
-          "title": "MissingVideo:",
-          "content": "HTTP/1.1 400 Bad request\n{\n    \"message\": \"Video not found\"\n}",
+          "title": "Missingimage:",
+          "content": "HTTP/1.1 400 Bad request\n{\n    \"message\": \"image not found\"\n}",
           "type": "json"
         },
         {
           "title": "InternalError:",
-          "content": "HTTP/1.1 500 Internal error\n{  \n    \"message\": {\n                \"Cast to ObjectId failed for value \\\"test\\\" at path \\\"_id\\\" for model \\\"Video\\\"\",\n                \"name\": \"CastError\",\n                \"stringValue\": \"\\\"test\\\"\",\n                \"kind\": \"ObjectId\",\n                \"value\": \"test\",\n                \"path\": \"_id\"\n               }\n}",
+          "content": "HTTP/1.1 500 Internal error\n{  \n    \"message\": {\n                \"Cast to ObjectId failed for value \\\"test\\\" at path \\\"_id\\\" for model \\\"image\\\"\",\n                \"name\": \"CastError\",\n                \"stringValue\": \"\\\"test\\\"\",\n                \"kind\": \"ObjectId\",\n                \"value\": \"test\",\n                \"path\": \"_id\"\n               }\n}",
           "type": "json"
         }
       ]
     },
-    "filename": "./video.controller.js",
-    "groupTitle": "videos"
+    "filename": "./image.controller.js",
+    "groupTitle": "Images"
   }
 ] });
