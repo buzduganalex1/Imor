@@ -16,3 +16,4 @@ Updates
 * 11/18/2018 - Added mockup for vips home page
 * 11/25/2018 - Added videos api
 * 11/25/2018 - Added videos api documentation (apidoc, swagger, openapi)
+* 11/27/2018 - Added new digrams
