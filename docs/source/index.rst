@@ -17,3 +17,4 @@ Updates
 * 11/25/2018 - Added videos api
 * 11/25/2018 - Added videos api documentation (apidoc, swagger, openapi)
 * 11/27/2018 - Added new digrams
+* 11/28/2018 - Updated the documentation to support the image api
