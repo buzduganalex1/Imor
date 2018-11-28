@@ -27,11 +27,32 @@ exports.test = function (req, res) {
  * @apiVersion 0.1.0
  * 
  * @apiParam {String} name Name of the image
- * @apiParam {String} duration Duration of the image
- * @apiParam {String} thumbnail Thumbnail of the image 
+ * @apiParam {String} type Type of the image 
+ * @apiParam {String} contentUrl url of the image
+ * @apiParam {String} author Author of the image
+ * @apiParam {String} contentLocation The location of the content in the picture 
+ * @apiParam {Date} datePublished The date the image was publised 
  * @apiParam {String} description Description of the image
+ * @apiParamExample {json} Request-Example
+ *       {
+ *           "_id": "5bfe4ce90d61243bdc56555f",
+ *           "name": "Beach in Mexico",
+ *           "type": "ImageObject",
+ *           "contentUrl": "mexico-beach.jpg",
+ *           "author": "Jane Doe",
+ *           "contentLocation": "Puerto Vallarta, Mexico",
+ *           "datePublished": "2018-01-25",
+ *           "description": "I took this picture while on vacation last year.",
+ *           "__v": 0
+ *       }
  * @apiPermission admin
  * 
+ * @apiHeaderExample {json} Header-Example:
+ *     {
+ *       "Content-Type" : "application/json",
+ *       "Authorization" : "example token"
+ *     }
+ *
  * @apiSuccess {Id} Id The id of the created image
  * 
  * @apiSuccessExample Example data on success
@@ -70,9 +91,12 @@ exports.image_create = function (req, res) {
     let image = new Image({
         _id : imageId,
         name: req.body.name,
-        duration: req.body.duration,
-        thumbnail: req.body.thumbnail,
-        description: req.body.description
+        type: req.body.type,
+        contentUrl: req.body.contentUrl,
+        author: req.body.author,
+        contentLocation : req.body.contentLocation,
+        datePublished : req.body.datePublished,
+        description : req.body.description
     });
 
     image.save(function (err) {
@@ -95,30 +119,44 @@ exports.image_create = function (req, res) {
  * @apiVersion 0.1.0
  * 
  * @apiParam {String} Id Id of the image that will be returned
+ * 
  * @apiPermission none
+ * @apiHeaderExample {json} Header-Example:
+ *     {
+ *       "Content-Type" : "application/json",
+ *       "Authorization" : "example token"
+ *     }
  * 
  * @apiSuccess {String} name Name of the image
- * @apiSuccess {String} duration Duration of the image
- * @apiSuccess {String} thumbnail Thumbnail of the image 
+ * @apiSuccess {String} type Type of the image 
+ * @apiSuccess {String} contentUrl url of the image
+ * @apiSuccess {String} author Author of the image
+ * @apiSuccess {String} contentLocation The location of the content in the picture 
+ * @apiSuccess {Date} datePublished The date the image was publised 
  * @apiSuccess {String} description Description of the image
  * 
  * @apiSuccessExample Example data on success
  *      HTTP/1.1 200 OK
  *       {
- *           "_id": "5bfa4f4a33f6a2091007450c",
- *           "name": "apples",
- *           "duration": "100",
- *           "description": "test",
+ *           "_id": "5bfe4ce90d61243bdc56555f",
+ *           "name": "Beach in Mexico",
+ *           "type": "ImageObject",
+ *           "contentUrl": "mexico-beach.jpg",
+ *           "author": "Jane Doe",
+ *           "contentLocation": "Puerto Vallarta, Mexico",
+ *           "datePublished": "2018-01-25",
+ *           "description": "I took this picture while on vacation last year.",
  *           "__v": 0
  *       }
  * 
- * @apiError ImageWasNotFound The id of the User was not found.
- * @apiErrorExample MissingImage:
+ * @apiError ImageWasNotFound The id of the image was not found.
+ * @apiErrorExample MissingImage
  *      HTTP/1.1 400 Bad request
  *      {
  *          "message": "Image not found"
  *      }
- * @apiErrorExample InternalError:
+ * @apiError InternalErrorOnGetDetails The system failed to get an image.
+ * @apiErrorExample InternalErrorOnGetDetails
  *      HTTP/1.1 500 Internal error
  *      {  
  *          "message": {
@@ -154,31 +192,55 @@ exports.image_details = function (req, res) {
  * @apiGroup Images
  * @apiVersion 0.1.0
  * 
- * @apiParam {String} Id Id of the Image that will be updated
+ * @apiParamExample {json} Request-Example
+ *       {
+ *           "_id": "5bfe4ce90d61243bdc56555f",
+ *           "name": "Beach in Mexico 2",
+ *           "type": "ImageObject",
+ *           "contentUrl": "mexico-beach.jpg",
+ *           "author": "Jane Doe",
+ *           "contentLocation": "Puerto Vallarta, Mexico",
+ *           "datePublished": "2018-01-25",
+ *           "description": "I took this picture while on vacation last year.",
+ *           "__v": 0
+ *       }
  * @apiPermission admin
+ * @apiHeaderExample {json} Header-Example:
+ *     {
+ *       "Content-Type" : "application/json",
+ *       "Authorization" : "example token"
+ *     }
  * 
  * @apiSuccess {String} name Name of the image
- * @apiSuccess {String} duration Duration of the image
- * @apiSuccess {String} thumbnail Thumbnail of the image 
+ * @apiSuccess {String} type Type of the image 
+ * @apiSuccess {String} contentUrl url of the image
+ * @apiSuccess {String} author Author of the image
+ * @apiSuccess {String} contentLocation The location of the content in the picture 
+ * @apiSuccess {Date} datePublished The date the image was publised 
  * @apiSuccess {String} description Description of the image
  * 
  * @apiSuccessExample Example data on success
  *      HTTP/1.1 200 OK
  *       {
- *           "_id": "5bfa4f4a33f6a2091007450c",
- *           "name": "apples",
- *           "duration": "120",
- *           "description": "test",
+ *           "_id": "5bfe4ce90d61243bdc56555f",
+ *           "name": "Beach in Mexico again 2",
+ *           "type": "ImageObject",
+ *           "contentUrl": "mexico-beach.jpg",
+ *           "author": "Jane Doe",
+ *           "contentLocation": "Puerto Vallarta, Mexico",
+ *           "datePublished": "2018-01-25",
+ *           "description": "I took this picture while on vacation last year.",
  *           "__v": 0
  *       }
  * 
- * @apiError ImageWasNotFound The id of the User was not found.
- * @apiErrorExample Missingimage:
+ * @apiError ImageWasNotFound The id of the image was not found.
+ * @apiErrorExample Missingimage
  *      HTTP/1.1 400 Bad request
  *      {
  *          "message": "image not found"
  *      }
- * @apiErrorExample InternalError:
+ * @apiError InternalErrorOnUpdate Failed to updated due to internal errors.
+ * @apiErrorExample InternalErrorOnUpdate
  *      HTTP/1.1 500 Internal error
  *      {  
  *          "message": {
@@ -218,6 +280,11 @@ exports.image_update = function (req, res) {
  * 
  * @apiParam {String} Id Id of the image that will be deleted
  * @apiPermission admin
+ * @apiHeaderExample {json} Header-Example:
+ *     {
+ *       "Content-Type" : "application/json",
+ *       "Authorization" : "example token"
+ *     }
  * 
  * @apiSuccess {String} message An informative message
  * 
@@ -227,9 +294,16 @@ exports.image_update = function (req, res) {
  *          'message' : 'Success'
  *      }
  * 
- * @apiError UserNotFound The id of the User was not found.
- * @apiErrorExample Error-Response:
+ * @apiError ImageNotFound The id of the image was not found.
+ * @apiErrorExample ImageNotFound
  *      HTTP/1.1 400 Bad request
+ *      {
+ *          "message": "Image was not found"
+ *      }
+ * 
+ * @apiError InternalErrorOnDelete Internal error on deletion.
+ * @apiErrorExample InternalErrorOnDelete
+ *      HTTP/1.1 500 Internal error
  *      {  
  *          "message": {
  *                      "Cast to ObjectId failed for value \"test\" at path \"_id\" for model \"image\"",
@@ -253,4 +327,71 @@ exports.image_delete = function (req, res) {
             'message' : 'Delete was with success'
         });
     })
+};
+
+/**
+ * @api {get} /vips/images Gets all images
+ * @apiName getImages
+ * @apiGroup Images
+ * @apiVersion 0.1.0
+ * 
+ * @apiParam {String} query The sparql query used for interogation
+ * @apiParam {String[]} prefixes The prefixes that it will contain
+ * @apiHeaderExample {json} Header-Example:
+ *     {
+ *       "Content-Type" : "application/json",
+ *       "Authorization" : "example token"
+ *     }
+ * 
+ * @apiSuccess {String[]} images All images that satisfy the query
+ * 
+ * @apiSuccessExample Example data on success
+ *      HTTP/1.1 200 OK
+ *      {  
+ *         "images": [
+ *              {
+ *                   "_id": "5bfe4ce90d61243bdc56555d",
+ *                   "name": "Beach in Mexico 1",
+ *                   "type": "ImageObject",
+ *                   "contentUrl": "mexico-beach.jpg",
+ *                   "author": "Jane Doe",
+ *                   "contentLocation": "Puerto Vallarta, Mexico",
+ *                   "datePublished": "2018-01-25",
+ *                   "description": "I took this picture while on vacation last year.",
+ *                   "__v": 0
+ *               },
+ *                               {
+ *                   "_id": "5bfe4ce90d61243bdc56555g",
+ *                   "name": "Beach in Mexico 2",
+ *                   "type": "ImageObject",
+ *                   "contentUrl": "mexico-beach.jpg",
+ *                   "author": "Jane Doe",
+ *                   "contentLocation": "Puerto Vallarta, Mexico",
+ *                   "datePublished": "2018-01-25",
+ *                   "description": "I took this picture while on vacation last year.",
+ *                   "__v": 0
+ *               },
+ *               {
+ *                   "_id": "5bfe4ce90d61243bdc56555q",
+ *                   "name": "Beach in Mexico 3",
+ *                   "type": "ImageObject",
+ *                   "contentUrl": "mexico-beach.jpg",
+ *                   "author": "Jane Doe",
+ *                   "contentLocation": "Puerto Vallarta, Mexico",
+ *                   "datePublished": "2018-01-25",
+ *                   "description": "I took this picture while on vacation last year.",
+ *                   "__v": 0
+ *               }
+ *          ]
+ *      }
+ * @apiError MissingPrefixes The prefixes are missing.
+ * @apiErrorExample MissingPrefixes
+ *      HTTP/1.1 400 BadRequest
+ *      {  
+ *          "message": {
+ *                          "Prefixes are missing"
+ *                     }
+ *      }
+ */
+exports.image_query = function (req, res) {
 };
