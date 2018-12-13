@@ -1,0 +1,165 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/alexandru/ontologies/2018/11/Imor#"
+     xml:base="http://www.semanticweb.org/alexandru/ontologies/2018/11/Imor"
+     xmlns:dbo="http://dbpedia.org/ontology/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:Imor="http://www.semanticweb.org/alexandru/ontologies/2018/11/Imor#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:1.0.0="http://www.semanticweb.org/alexandru/ontologies/2018/11/Imor/1.0.0#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/alexandru/ontologies/2018/11/Imor">
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/alexandru/ontologies/2018/11/Imor/1.0.0"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/alexandru/ontologies/2018/11/Imor#author -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/alexandru/ontologies/2018/11/Imor#author"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alexandru/ontologies/2018/11/Imor#contentLocation -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/alexandru/ontologies/2018/11/Imor#contentLocation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alexandru/ontologies/2018/11/Imor#datePublished -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/alexandru/ontologies/2018/11/Imor#datePublished"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alexandru/ontologies/2018/11/Imor#description -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/alexandru/ontologies/2018/11/Imor#description"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alexandru/ontologies/2018/11/Imor#name -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/alexandru/ontologies/2018/11/Imor#name"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alexandru/ontologies/2018/11/Imor#postedImage -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/alexandru/ontologies/2018/11/Imor#postedImage"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alexandru/ontologies/2018/11/Imor#url -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/alexandru/ontologies/2018/11/Imor#url"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/alexandru/ontologies/2018/11/Imor#Author -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alexandru/ontologies/2018/11/Imor#Author">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexandru/ontologies/2018/11/Imor#Person"/>
+        <postedImage rdf:resource="http://www.semanticweb.org/alexandru/ontologies/2018/11/Imor#Image"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexandru/ontologies/2018/11/Imor#Image -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alexandru/ontologies/2018/11/Imor#Image">
+        <author rdf:resource="http://www.semanticweb.org/alexandru/ontologies/2018/11/Imor#Author"/>
+        <contentLocation rdf:resource="http://www.semanticweb.org/alexandru/ontologies/2018/11/Imor#Location"/>
+        <datePublished rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <description rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <name rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <url rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexandru/ontologies/2018/11/Imor#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alexandru/ontologies/2018/11/Imor#Location"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alexandru/ontologies/2018/11/Imor#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alexandru/ontologies/2018/11/Imor#Person">
+        <name rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/alexandru/ontologies/2018/11/Imor#Alex -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alexandru/ontologies/2018/11/Imor#Alex">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alexandru/ontologies/2018/11/Imor#Author"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alex</name>
+        <postedImage rdf:resource="http://www.semanticweb.org/alexandru/ontologies/2018/11/Imor#mexico-beach"/>
+        <url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://dbpedia.org/page/Alex_(footballer,_born_1982)</url>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alexandru/ontologies/2018/11/Imor#Mexico -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alexandru/ontologies/2018/11/Imor#Mexico">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alexandru/ontologies/2018/11/Imor#Location"/>
+        <url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://dbpedia.org/page/Mexico</url>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alexandru/ontologies/2018/11/Imor#mexico-beach -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alexandru/ontologies/2018/11/Imor#mexico-beach">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alexandru/ontologies/2018/11/Imor#Image"/>
+        <author rdf:resource="http://www.semanticweb.org/alexandru/ontologies/2018/11/Imor#Alex"/>
+        <contentLocation rdf:resource="http://www.semanticweb.org/alexandru/ontologies/2018/11/Imor#Mexico"/>
+        <datePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-04-12T13:20:00</datePublished>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">I took this picture while on vacation last year.</description>
+        <name xml:lang="en">Beach in Mexico</name>
+        <url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://datypic.com/prod.html#shirt</url>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
+
