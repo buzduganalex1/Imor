@@ -1,0 +1,6 @@
+Load the owl file in virtuoso 
+
+SPARQL LOAD <C:/GitRepositories/Imor/ProjectFiles/database/ImagesOntologyV1.owl> into <http://www.semanticweb.org/ImagesOntology>;
+
+Delete evertyhing from virtuoso
+RDF_GLOBAL_RESET ();
