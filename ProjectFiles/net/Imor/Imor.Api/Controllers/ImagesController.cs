@@ -19,6 +19,30 @@ namespace Imor.Api.Controllers
             return repo.GetImages();
         }
 
+        [HttpGet("byUri")]
+        public ImorImage Get(string imageUri)
+        {
+            var repo = new ImagesRepository();
+
+            return repo.GetImageByUri(imageUri);
+        }
+
+        [HttpGet("similar")]
+        public IEnumerable<ImorImage> GetSimmilarImages(string imageUri)
+        {
+            var repo = new ImagesRepository();
+
+            return repo.GetSimilarImages(imageUri, 10);
+        }
+
+        [HttpGet("byTag")]
+        public IEnumerable<ImorImage> GetImagesForTag(string tagUri)
+        {
+            var repo = new ImagesRepository();
+
+            return repo.SearchImagesByTag(tagUri);
+        }
+
         [HttpPost]
         [Route("create")]
         public void Post([FromBody]CreateImageCommand request)
@@ -31,7 +55,7 @@ namespace Imor.Api.Controllers
 
                 foreach (var tag in request.Tags)
                 {
-                    var existingTag = tagRepository.GetTagByUri(new Uri(ImorEnum.GetUri(tag)));
+                    var existingTag = tagRepository.GetTagByUri(tag);
 
                     if (existingTag != null)
                     {

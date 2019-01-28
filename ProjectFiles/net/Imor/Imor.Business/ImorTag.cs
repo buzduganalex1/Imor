@@ -1,4 +1,6 @@
-﻿namespace Imor.Business
+﻿using System.Collections.Generic;
+
+namespace Imor.Business
 {
     public class ImorTag
     {

@@ -12,7 +12,11 @@ namespace Imor.Client.Tests
         {
             //this.GetImagesTest();
 
-            this.InsertImage();
+            //this.InsertImage();
+
+            //this.SearchImagesByTag();
+
+            this.SearchImagesForTags();
         }
 
         private void GetImagesTest()
@@ -46,6 +50,41 @@ namespace Imor.Client.Tests
                     }
                 }
             });
+        }
+
+        private void SearchImagesByTag()
+        {
+            var repo = new ImagesRepository();
+            var tagRepo = new TagsRepository();
+            
+            var results = repo.SearchImagesByTag("http://www.semanticweb.org/ImagesOntology#DogTag");
+
+            foreach (var result in results)
+            {
+                Console.WriteLine(JsonConvert.SerializeObject(result));
+            }
+        }
+
+        private void SearchImagesForTags()
+        {
+            var repo = new ImagesRepository();
+
+            var tagRepo = new TagsRepository();
+
+            var tags = new List<string>()
+            {
+                "http://www.semanticweb.org/ImagesOntology#DogTag",
+                "http://www.semanticweb.org/ImagesOntology#PetTag",
+                "http://www.semanticweb.org/ImagesOntology#CatsTag"
+
+            };
+
+            var results = repo.SearchImagesByTags(tags);
+
+            foreach (var result in results)
+            {
+                Console.WriteLine(JsonConvert.SerializeObject(result));
+            }
         }
     }
 }

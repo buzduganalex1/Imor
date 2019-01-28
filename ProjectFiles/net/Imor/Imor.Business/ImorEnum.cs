@@ -17,6 +17,8 @@
         public const string RdfType = "http://www.w3.org/1999/02/22-rdf-syntax-ns#type";
 
         public const string Content = "http://www.semanticweb.org/ImagesOntology#Content";
+
+        public const string IsSimilar = "http://www.semanticweb.org/ImagesOntology#similarTag";
         
         public static string GetUri(string value)
         {

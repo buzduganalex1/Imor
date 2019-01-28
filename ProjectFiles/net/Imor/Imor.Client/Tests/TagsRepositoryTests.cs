@@ -12,6 +12,7 @@ namespace Imor.Client.Tests
             this.GetTagsForImage();
 
             this.GetTagsTest();
+            
         }
 
         private void GetTagsTest()

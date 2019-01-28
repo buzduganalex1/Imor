@@ -2,19 +2,45 @@
 using System.Collections.Generic;
 using System.Linq;
 using Imor.Business;
+using VDS.RDF;
 using VDS.RDF.Nodes;
 
 namespace Imor.Database
 {
     public class TagsRepository
     {
-        public IEnumerable<ImorTag> GetTagsForImage(Uri image)
+        private readonly IGraph graph;
+
+        public TagsRepository()
+        {
+            this.graph = DatabaseInitializer.Initialize();
+        }
+
+        public IEnumerable<ImorTag> GetAllTags()
         {
             var tags = new List<ImorTag>();
 
-            var graph = DatabaseInitializer.Initialize();
+            var tagNode = graph.GetUriNode(new Uri(ImorEnum.Tag));
 
-            var imageNode = graph.GetUriNode(image);
+            var tagsTriples = graph.GetTriplesWithObject(tagNode);
+
+            foreach (var tagsTriple in tagsTriples.Where(x => x.Predicate.ToString() == ImorEnum.RdfType))
+            {
+                var tagProperties = graph.GetTriplesWithSubject(tagsTriple.Subject);
+
+                var tag = this.MapImorTag(tagsTriple.Subject.AsValuedNode().AsString(), tagProperties);
+
+                tags.Add(tag);
+            }
+
+            return tags;
+        }
+
+        public IEnumerable<ImorTag> GetTagsForImage(string imageUri)
+        {
+            var tags = new List<ImorTag>();
+
+            var imageNode = graph.GetUriNode(new Uri(imageUri));
 
             var hasA = graph.GetUriNode(new Uri(ImorEnum.HasA));
 
@@ -24,7 +50,7 @@ namespace Imor.Database
             {
                 var tag = new ImorTag
                 {
-                    Uri = triple.Subject.ToString()
+                    Uri = triple.Object.ToString()
                 };
 
                 var tagProperties = graph.GetTriplesWithSubject(triple.Object);
@@ -47,38 +73,78 @@ namespace Imor.Database
             
             return tags;
         }
+        
+        public ImorTag GetTagByUri(string uri)
+        {       
+            var tagNode = graph.GetUriNode(new Uri(ImorEnum.GetUri(uri)));
 
-        public IEnumerable<ImorTag> GetAllTags()
+            if (tagNode == null)
+            {
+                tagNode = graph.GetUriNode(new Uri(uri));
+
+                if (tagNode == null)
+                {
+                    return null;
+                }
+            }
+
+            var properties = graph.GetTriplesWithSubject(tagNode);
+
+            var tag = this.MapImorTag(uri, properties);
+            
+            return tag;
+        }
+
+        public void InsertImorTag(ImorTag tag)
+        {
+            var node = graph.CreateUriNode(new Uri(tag.Uri));
+
+            var typeNode = graph.GetUriNode(new Uri(ImorEnum.RdfType));
+
+            var tagNode = graph.GetUriNode(new Uri(ImorEnum.Tag));
+
+            var t = new Triple(node, typeNode, tagNode);
+
+            if (!string.IsNullOrEmpty(tag.Description))
+            {
+                var descriptionNode = graph.GetUriNode(new Uri(ImorEnum.Description));
+
+                var descriptionTriple = new Triple(node, descriptionNode, graph.CreateLiteralNode(tag.Description));
+
+                graph.Assert(descriptionTriple);
+            }
+
+            if (!string.IsNullOrEmpty(tag.Label))
+            {
+                var label = graph.GetUriNode(new Uri(ImorEnum.TagLabel));
+
+                var contenTriple = new Triple(node, label, graph.CreateLiteralNode(tag.Label));
+
+                graph.Assert(contenTriple);
+            }
+            
+            graph.Assert(t);
+
+            graph.SaveToFile(DatabaseInitializer.ontology);
+        }
+
+        public IEnumerable<ImorTag> GetSimilarTags(string uri)
         {
             var tags = new List<ImorTag>();
 
-            var graph = DatabaseInitializer.Initialize();
-            
-            var tagNode = graph.GetUriNode(new Uri(ImorEnum.Tag));
-            
-            var tagsTriples = graph.GetTriplesWithObject(tagNode);
+            var tagNode = graph.GetUriNode(new Uri(uri));
 
-            foreach (var tagsTriple in tagsTriples.Where(x => x.Predicate.ToString() == ImorEnum.RdfType))
+            var isSimilarNode = graph.GetUriNode(new Uri(ImorEnum.IsSimilar));
+
+            var similarNodes = graph.GetTriplesWithSubjectPredicate(tagNode, isSimilarNode);
+
+            foreach (var similarNode in similarNodes)
             {
-                var tagProperties = graph.GetTriplesWithSubject(tagsTriple.Subject);
+                var nodeUri = similarNode.Object.AsValuedNode().AsString();
 
-                var tag = new ImorTag()
-                {
-                    Uri = tagsTriple.Subject.ToString()
-                };
+                var properties = graph.GetTriplesWithSubject(new Uri(nodeUri));
 
-                foreach (var property in tagProperties)
-                {
-                    if (property.Predicate.ToString() == ImorEnum.TagLabel)
-                    {
-                        tag.Label = property.Object.AsValuedNode().AsString();
-                    }
-
-                    if (property.Predicate.ToString() == ImorEnum.Description)
-                    {
-                        tag.Description = property.Object.AsValuedNode().AsString();
-                    }
-                }
+                var tag = this.MapImorTag(nodeUri, properties);
 
                 tags.Add(tag);
             }
@@ -86,25 +152,14 @@ namespace Imor.Database
             return tags;
         }
 
-        public ImorTag GetTagByUri(Uri uri)
+        private ImorTag MapImorTag(string uri, IEnumerable<Triple> tagProperties)
         {
-            var graph = DatabaseInitializer.Initialize();
-
-            var tagNode = graph.GetUriNode(uri);
-
-            if (tagNode == null)
-            {
-                return null;
-            }
-
-            var properties = graph.GetTriplesWithSubject(tagNode);
-
             var tag = new ImorTag()
             {
-                Uri = uri.OriginalString
+                Uri = uri
             };
 
-            foreach (var property in properties)
+            foreach (var property in tagProperties)
             {
                 if (property.Predicate.ToString() == ImorEnum.TagLabel)
                 {

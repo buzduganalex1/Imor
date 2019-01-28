@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Imor.Api.Contracts;
 using Imor.Business;
 using Imor.Database;
 using Microsoft.AspNetCore.Mvc;
@@ -23,7 +24,37 @@ namespace Imor.Api.Controllers
         {
             var repo = new TagsRepository();
 
-            return repo.GetTagsForImage(new Uri(imageUri));
+            return repo.GetTagsForImage(imageUri);
+        }
+
+        [HttpGet("byUri")]
+        public ImorTag GetTagByUri(string tagUri)
+        {
+            var repo = new TagsRepository();
+
+            return repo.GetTagByUri(tagUri);
+        }
+
+        [HttpGet("similar")]
+        public IEnumerable<ImorTag> GetSimilarTags(string tagUri)
+        {
+            var repo = new TagsRepository();
+
+            return repo.GetSimilarTags(tagUri);
+        }
+
+        [HttpPost]
+        [Route("create")]
+        public void Post([FromBody]CreateTagCommand request)
+        {
+            var repository = new TagsRepository();
+
+            repository.InsertImorTag(new ImorTag
+            {
+                Uri = request.Uri,
+                Description = request.Description,
+                Label = request.Label
+            });
         }
     }
 }

@@ -1,10 +1,10 @@
 ﻿using System;
-using System.Net.Http;
-using System.Net.Http.Headers;
-using System.Text;
-using Imor.Api.Contracts;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using Imor.Business;
 using Imor.Client.Tests;
-using Newtonsoft.Json;
+using Imor.Database;
 
 namespace Imor.Client
 {
@@ -12,9 +12,16 @@ namespace Imor.Client
     {
         static void Main(string[] args)
         {
+            var sw = new Stopwatch();
+            sw.Start();
+
             //new TagsRepositoryTests().Run();
-            //new ImageRepositoryTests().Run();
-            new ApiTests().Run();
+            new ImageRepositoryTests().Run();
+
+            sw.Stop();
+
+            Console.WriteLine("Elapsed={0}", sw.Elapsed);
+            //new ApiTests().Run();            
         }
     }
 }
