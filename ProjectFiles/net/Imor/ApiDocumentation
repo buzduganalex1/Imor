@@ -153,6 +153,112 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "GetImagesByTag",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetTagByUri",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:52676/api/tags/byUri?tagUri=http%3A%2F%2Fwww.semanticweb.org%2FImagesOntology%23DogTag",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52676",
+					"path": [
+						"api",
+						"tags",
+						"byUri"
+					],
+					"query": [
+						{
+							"key": "tagUri",
+							"value": "http%3A%2F%2Fwww.semanticweb.org%2FImagesOntology%23DogTag"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateTag",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetSimilarTags",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetImageByUri",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetSimilarImages",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
 		}
 	]
 }
