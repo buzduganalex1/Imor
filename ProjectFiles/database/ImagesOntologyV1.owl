@@ -431,6 +431,17 @@
     
 
 
+    <!-- http://www.semanticweb.org/ImagesOntology#PoliceDogs -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ImagesOntology#PoliceDogs">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ImagesOntology#Image"/>
+        <Content>https://img-9gag-fun.9cache.com/photo/aE28b89_700bwp.webp</Content>
+        <description>9gag post 3</description>
+        <hasA rdf:resource="http://www.semanticweb.org/ImagesOntology#DogTag"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/ImagesOntology#TestImage -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ImagesOntology#TestImage">
@@ -481,6 +492,26 @@
         <hasA rdf:resource="http://www.semanticweb.org/ImagesOntology#CatsTag"/>
         <hasA rdf:resource="http://www.semanticweb.org/ImagesOntology#DogTag"/>
         <hasA rdf:resource="http://www.semanticweb.org/ImagesOntology#PetTag"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ImagesOntology#9gagPost -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ImagesOntology#9gagPost">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ImagesOntology#Image"/>
+        <Content>https://img-9gag-fun.9cache.com/photo/aXYnZxv_700bwp.webp</Content>
+        <description>9gag post</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ImagesOntology#9gagPost2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ImagesOntology#9gagPost2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ImagesOntology#Image"/>
+        <Content>https://img-9gag-fun.9cache.com/photo/aA3GnWR_700bwp.webp</Content>
+        <description>9gag post 2</description>
     </owl:NamedIndividual>
     
 
