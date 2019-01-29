@@ -1,0 +1,18 @@
+<p>
+  tag works!
+</p>
+<div>
+
+</div>
+
+<ul>
+    <li *ngFor="let image of images">
+        {{image.description}} <br>
+        <img src="{{image.content}}" width="300" height="300" alt="Smiley face">   
+        <ul>
+            <li *ngFor="let tag of image.tags">
+              <span> {{tag.label}}</span>
+            </li>
+        </ul>
+    </li>
+  </ul>
