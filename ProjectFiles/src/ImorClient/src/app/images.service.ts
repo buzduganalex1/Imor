@@ -13,17 +13,17 @@ export class ImagesService {
   }
 
   getImages(): Observable<Image[]>{
-    return this.http.get<Image[]>("http://localhost:53370/api/images/")
+    return this.http.get<Image[]>("http://imor-sparql-endpoint.westeurope.cloudapp.azure.com/api/images/")
   }
 
   getImagesForTag(uri: String): Observable<Image[]>{
-    const path = "http://localhost:53370/api/images/byTag?tagUri=" + uri;
+    const path = "http://imor-sparql-endpoint.westeurope.cloudapp.azure.com/api/images/byTag?tagUri=" + uri;
     
     return this.http.get<Image[]>(path)
   }
 
   getImageByUri(uri: string){
-    const path = "http://localhost:53370/api/images/byUri?imageUri=" + uri;
+    const path = "http://imor-sparql-endpoint.westeurope.cloudapp.azure.com/api/images/byUri?imageUri=" + uri;
 
     return this.http.get<Image>(path)
   }

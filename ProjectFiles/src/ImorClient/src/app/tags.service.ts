@@ -14,17 +14,17 @@ export class TagsService {
   }
 
   public getTags(): Observable<Tag[]>{
-    return this.http.get<Tag[]>("http://localhost:53370/api/tags/all")
+    return this.http.get<Tag[]>("http://imor-sparql-endpoint.westeurope.cloudapp.azure.com/api/tags/all")
   }
 
   public getTagsForImage(uri: string): Observable<Tag[]>{
-    const path = "http://localhost:53370/api/tags/forImageUri?imageUri=" + uri;
-    
+    const path = "http://imor-sparql-endpoint.westeurope.cloudapp.azure.com/api/tags/forImageUri?imageUri=" + uri;
+
     return this.http.get<Tag[]>(path)
   }
 
   public getTag(uri: string): Observable<Tag>{
-    const path = "http://localhost:53370/api/tags/byUri?tagUri=" + uri;
+    const path = "http://imor-sparql-endpoint.westeurope.cloudapp.azure.com/api/tags/byUri?tagUri=" + uri;
 
     return this.http.get<Tag>(path);
   }
