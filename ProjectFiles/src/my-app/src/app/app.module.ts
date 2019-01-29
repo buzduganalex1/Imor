@@ -12,6 +12,11 @@ import { HttpClientModule }    from '@angular/common/http';
 import { TagsComponent } from './tags/tags.component';
 import { ImageComponent } from './image/image.component';
 import { ImagesComponent } from './images/images.component';
+import { AuthorComponent } from './author/author.component';
+import {NoopAnimationsModule} from '@angular/platform-browser/animations';
+import { ErrorStateMatcher, ShowOnDirtyErrorStateMatcher, MatSidenavModule, MatToolbarModule, MatIconModule, MatListModule } from '@angular/material';
+import {FlexLayoutModule} from '@angular/flex-layout';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 @NgModule({
   declarations: [
@@ -22,15 +27,31 @@ import { ImagesComponent } from './images/images.component';
     DashboardComponent,
     TagsComponent,
     ImageComponent,
-    ImagesComponent
+    ImagesComponent,
+    AuthorComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
+    NoopAnimationsModule,
+    MatSidenavModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatListModule,
+    FlexLayoutModule
   ],
-  providers: [],
+  exports:[
+    MatSidenavModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatListModule,
+  ],
+  providers: [
+    {provide: ErrorStateMatcher, useClass: ShowOnDirtyErrorStateMatcher}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -6,6 +6,8 @@ import { HeroDetailComponent }  from './hero-detail/hero-detail.component';
 import { TagsComponent } from './tags/tags.component';
 import { ImageComponent } from './image/image.component';
 import { ImagesComponent } from './images/images.component';
+import {AuthorComponent} from './author/author.component';
+import {WelcomeComponent} from './welcome/welcome.component';
 
 const routes: Routes = [
   { path: 'heroes', component: HeroesComponent },
@@ -14,6 +16,8 @@ const routes: Routes = [
   { path: 'tags', component: TagsComponent},
   { path: 'image/:uri', component: ImageComponent},
   { path: 'images', component: ImagesComponent},
+  { path: 'author', component: AuthorComponent},
+  { path: 'welcome', component: WelcomeComponent},
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
 ];
 
