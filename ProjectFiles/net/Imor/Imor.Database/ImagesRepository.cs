@@ -1,10 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Text;
 using Imor.Business;
+using Microsoft.Extensions.Caching.Memory;
 using VDS.RDF;
 using VDS.RDF.Nodes;
-using VDS.RDF.Query.Datasets;
+using VDS.RDF.Writing;
+using StringWriter = System.IO.StringWriter;
 
 namespace Imor.Database
 {
@@ -160,7 +164,9 @@ namespace Imor.Database
 
             graph.Assert(t);
 
-            graph.SaveToFile(DatabaseInitializer.ontology);
+            var sw = new StringWriter(new StringBuilder(DatabaseInitializer.ontology));
+
+            graph.SaveToStream(sw,new CompressingTurtleWriter());
         }
 
         private ImorImage MapImage(string imageUri, IEnumerable<Triple> triples)

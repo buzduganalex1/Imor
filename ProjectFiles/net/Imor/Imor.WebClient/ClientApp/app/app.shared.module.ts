@@ -11,6 +11,7 @@ import { FetchDataComponent } from './components/fetchdata/fetchdata.component';
 import { CounterComponent } from './components/counter/counter.component';
 import { TagsComponent } from './components/tags/tags.component';
 import { ImagesComponent } from './components/images/images.component';
+import { ImagesForTagComponent } from './components/images/imagesForTag.component';
 
 @NgModule({
     declarations: [
@@ -20,7 +21,8 @@ import { ImagesComponent } from './components/images/images.component';
         FetchDataComponent,
 		HomeComponent,
 		TagsComponent,
-	    ImagesComponent
+	    ImagesForTagComponent,
+		ImagesComponent
     ],
     imports: [
         CommonModule,
@@ -32,7 +34,8 @@ import { ImagesComponent } from './components/images/images.component';
             { path: 'counter', component: CounterComponent },
 			{ path: 'fetch-data', component: FetchDataComponent },
 			{ path: 'tags', component: TagsComponent },
-	        { path: 'images', component: ImagesComponent },
+			{ path: 'images', component: ImagesComponent },
+			{ path: 'imagesForTag', component: ImagesForTagComponent },
             { path: '**', redirectTo: 'home' }
         ])
     ]

@@ -15,7 +15,9 @@
 	<tbody>
 	<tr *ngFor="let tag of tags">
 		<td>{{ tag.description }}</td>
-		<td>{{ tag.label }}</td>
+		<td>
+			<a [routerLink]="['/imagesForTag']">{{ tag.label }}</a>
+		</td>
 		<td>{{ tag.uri }}</td>
 	</tr>
 	</tbody>

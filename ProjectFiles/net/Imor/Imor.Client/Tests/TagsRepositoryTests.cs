@@ -31,7 +31,7 @@ namespace Imor.Client.Tests
         {
             var repository = new TagsRepository();
 
-            var results = repository.GetTagsForImage(new Uri(ImorEnum.GetUri("CatImage")));
+            var results = repository.GetTagsForImage("CatImage");
 
             foreach (var result in results)
             {

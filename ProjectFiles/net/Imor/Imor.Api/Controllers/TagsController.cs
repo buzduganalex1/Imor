@@ -14,9 +14,17 @@ namespace Imor.Api.Controllers
         [HttpGet("all")]
         public IEnumerable<ImorTag> Get()
         {
-            var repo = new TagsRepository();
+            try
+            {
+                var repo = new TagsRepository();
 
-            return repo.GetAllTags();
+                return repo.GetAllTags();
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+
         }
 
         [HttpGet("forImageUri")]

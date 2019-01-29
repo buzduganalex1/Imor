@@ -55,6 +55,11 @@
     <imor:description>Hills of the Judean Desert</imor:description>
     <imor:hasA rdf:resource="&imor;HillsTag" />
   </imor:Image>
+  <imor:Image rdf:about="&imor;DessertHill2">
+    <imor:Content>https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Judea_2_by_David_Shankbone.jpg/1280px-Judea_2_by_David_Shankbone.jpg</imor:Content>
+    <imor:description>Hills of the Judean Desert</imor:description>
+    <imor:hasA rdf:resource="&imor;HillsTag" />
+  </imor:Image>
   <owl:NamedIndividual rdf:about="&imor;DogImage">
     <imor:description rdf:datatype="&xsd;string">This is a dog image</imor:description>
     <imor:hasA rdf:resource="&imor;DogTag" />

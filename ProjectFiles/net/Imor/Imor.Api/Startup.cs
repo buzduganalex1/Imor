@@ -35,9 +35,14 @@ namespace Imor.Api
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseMvc();
             app.UseCors(builder =>
-                builder.WithOrigins("http://localhost:52676"));
+                builder.WithOrigins("http://localhost:52676")
+                    .AllowAnyMethod().AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader()
+                    .AllowCredentials());
+
+            app.UseMvc();
         }
     }
 }

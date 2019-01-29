@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE rdf:RDF [
+	<!ENTITY rdf 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+	<!ENTITY rdfs 'http://www.w3.org/2000/01/rdf-schema#'>
+	<!ENTITY xsd 'http://www.w3.org/2001/XMLSchema#'>
+	<!ENTITY owl 'http://www.w3.org/2002/07/owl#'>
+	<!ENTITY dc 'http://purl.org/dc/elements/1.1/'>
+	<!ENTITY xml 'http://www.w3.org/XML/1998/namespace'>
+	<!ENTITY imor 'http://www.semanticweb.org/ImagesOntology#'>
+]>
+<rdf:RDF xml:base="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns="http://www.semanticweb.org/ImagesOntology#" xmlns:imor="http://www.semanticweb.org/ImagesOntology#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <owl:NamedIndividual rdf:about="http://dbpedia.org/describe/?url=http%3A%2F%2Fwww.wikidata.org%2Fentity%2FQ5288287&amp;sid=38846">
+    <owl:sameAs rdf:resource="&imor;DogTag" />
+  </owl:NamedIndividual>
+  <owl:Ontology rdf:about="http://www.semanticweb.org/ImagesOntology">
+    <dc:description>This is the RDF Schema for the RDF vocabulary terms in the RDF Namespace, defined in RDF 1.1 Concepts.</dc:description>
+    <dc:title>The RDF Concepts Vocabulary (RDF)</dc:title>
+  </owl:Ontology>
+  <owl:NamedIndividual rdf:about="&imor;9gagPost">
+    <imor:Content>https://img-9gag-fun.9cache.com/photo/aXYnZxv_700bwp.webp</imor:Content>
+    <imor:description>9gag post</imor:description>
+    <rdf:type rdf:resource="&imor;Image" />
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="&imor;9gagPost2">
+    <imor:Content>https://img-9gag-fun.9cache.com/photo/aA3GnWR_700bwp.webp</imor:Content>
+    <imor:description>9gag post 2</imor:description>
+    <rdf:type rdf:resource="&imor;Image" />
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="&imor;CatImage">
+    <imor:Content rdf:datatype="&xsd;anyURI">https://i.ebayimg.com/images/g/k5cAAOSwNSxVeEJv/s-l1600.jpg</imor:Content>
+    <imor:description rdf:datatype="&xsd;string">This is a cat image</imor:description>
+    <imor:hasA rdf:resource="&imor;CatsTag" />
+    <imor:hasA rdf:resource="&imor;PetTag" />
+    <rdf:type rdf:resource="&imor;Image" />
+    <owl:sameAs rdf:resource="https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500" />
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="&imor;CatsTag">
+    <imor:description rdf:datatype="&xsd;string">This is a cat tag</imor:description>
+    <imor:label rdf:datatype="&xsd;string">Cats</imor:label>
+    <rdf:type rdf:resource="&imor;Tag" />
+  </owl:NamedIndividual>
+  <owl:AnnotationProperty rdf:about="&imor;Content">
+    <rdf:type rdf:resource="&owl;AnnotationProperty" />
+  </owl:AnnotationProperty>
+  <imor:Image rdf:about="&imor;CzechHill">
+    <imor:Content>https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Bacin_zari_2015.jpg/1920px-Bacin_zari_2015.jpg</imor:Content>
+    <imor:description>A hill in the Czech Republic</imor:description>
+    <imor:hasA rdf:resource="&imor;HillsTag" />
+  </imor:Image>
+  <owl:Class rdf:about="&imor;Description">
+    <rdf:type rdf:resource="&owl;Class" />
+  </owl:Class>
+  <imor:Image rdf:about="&imor;DessertHill">
+    <imor:Content>https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Judea_2_by_David_Shankbone.jpg/1280px-Judea_2_by_David_Shankbone.jpg</imor:Content>
+    <imor:description>Hills of the Judean Desert</imor:description>
+    <imor:hasA rdf:resource="&imor;HillsTag" />
+  </imor:Image>
+  <imor:Image rdf:about="&imor;DessertHill2">
+    <imor:Content>https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Judea_2_by_David_Shankbone.jpg/1280px-Judea_2_by_David_Shankbone.jpg</imor:Content>
+    <imor:description>Hills of the Judean Desert</imor:description>
+    <imor:hasA rdf:resource="&imor;HillsTag" />
+  </imor:Image>
+  <imor:Image rdf:about="&imor;DessertHill3">
+    <imor:Content>https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Judea_2_by_David_Shankbone.jpg/1280px-Judea_2_by_David_Shankbone.jpg</imor:Content>
+    <imor:description>Hills of the Judean Desert</imor:description>
+    <imor:hasA rdf:resource="&imor;HillsTag" />
+  </imor:Image>
+  <imor:Image rdf:about="&imor;DessertHill4">
+    <imor:Content>https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Judea_2_by_David_Shankbone.jpg/1280px-Judea_2_by_David_Shankbone.jpg</imor:Content>
+    <imor:description>Hills of the Judean Desert</imor:description>
+    <imor:hasA rdf:resource="&imor;HillsTag" />
+  </imor:Image>
+  <owl:NamedIndividual rdf:about="&imor;DogImage">
+    <imor:description rdf:datatype="&xsd;string">This is a dog image</imor:description>
+    <imor:hasA rdf:resource="&imor;DogTag" />
+    <rdf:type rdf:resource="&imor;Image" />
+    <owl:sameAs rdf:resource="https://upload.wikimedia.org/wikipedia/commons/9/9b/Grantville.jpg" />
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="&imor;DogTag">
+    <imor:label rdf:datatype="&xsd;string">Dogs</imor:label>
+    <rdf:type rdf:resource="&imor;Tag" />
+  </owl:NamedIndividual>
+  <imor:Image rdf:about="&imor;Glacier">
+    <imor:Content>https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Glacier_park1.jpg/1280px-Glacier_park1.jpg</imor:Content>
+    <imor:description>U-shaped valley in Glacier National Park, Montana, United States</imor:description>
+    <imor:hasA rdf:resource="&imor;ValleysTag" />
+  </imor:Image>
+  <owl:NamedIndividual rdf:about="&imor;HillsTag">
+    <imor:description rdf:datatype="&xsd;string">This tag describes hills</imor:description>
+    <imor:label rdf:datatype="&xsd;string">Hills</imor:label>
+    <imor:similarTag rdf:resource="&imor;MountainsTag" />
+    <imor:similarTag rdf:resource="&imor;ValleysTag" />
+    <rdf:type rdf:resource="&imor;Tag" />
+  </owl:NamedIndividual>
+  <owl:Class rdf:about="&imor;Image">
+    <imor:description rdf:datatype="&xsd;string"></imor:description>
+    <imor:hasA rdf:resource="&imor;Tag" />
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="&imor;Image4">
+    <imor:Content>https://wallpaperbrowse.com/media/images/3848765-wallpaper-images-download.jpg</imor:Content>
+    <imor:description>Test 4</imor:description>
+    <rdf:type rdf:resource="&imor;Image" />
+  </owl:NamedIndividual>
+  <imor:Image rdf:about="&imor;ItalyHill">
+    <imor:Content>https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Tuscan_views_at_sunset_%285790020702%29.jpg/1920px-Tuscan_views_at_sunset_%285790020702%29.jpg</imor:Content>
+    <imor:description>Hills in Tuscany, Italy</imor:description>
+    <imor:hasA rdf:resource="&imor;HillsTag" />
+  </imor:Image>
+  <imor:Image rdf:about="&imor;MountArayet">
+    <imor:Content>https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Monasterio_Khor_Virap%2C_Armenia%2C_2016-10-01%2C_DD_25.jpg/1920px-Monasterio_Khor_Virap%2C_Armenia%2C_2016-10-01%2C_DD_25.jpg</imor:Content>
+    <imor:description>This mountain is really huge</imor:description>
+    <imor:hasA rdf:resource="&imor;MountainsTag" />
+  </imor:Image>
+  <imor:Image rdf:about="&imor;MountKenya">
+    <imor:Content>https://en.wikipedia.org/wiki/Mountain#/media/File:Batian_Nelion_and_pt_Slade_in_the_foreground_Mt_Kenya.JPG</imor:Content>
+    <imor:Content>https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Batian_Nelion_and_pt_Slade_in_the_foreground_Mt_Kenya.JPG/1280px-Batian_Nelion_and_pt_Slade_in_the_foreground_Mt_Kenya.JPG</imor:Content>
+    <imor:description>This mountain is really huge</imor:description>
+    <imor:hasA rdf:resource="&imor;MountainsTag" />
+  </imor:Image>
+  <imor:Image rdf:about="&imor;MountWilhelm">
+    <imor:Content>https://en.wikipedia.org/wiki/Mountain#/media/File:Mount_Wilhelm.jpg</imor:Content>
+    <imor:Content>https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Mount_Wilhelm.jpg/1280px-Mount_Wilhelm.jpg</imor:Content>
+    <imor:description>This mountain is really huge</imor:description>
+    <imor:hasA rdf:resource="&imor;MountainsTag" />
+  </imor:Image>
+  <owl:NamedIndividual rdf:about="&imor;MountainsTag">
+    <imor:description rdf:datatype="&xsd;string">This tag describes pictures with mountains</imor:description>
+    <imor:label rdf:datatype="&xsd;string">Mountains</imor:label>
+    <imor:similarTag rdf:resource="&imor;HillsTag" />
+    <imor:similarTag rdf:resource="&imor;ValleysTag" />
+    <rdf:type rdf:resource="&imor;Tag" />
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="&imor;PetTag">
+    <imor:label rdf:datatype="&xsd;string">Pet</imor:label>
+    <rdf:type rdf:resource="&imor;Tag" />
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="&imor;PoliceDogs">
+    <imor:Content>https://img-9gag-fun.9cache.com/photo/aE28b89_700bwp.webp</imor:Content>
+    <imor:description>9gag post 3</imor:description>
+    <imor:hasA rdf:resource="&imor;DogTag" />
+    <rdf:type rdf:resource="&imor;Image" />
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="&imor;PoliceDogs2">
+    <imor:Content>https://img-9gag-fun.9cache.com/photo/aE28b89_700bwp.webp</imor:Content>
+    <imor:description>9gag post 3</imor:description>
+    <imor:hasA rdf:resource="&imor;DogTag" />
+    <imor:hasA rdf:resource="&imor;PetTag" />
+    <rdf:type rdf:resource="&imor;Image" />
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="&imor;PoliceDogs3">
+    <imor:Content>https://img-9gag-fun.9cache.com/photo/aE28b89_700bwp.webp</imor:Content>
+    <imor:description>9gag post 3</imor:description>
+    <imor:hasA rdf:resource="&imor;CatsTag" />
+    <imor:hasA rdf:resource="&imor;DogTag" />
+    <imor:hasA rdf:resource="&imor;PetTag" />
+    <rdf:type rdf:resource="&imor;Image" />
+  </owl:NamedIndividual>
+  <imor:Image rdf:about="&imor;Romsdalen">
+    <imor:Content>https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Romsdalen.jpg/1920px-Romsdalen.jpg</imor:Content>
+    <imor:Content>https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Vale_dos_Frades.jpg/1920px-Vale_dos_Frades.jpg</imor:Content>
+    <imor:description>Romsdalen in Western Norway is an almost vertical valley.</imor:description>
+    <imor:description>The Frades Valley in the mountainous region of Rio de Janeiro state, Brazil</imor:description>
+    <imor:hasA rdf:resource="&imor;ValleysTag" />
+  </imor:Image>
+  <owl:Class rdf:about="&imor;Tag">
+    <imor:label rdf:datatype="&xsd;string"></imor:label>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="&imor;Tag1">
+    <imor:description>Tets Tag</imor:description>
+    <imor:label>Tag1</imor:label>
+    <imor:similarTag rdf:resource="&imor;Tag" />
+    <rdf:type rdf:resource="&imor;Tag" />
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="&imor;TestImage">
+    <rdf:type rdf:resource="&imor;Image" />
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="&imor;TestImage2">
+    <rdf:type rdf:resource="&imor;Image" />
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="&imor;TestImage3">
+    <imor:Content>https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Ffortunedotcom.files.wordpress.com%2F2017%2F01%2Fgettyimages-632438922.jpg&amp;w=800&amp;q=85</imor:Content>
+    <imor:description>Test image 3</imor:description>
+    <imor:hasA rdf:resource="&imor;CatsTag" />
+    <rdf:type rdf:resource="&imor;Image" />
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="&imor;TestImage5">
+    <imor:Content>https://wallpaperbrowse.com/media/images/3848765-wallpaper-images-download.jpg</imor:Content>
+    <imor:description>Test 4</imor:description>
+    <imor:description>Test 6</imor:description>
+    <imor:hasA rdf:resource="&imor;CatsTag" />
+    <imor:hasA rdf:resource="&imor;DogTag" />
+    <imor:hasA rdf:resource="&imor;PetTag" />
+    <rdf:type rdf:resource="&imor;Image" />
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="&imor;TestImage6">
+    <imor:Content>https://wallpaperbrowse.com/media/images/3848765-wallpaper-images-download.jpg</imor:Content>
+    <imor:description>Test 6</imor:description>
+    <imor:hasA rdf:resource="&imor;CatsTag" />
+    <imor:hasA rdf:resource="&imor;DogTag" />
+    <imor:hasA rdf:resource="&imor;PetTag" />
+    <rdf:type rdf:resource="&imor;Image" />
+  </owl:NamedIndividual>
+  <imor:Image rdf:about="&imor;VallesCalchaquies">
+    <imor:Content>https://upload.wikimedia.org/wikipedia/commons/5/50/Salta-VallesCalchaquies-P3140151.JPG</imor:Content>
+    <imor:description>This mountain is really huge</imor:description>
+    <imor:hasA rdf:resource="&imor;ValleysTag" />
+  </imor:Image>
+  <owl:NamedIndividual rdf:about="&imor;ValleysTag">
+    <imor:description rdf:datatype="&xsd;string">This tag describes valleys</imor:description>
+    <imor:label rdf:datatype="&xsd;string">Valleys</imor:label>
+    <imor:similarTag rdf:resource="&imor;HillsTag" />
+    <imor:similarTag rdf:resource="&imor;MountainsTag" />
+    <rdf:type rdf:resource="&imor;Tag" />
+  </owl:NamedIndividual>
+  <owl:AnnotationProperty rdf:about="&imor;description">
+    <rdf:type rdf:resource="&owl;AnnotationProperty" />
+  </owl:AnnotationProperty>
+  <owl:AnnotationProperty rdf:about="&imor;hasA">
+    <rdf:type rdf:resource="&owl;AnnotationProperty" />
+  </owl:AnnotationProperty>
+  <owl:AnnotationProperty rdf:about="&imor;label">
+    <rdf:type rdf:resource="&owl;AnnotationProperty" />
+  </owl:AnnotationProperty>
+  <owl:AnnotationProperty rdf:about="&imor;similarTag">
+    <rdf:type rdf:resource="&owl;AnnotationProperty" />
+  </owl:AnnotationProperty>
+  <owl:Ontology rdf:about="&rdf;">
+    <dc:description>This is the RDF Schema for the RDF vocabulary terms in the RDF Namespace, defined in RDF 1.1 Concepts.</dc:description>
+    <dc:title>The RDF Concepts Vocabulary (RDF)</dc:title>
+  </owl:Ontology>
+  <rdfs:Class rdf:about="&rdf;Alt">
+    <rdf:type rdf:resource="&owl;Class" />
+    <rdfs:comment>The class of containers of alternatives.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&rdf;" />
+    <rdfs:label>Alt</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&rdfs;Container" />
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&rdf;Bag">
+    <rdf:type rdf:resource="&owl;Class" />
+    <rdfs:comment>The class of unordered containers.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&rdf;" />
+    <rdfs:label>Bag</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&rdfs;Container" />
+  </rdfs:Class>
+  <rdfs:Datatype rdf:about="&rdf;HTML">
+    <rdf:type rdf:resource="&owl;Class" />
+    <rdfs:comment>The datatype of RDF literals storing fragments of HTML content</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&rdf;" />
+    <rdfs:label>HTML</rdfs:label>
+    <rdfs:seeAlso rdf:resource="http://www.w3.org/TR/rdf11-concepts/#section-html" />
+    <rdfs:subClassOf rdf:resource="&rdfs;Literal" />
+  </rdfs:Datatype>
+  <rdfs:Class rdf:about="&rdf;List">
+    <rdf:type rdf:resource="&owl;Class" />
+    <rdfs:comment>The class of RDF Lists.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&rdf;" />
+    <rdfs:label>List</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&rdfs;Resource" />
+  </rdfs:Class>
+  <rdfs:Datatype rdf:about="&rdf;PlainLiteral">
+    <rdf:type rdf:resource="&owl;Class" />
+    <rdfs:comment>The class of plain (i.e. untyped) literal values, as used in RIF and OWL 2</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&rdf;" />
+    <rdfs:label>PlainLiteral</rdfs:label>
+    <rdfs:seeAlso rdf:resource="http://www.w3.org/TR/rdf-plain-literal/" />
+    <rdfs:subClassOf rdf:resource="&rdfs;Literal" />
+  </rdfs:Datatype>
+  <rdfs:Class rdf:about="&rdf;Property">
+    <rdf:type rdf:resource="&owl;Class" />
+    <rdfs:comment>The class of RDF properties.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&rdf;" />
+    <rdfs:label>Property</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&rdfs;Resource" />
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&rdf;Seq">
+    <rdf:type rdf:resource="&owl;Class" />
+    <rdfs:comment>The class of ordered containers.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&rdf;" />
+    <rdfs:label>Seq</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&rdfs;Container" />
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&rdf;Statement">
+    <rdf:type rdf:resource="&owl;Class" />
+    <rdfs:comment>The class of RDF statements.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&rdf;" />
+    <rdfs:label>Statement</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&rdfs;Resource" />
+  </rdfs:Class>
+  <rdfs:Datatype rdf:about="&rdf;XMLLiteral">
+    <rdf:type rdf:resource="&owl;Class" />
+    <rdfs:comment>The datatype of XML literal values.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&rdf;" />
+    <rdfs:label>XMLLiteral</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&rdfs;Literal" />
+  </rdfs:Datatype>
+  <rdf:Property rdf:about="&rdf;first">
+    <rdf:type rdf:resource="&owl;ObjectProperty" />
+    <rdfs:comment>The first item in the subject RDF list.</rdfs:comment>
+    <rdfs:domain rdf:resource="&rdf;List" />
+    <rdfs:isDefinedBy rdf:resource="&rdf;" />
+    <rdfs:label>first</rdfs:label>
+    <rdfs:range rdf:resource="&rdfs;Resource" />
+  </rdf:Property>
+  <rdfs:Datatype rdf:about="&rdf;langString">
+    <rdf:type rdf:resource="&owl;Class" />
+    <rdfs:comment>The datatype of language-tagged string values</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&rdf;" />
+    <rdfs:label>langString</rdfs:label>
+    <rdfs:seeAlso rdf:resource="http://www.w3.org/TR/rdf11-concepts/#section-Graph-Literal" />
+    <rdfs:subClassOf rdf:resource="&rdfs;Literal" />
+  </rdfs:Datatype>
+  <rdf:List rdf:about="&rdf;nil">
+    <rdfs:comment>The empty list, with no items in it. If the rest of a list is nil then the list has no more items in it.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&rdf;" />
+    <rdfs:label>nil</rdfs:label>
+  </rdf:List>
+  <rdf:Property rdf:about="&rdf;object">
+    <rdf:type rdf:resource="&owl;ObjectProperty" />
+    <rdfs:comment>The object of the subject RDF statement.</rdfs:comment>
+    <rdfs:domain rdf:resource="&rdf;Statement" />
+    <rdfs:isDefinedBy rdf:resource="&rdf;" />
+    <rdfs:label>object</rdfs:label>
+    <rdfs:range rdf:resource="&rdfs;Resource" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&rdf;predicate">
+    <rdf:type rdf:resource="&owl;ObjectProperty" />
+    <rdfs:comment>The predicate of the subject RDF statement.</rdfs:comment>
+    <rdfs:domain rdf:resource="&rdf;Statement" />
+    <rdfs:isDefinedBy rdf:resource="&rdf;" />
+    <rdfs:label>predicate</rdfs:label>
+    <rdfs:range rdf:resource="&rdfs;Resource" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&rdf;rest">
+    <rdf:type rdf:resource="&owl;ObjectProperty" />
+    <rdfs:comment>The rest of the subject RDF list after the first item.</rdfs:comment>
+    <rdfs:domain rdf:resource="&rdf;List" />
+    <rdfs:isDefinedBy rdf:resource="&rdf;" />
+    <rdfs:label>rest</rdfs:label>
+    <rdfs:range rdf:resource="&rdf;List" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&rdf;subject">
+    <rdf:type rdf:resource="&owl;ObjectProperty" />
+    <rdfs:comment>The subject of the subject RDF statement.</rdfs:comment>
+    <rdfs:domain rdf:resource="&rdf;Statement" />
+    <rdfs:isDefinedBy rdf:resource="&rdf;" />
+    <rdfs:label>subject</rdfs:label>
+    <rdfs:range rdf:resource="&rdfs;Resource" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&rdf;type">
+    <rdf:type rdf:resource="&owl;ObjectProperty" />
+    <rdfs:comment>The subject is an instance of a class.</rdfs:comment>
+    <rdfs:domain rdf:resource="&rdfs;Resource" />
+    <rdfs:isDefinedBy rdf:resource="&rdf;" />
+    <rdfs:label>type</rdfs:label>
+    <rdfs:range rdf:resource="&rdfs;Class" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&rdf;value">
+    <rdf:type rdf:resource="&owl;ObjectProperty" />
+    <rdfs:comment>Idiomatic property used for structured values.</rdfs:comment>
+    <rdfs:domain rdf:resource="&rdfs;Resource" />
+    <rdfs:isDefinedBy rdf:resource="&rdf;" />
+    <rdfs:label>value</rdfs:label>
+    <rdfs:range rdf:resource="&rdfs;Resource" />
+  </rdf:Property>
+  <owl:Class rdf:about="&rdfs;Class">
+    <rdf:type rdf:resource="&owl;Class" />
+  </owl:Class>
+  <owl:Class rdf:about="&rdfs;Container">
+    <rdf:type rdf:resource="&owl;Class" />
+  </owl:Class>
+  <owl:Class rdf:about="&rdfs;Literal">
+    <rdf:type rdf:resource="&owl;Class" />
+  </owl:Class>
+  <owl:Class rdf:about="&rdfs;Resource">
+    <rdf:type rdf:resource="&owl;Class" />
+  </owl:Class>
+  <owl:AnnotationProperty rdf:about="&owl;sameAs">
+    <rdf:type rdf:resource="&owl;AnnotationProperty" />
+  </owl:AnnotationProperty>
+  <owl:NamedIndividual rdf:about="https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500">
+    <rdf:type rdf:resource="&owl;NamedIndividual" />
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="https://upload.wikimedia.org/wikipedia/commons/9/9b/Grantville.jpg">
+    <rdf:type rdf:resource="&owl;NamedIndividual" />
+  </owl:NamedIndividual>
+</rdf:RDF>
