@@ -1,0 +1,425 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0",
+    "title": "Imor",
+    "description": "TODO: Add Description",
+    "contact": {}
+  },
+  "host": "imor-sparql-endpoint.westeurope.cloudapp.azure.com",
+  "basePath": "/api",
+  "schemes": [
+    "http"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/images": {
+      "get": {
+        "description": "TODO: Add Description",
+        "summary": "GetImages",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "ImagesGet",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/all": {
+      "get": {
+        "description": "TODO: Add Description",
+        "summary": "GetTags",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "AllGet",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/sparql": {
+      "post": {
+        "description": "TODO: Add Description",
+        "summary": "GetSparqlResponse",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "SparqlPost",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/GetSparqlResponseRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/tags/forImageUri": {
+      "get": {
+        "description": "TODO: Add Description",
+        "summary": "GetTagsForImage",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "TagsForImageUriGet",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "imageUri",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/images/create": {
+      "post": {
+        "description": "TODO: Add Description",
+        "summary": "CreateImage",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "ImagesCreatePost",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/CreateImageRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/images/byTag": {
+      "get": {
+        "description": "TODO: Add Description",
+        "summary": "GetImagesByTag",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "ImagesByTagGet",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "tagUri",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/tags/byUri": {
+      "get": {
+        "description": "TODO: Add Description",
+        "summary": "GetTagByUri",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "TagsByUriGet",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "tagUri",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/tags/create": {
+      "post": {
+        "description": "TODO: Add Description",
+        "summary": "CreateTag",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "TagsCreatePost",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/CreateTagRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/tags/similar": {
+      "get": {
+        "description": "TODO: Add Description",
+        "summary": "GetSimilarTags",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "TagsSimilarGet",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "tagUri",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/images/byUri": {
+      "get": {
+        "description": "TODO: Add Description",
+        "summary": "GetImageByUri",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "ImagesByUriGet",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "imageUri",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/images/similar": {
+      "get": {
+        "description": "TODO: Add Description",
+        "summary": "GetSimilarImages",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "ImagesSimilarGet",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "imageUri",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "GetSparqlResponseRequest": {
+      "title": "GetSparqlResponseRequest",
+      "example": {
+        "Query": "prefix imor: <http://www.semanticweb.org/ImagesOntology#>\r\n\r\nselect ?s \r\nwhere { \r\n\t?s a  imor:Image\r\n} \r\n"
+      },
+      "type": "object",
+      "properties": {
+        "Query": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "Query"
+      ]
+    },
+    "CreateImageRequest": {
+      "title": "CreateImageRequest",
+      "example": {
+        "Uri": "http://www.semanticweb.org/ImagesOntology#Computer",
+        "Description": "This is a nice car",
+        "Content": "https://media.wired.com/photos/5b86fce8900cb57bbfd1e7ee/master/w_582,c_limit/Jaguar_I-PACE_S_Indus-Silver_065.jpg",
+        "Tags": [
+          "Computer",
+          "Technology"
+        ]
+      },
+      "type": "object",
+      "properties": {
+        "Uri": {
+          "type": "string"
+        },
+        "Description": {
+          "type": "string"
+        },
+        "Content": {
+          "type": "string"
+        },
+        "Tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "Uri",
+        "Description",
+        "Content",
+        "Tags"
+      ]
+    },
+    "CreateTagRequest": {
+      "title": "CreateTagRequest",
+      "example": {
+        "Uri": "http://www.semanticweb.org/ImagesOntology#CarTag",
+        "Description": "Car Tag",
+        "Label": "CarTag"
+      },
+      "type": "object",
+      "properties": {
+        "Uri": {
+          "type": "string"
+        },
+        "Description": {
+          "type": "string"
+        },
+        "Label": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "Uri",
+        "Description",
+        "Label"
+      ]
+    }
+  },
+  "tags": [
+    {
+      "name": "Misc",
+      "description": ""
+    }
+  ]
+}
