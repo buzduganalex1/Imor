@@ -125,6 +125,17 @@
                         other languages using the Cypher Query Language through a transactional HTTP endpoint, or
                         through the binary "bolt" protocol.</p>
                 </li>
+                <li>
+                    <p><a href="https://www.dotnetrdf.org/">dotNetRdf</a> is a free and open source API for working with 
+                        RDF and SPARQL in the .Net stack. Originally started by Rob Vesse back in January 2009 the project 
+                        is still going strong and now has a small core development team and a growing user community around 
+                        the world. It provides support for most common RDF data formats and incorporates a fully compliant
+                        SPARQL 1.1 query and update engine. It also provides intergration with a variety of popular 
+                        commercial and open source triple stores making it more than capable of being heavy duty production 
+                        grade applications. It also provides an API to work with RDF triple stores such as AllegroGraph, 
+                        Jena and Virtuoso.
+                    </p>
+                </li>
             </ul>
         </section>
 
@@ -280,6 +291,27 @@
                         </figcaption>
                     </figure>
                 </section><!-- data-modelling -->
+            </section>
+
+            <section id="ontology">
+                <h2>Ontology description</h2>
+                <p>
+                    Initally we discused a few ideas about what we might need to describe images and ended up picking
+                    just a few details.
+                </p>
+                <p>
+                    We setteled on two main concepts: Images and Tags. An Image has an URI and a description and a Tag 
+                    has a label. Every image can have one or more tags.
+                    Due to this simple design we can display all the images that belong to a tag. Also, when displaying 
+                    an image we can display a list of tags.
+                </p>
+                <p>
+                    This ontology can be extended and ideas from the inital plan can be added easily.
+                    One of the ideas was to have a Location, but this can be easily be done using a Tag from the current
+                    implementation.
+                    Apart from tags, categories might be useful, altough this also can be done using the Tags component.
+                    Almost all initial ideas can be implemented to a degree using the Tags component.
+                </p>
             </section>
 
             <section id="conclusion">

@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/buzdu/ontologies/2019/0/ImagesOntology#"
+     xml:base="http://www.semanticweb.org/buzdu/ontologies/2019/0/ImagesOntology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/buzdu/ontologies/2019/0/ImagesOntology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/buzdu/ontologies/2019/0/ImagesOntology#description -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/buzdu/ontologies/2019/0/ImagesOntology#description"/>
+    
+
+
+    <!-- http://www.semanticweb.org/buzdu/ontologies/2019/0/ImagesOntology#hasA -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/buzdu/ontologies/2019/0/ImagesOntology#hasA"/>
+    
+
+
+    <!-- http://www.semanticweb.org/buzdu/ontologies/2019/0/ImagesOntology#label -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/buzdu/ontologies/2019/0/ImagesOntology#label"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#sameAs -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#sameAs"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/buzdu/ontologies/2019/0/ImagesOntology#Description -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/buzdu/ontologies/2019/0/ImagesOntology#Description"/>
+    
+
+
+    <!-- http://www.semanticweb.org/buzdu/ontologies/2019/0/ImagesOntology#Image -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/buzdu/ontologies/2019/0/ImagesOntology#Image">
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></description>
+        <hasA rdf:resource="http://www.semanticweb.org/buzdu/ontologies/2019/0/ImagesOntology#Tag"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/buzdu/ontologies/2019/0/ImagesOntology#Tag -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/buzdu/ontologies/2019/0/ImagesOntology#Tag">
+        <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/describe/?url=http%3A%2F%2Fwww.wikidata.org%2Fentity%2FQ5288287&amp;sid=38846 -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/describe/?url=http%3A%2F%2Fwww.wikidata.org%2Fentity%2FQ5288287&amp;sid=38846">
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/buzdu/ontologies/2019/0/ImagesOntology#DogTag"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/buzdu/ontologies/2019/0/ImagesOntology#CatImage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/buzdu/ontologies/2019/0/ImagesOntology#CatImage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/buzdu/ontologies/2019/0/ImagesOntology#Image"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is a cat image</description>
+        <hasA rdf:resource="http://www.semanticweb.org/buzdu/ontologies/2019/0/ImagesOntology#CatsTag"/>
+        <owl:sameAs rdf:resource="https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/buzdu/ontologies/2019/0/ImagesOntology#CatsTag -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/buzdu/ontologies/2019/0/ImagesOntology#CatsTag">
+        <rdf:type rdf:resource="http://www.semanticweb.org/buzdu/ontologies/2019/0/ImagesOntology#Tag"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is a cat tag</description>
+        <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cats</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/buzdu/ontologies/2019/0/ImagesOntology#DogImage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/buzdu/ontologies/2019/0/ImagesOntology#DogImage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/buzdu/ontologies/2019/0/ImagesOntology#Image"/>
+        <owl:sameAs rdf:resource="https://upload.wikimedia.org/wikipedia/commons/9/9b/Grantville.jpg"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is a dog image</description>
+        <hasA rdf:resource="http://www.semanticweb.org/buzdu/ontologies/2019/0/ImagesOntology#DogTag"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/buzdu/ontologies/2019/0/ImagesOntology#DogTag -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/buzdu/ontologies/2019/0/ImagesOntology#DogTag">
+        <rdf:type rdf:resource="http://www.semanticweb.org/buzdu/ontologies/2019/0/ImagesOntology#Tag"/>
+        <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dogs</label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://upload.wikimedia.org/wikipedia/commons/9/9b/Grantville.jpg -->
+
+    <owl:NamedIndividual rdf:about="https://upload.wikimedia.org/wikipedia/commons/9/9b/Grantville.jpg"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.7.2018-12-02T02:23:35Z) https://github.com/owlcs/owlapi -->
+
