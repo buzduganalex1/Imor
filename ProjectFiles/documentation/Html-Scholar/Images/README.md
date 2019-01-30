@@ -1,6 +1,6 @@
 # Imor User guide
 
-extensible microservice-based system able to perform processing tasks such as browsingand perform faceted searching adopting both deep learning (or machine learning) techniques and semantic Web technologies.
+Imor is an extensible microservice-based system able to perform processing tasks such as browsingand perform faceted searching adopting both deep learning (or machine learning) techniques and semantic Web technologies.
 
 The platform is able to generate various visualizations (e.g., semantic zoom), correlations, classifications, and recommendations exposed via a SPARQL endpoint. Also, a comparison study will be provided to explain the obtained results.
 
