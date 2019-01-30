@@ -5,15 +5,15 @@ Imor is an extensible microservice-based system able to perform processing tasks
 The platform is able to generate various visualizations (e.g., semantic zoom), correlations, classifications, and recommendations exposed via a SPARQL endpoint. Also, a comparison study will be provided to explain the obtained results.
 
 Home page
-![alt text](Home.png)
+![alt text](Home.PNG)
 
 The application contains a list of tags extracted from images using machine learning to identify features. By clickin on the desired tag the application loads the images that are identified by that tag.
 
-![alt text](Hills.png)
+![alt text](Hills.PNG)
 
 Each image is clickable and opens a page where we can vizualize the details of the image togheter with a set of recommended images that are similar. This is done via similar tags using semantic Web.
 
-![alt text](imageDetails.png)
+![alt text](imageDetails.PNG)
 
 Each image has a list of tags that are used for identifying the traits in the picture.
 
