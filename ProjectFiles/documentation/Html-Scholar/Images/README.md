@@ -9,7 +9,7 @@ Home page
 
 The application contains a list of tags extracted from images using machine learning to identify features. By clickin on the desired tag the application loads the images that are identified by that tag.
 
-![alt text](Hills.PNG)
+![alt text](Hills.png)
 
 Each image is clickable and opens a page where we can vizualize the details of the image togheter with a set of recommended images that are similar. This is done via similar tags using semantic Web.
 
