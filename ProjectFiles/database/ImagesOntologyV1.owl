@@ -16,18 +16,19 @@
     <dc:description>This is the RDF Schema for the RDF vocabulary terms in the RDF Namespace, defined in RDF 1.1 Concepts.</dc:description>
     <dc:title>The RDF Concepts Vocabulary (RDF)</dc:title>
   </owl:Ontology>
-  <owl:NamedIndividual rdf:about="&imor;9gagPost">
-    <imor:Content>https://img-9gag-fun.9cache.com/photo/aXYnZxv_700bwp.webp</imor:Content>
-    <imor:description>9gag post</imor:description>
+  <owl:NamedIndividual rdf:about="&imor;Car">
+    <imor:Content>https://media.wired.com/photos/5b86fce8900cb57bbfd1e7ee/master/w_582,c_limit/Jaguar_I-PACE_S_Indus-Silver_065.jpg</imor:Content>
+    <imor:description>This is a nice car</imor:description>
+    <imor:hasA rdf:resource="&imor;CarTag" />
     <rdf:type rdf:resource="&imor;Image" />
   </owl:NamedIndividual>
-  <owl:NamedIndividual rdf:about="&imor;9gagPost2">
-    <imor:Content>https://img-9gag-fun.9cache.com/photo/aA3GnWR_700bwp.webp</imor:Content>
-    <imor:description>9gag post 2</imor:description>
-    <rdf:type rdf:resource="&imor;Image" />
+  <owl:NamedIndividual rdf:about="&imor;CarTag">
+    <imor:description>Car Tag</imor:description>
+    <imor:label>CarTag</imor:label>
+    <rdf:type rdf:resource="&imor;Tag" />
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="&imor;CatImage">
-    <imor:Content rdf:datatype="&xsd;anyURI">https://i.ebayimg.com/images/g/k5cAAOSwNSxVeEJv/s-l1600.jpg</imor:Content>
+    <imor:Content rdf:datatype="&xsd;string">https://www.avantaje.ro/wp-content/uploads/2012/07/pisica.jpg?width=300&amp;height=382</imor:Content>
     <imor:description rdf:datatype="&xsd;string">This is a cat image</imor:description>
     <imor:hasA rdf:resource="&imor;CatsTag" />
     <imor:hasA rdf:resource="&imor;PetTag" />
@@ -37,30 +38,39 @@
   <owl:NamedIndividual rdf:about="&imor;CatsTag">
     <imor:description rdf:datatype="&xsd;string">This is a cat tag</imor:description>
     <imor:label rdf:datatype="&xsd;string">Cats</imor:label>
+    <imor:similarTag rdf:resource="&imor;DogTag" />
+    <imor:similarTag rdf:resource="&imor;PetTag" />
+    <rdf:type rdf:resource="&imor;Tag" />
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="&imor;Computer">
+    <imor:Content rdf:datatype="&xsd;string">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj7FOueUXqcQcdY83fB_4aAEtZKHf0tOFtY9RdggRtjgJuw2UV</imor:Content>
+    <imor:description>This is a label for Computer</imor:description>
+    <imor:hasA rdf:resource="&imor;Computer" />
+    <imor:hasA rdf:resource="&imor;Technology" />
+    <imor:label>Computer</imor:label>
+    <rdf:type rdf:resource="&imor;Image" />
     <rdf:type rdf:resource="&imor;Tag" />
   </owl:NamedIndividual>
   <owl:AnnotationProperty rdf:about="&imor;Content">
     <rdf:type rdf:resource="&owl;AnnotationProperty" />
   </owl:AnnotationProperty>
-  <imor:Image rdf:about="&imor;CzechHill">
+  <owl:NamedIndividual rdf:about="&imor;CzechHill">
     <imor:Content>https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Bacin_zari_2015.jpg/1920px-Bacin_zari_2015.jpg</imor:Content>
     <imor:description>A hill in the Czech Republic</imor:description>
     <imor:hasA rdf:resource="&imor;HillsTag" />
-  </imor:Image>
+    <rdf:type rdf:resource="&imor;Image" />
+  </owl:NamedIndividual>
   <owl:Class rdf:about="&imor;Description">
     <rdf:type rdf:resource="&owl;Class" />
   </owl:Class>
-  <imor:Image rdf:about="&imor;DessertHill">
+  <owl:NamedIndividual rdf:about="&imor;DessertHill">
     <imor:Content>https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Judea_2_by_David_Shankbone.jpg/1280px-Judea_2_by_David_Shankbone.jpg</imor:Content>
     <imor:description>Hills of the Judean Desert</imor:description>
     <imor:hasA rdf:resource="&imor;HillsTag" />
-  </imor:Image>
-  <imor:Image rdf:about="&imor;DessertHill2">
-    <imor:Content>https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Judea_2_by_David_Shankbone.jpg/1280px-Judea_2_by_David_Shankbone.jpg</imor:Content>
-    <imor:description>Hills of the Judean Desert</imor:description>
-    <imor:hasA rdf:resource="&imor;HillsTag" />
-  </imor:Image>
+    <rdf:type rdf:resource="&imor;Image" />
+  </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="&imor;DogImage">
+    <imor:Content rdf:datatype="&xsd;string">https://www.animalzoo.ro/wp-content/uploads/2014/03/caine-happy-650x406.jpg</imor:Content>
     <imor:description rdf:datatype="&xsd;string">This is a dog image</imor:description>
     <imor:hasA rdf:resource="&imor;DogTag" />
     <rdf:type rdf:resource="&imor;Image" />
@@ -68,13 +78,16 @@
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="&imor;DogTag">
     <imor:label rdf:datatype="&xsd;string">Dogs</imor:label>
+    <imor:similarTag rdf:resource="&imor;CatsTag" />
+    <imor:similarTag rdf:resource="&imor;PetTag" />
     <rdf:type rdf:resource="&imor;Tag" />
   </owl:NamedIndividual>
-  <imor:Image rdf:about="&imor;Glacier">
+  <owl:NamedIndividual rdf:about="&imor;Glacier">
     <imor:Content>https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Glacier_park1.jpg/1280px-Glacier_park1.jpg</imor:Content>
     <imor:description>U-shaped valley in Glacier National Park, Montana, United States</imor:description>
     <imor:hasA rdf:resource="&imor;ValleysTag" />
-  </imor:Image>
+    <rdf:type rdf:resource="&imor;Image" />
+  </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="&imor;HillsTag">
     <imor:description rdf:datatype="&xsd;string">This tag describes hills</imor:description>
     <imor:label rdf:datatype="&xsd;string">Hills</imor:label>
@@ -86,33 +99,31 @@
     <imor:description rdf:datatype="&xsd;string"></imor:description>
     <imor:hasA rdf:resource="&imor;Tag" />
   </owl:Class>
-  <owl:NamedIndividual rdf:about="&imor;Image4">
-    <imor:Content>https://wallpaperbrowse.com/media/images/3848765-wallpaper-images-download.jpg</imor:Content>
-    <imor:description>Test 4</imor:description>
-    <rdf:type rdf:resource="&imor;Image" />
-  </owl:NamedIndividual>
-  <imor:Image rdf:about="&imor;ItalyHill">
+  <owl:NamedIndividual rdf:about="&imor;ItalyHill">
     <imor:Content>https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Tuscan_views_at_sunset_%285790020702%29.jpg/1920px-Tuscan_views_at_sunset_%285790020702%29.jpg</imor:Content>
     <imor:description>Hills in Tuscany, Italy</imor:description>
     <imor:hasA rdf:resource="&imor;HillsTag" />
-  </imor:Image>
-  <imor:Image rdf:about="&imor;MountArayet">
+    <rdf:type rdf:resource="&imor;Image" />
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="&imor;MountArayet">
     <imor:Content>https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Monasterio_Khor_Virap%2C_Armenia%2C_2016-10-01%2C_DD_25.jpg/1920px-Monasterio_Khor_Virap%2C_Armenia%2C_2016-10-01%2C_DD_25.jpg</imor:Content>
     <imor:description>This mountain is really huge</imor:description>
     <imor:hasA rdf:resource="&imor;MountainsTag" />
-  </imor:Image>
-  <imor:Image rdf:about="&imor;MountKenya">
+    <rdf:type rdf:resource="&imor;Image" />
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="&imor;MountKenya">
     <imor:Content>https://en.wikipedia.org/wiki/Mountain#/media/File:Batian_Nelion_and_pt_Slade_in_the_foreground_Mt_Kenya.JPG</imor:Content>
     <imor:Content>https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Batian_Nelion_and_pt_Slade_in_the_foreground_Mt_Kenya.JPG/1280px-Batian_Nelion_and_pt_Slade_in_the_foreground_Mt_Kenya.JPG</imor:Content>
     <imor:description>This mountain is really huge</imor:description>
     <imor:hasA rdf:resource="&imor;MountainsTag" />
-  </imor:Image>
-  <imor:Image rdf:about="&imor;MountWilhelm">
-    <imor:Content>https://en.wikipedia.org/wiki/Mountain#/media/File:Mount_Wilhelm.jpg</imor:Content>
+    <rdf:type rdf:resource="&imor;Image" />
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="&imor;MountWilhelm">
     <imor:Content>https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Mount_Wilhelm.jpg/1280px-Mount_Wilhelm.jpg</imor:Content>
     <imor:description>This mountain is really huge</imor:description>
     <imor:hasA rdf:resource="&imor;MountainsTag" />
-  </imor:Image>
+    <rdf:type rdf:resource="&imor;Image" />
+  </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="&imor;MountainsTag">
     <imor:description rdf:datatype="&xsd;string">This tag describes pictures with mountains</imor:description>
     <imor:label rdf:datatype="&xsd;string">Mountains</imor:label>
@@ -122,6 +133,8 @@
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="&imor;PetTag">
     <imor:label rdf:datatype="&xsd;string">Pet</imor:label>
+    <imor:similarTag rdf:resource="&imor;CatsTag" />
+    <imor:similarTag rdf:resource="&imor;DogTag" />
     <rdf:type rdf:resource="&imor;Tag" />
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="&imor;PoliceDogs">
@@ -130,71 +143,27 @@
     <imor:hasA rdf:resource="&imor;DogTag" />
     <rdf:type rdf:resource="&imor;Image" />
   </owl:NamedIndividual>
-  <owl:NamedIndividual rdf:about="&imor;PoliceDogs2">
-    <imor:Content>https://img-9gag-fun.9cache.com/photo/aE28b89_700bwp.webp</imor:Content>
-    <imor:description>9gag post 3</imor:description>
-    <imor:hasA rdf:resource="&imor;DogTag" />
-    <imor:hasA rdf:resource="&imor;PetTag" />
-    <rdf:type rdf:resource="&imor;Image" />
-  </owl:NamedIndividual>
-  <owl:NamedIndividual rdf:about="&imor;PoliceDogs3">
-    <imor:Content>https://img-9gag-fun.9cache.com/photo/aE28b89_700bwp.webp</imor:Content>
-    <imor:description>9gag post 3</imor:description>
-    <imor:hasA rdf:resource="&imor;CatsTag" />
-    <imor:hasA rdf:resource="&imor;DogTag" />
-    <imor:hasA rdf:resource="&imor;PetTag" />
-    <rdf:type rdf:resource="&imor;Image" />
-  </owl:NamedIndividual>
-  <imor:Image rdf:about="&imor;Romsdalen">
+  <owl:NamedIndividual rdf:about="&imor;Romsdalen">
     <imor:Content>https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Romsdalen.jpg/1920px-Romsdalen.jpg</imor:Content>
-    <imor:Content>https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Vale_dos_Frades.jpg/1920px-Vale_dos_Frades.jpg</imor:Content>
     <imor:description>Romsdalen in Western Norway is an almost vertical valley.</imor:description>
-    <imor:description>The Frades Valley in the mountainous region of Rio de Janeiro state, Brazil</imor:description>
     <imor:hasA rdf:resource="&imor;ValleysTag" />
-  </imor:Image>
+    <rdf:type rdf:resource="&imor;Image" />
+  </owl:NamedIndividual>
   <owl:Class rdf:about="&imor;Tag">
     <imor:label rdf:datatype="&xsd;string"></imor:label>
   </owl:Class>
-  <owl:NamedIndividual rdf:about="&imor;Tag1">
-    <imor:description>Tets Tag</imor:description>
-    <imor:label>Tag1</imor:label>
-    <imor:similarTag rdf:resource="&imor;Tag" />
+  <owl:NamedIndividual rdf:about="&imor;Technology">
+    <imor:description>This is a label for Technology</imor:description>
+    <imor:label>Technology</imor:label>
+    <imor:similarTag rdf:resource="&imor;Computer" />
     <rdf:type rdf:resource="&imor;Tag" />
   </owl:NamedIndividual>
-  <owl:NamedIndividual rdf:about="&imor;TestImage">
-    <rdf:type rdf:resource="&imor;Image" />
-  </owl:NamedIndividual>
-  <owl:NamedIndividual rdf:about="&imor;TestImage2">
-    <rdf:type rdf:resource="&imor;Image" />
-  </owl:NamedIndividual>
-  <owl:NamedIndividual rdf:about="&imor;TestImage3">
-    <imor:Content>https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Ffortunedotcom.files.wordpress.com%2F2017%2F01%2Fgettyimages-632438922.jpg&amp;w=800&amp;q=85</imor:Content>
-    <imor:description>Test image 3</imor:description>
-    <imor:hasA rdf:resource="&imor;CatsTag" />
-    <rdf:type rdf:resource="&imor;Image" />
-  </owl:NamedIndividual>
-  <owl:NamedIndividual rdf:about="&imor;TestImage5">
-    <imor:Content>https://wallpaperbrowse.com/media/images/3848765-wallpaper-images-download.jpg</imor:Content>
-    <imor:description>Test 4</imor:description>
-    <imor:description>Test 6</imor:description>
-    <imor:hasA rdf:resource="&imor;CatsTag" />
-    <imor:hasA rdf:resource="&imor;DogTag" />
-    <imor:hasA rdf:resource="&imor;PetTag" />
-    <rdf:type rdf:resource="&imor;Image" />
-  </owl:NamedIndividual>
-  <owl:NamedIndividual rdf:about="&imor;TestImage6">
-    <imor:Content>https://wallpaperbrowse.com/media/images/3848765-wallpaper-images-download.jpg</imor:Content>
-    <imor:description>Test 6</imor:description>
-    <imor:hasA rdf:resource="&imor;CatsTag" />
-    <imor:hasA rdf:resource="&imor;DogTag" />
-    <imor:hasA rdf:resource="&imor;PetTag" />
-    <rdf:type rdf:resource="&imor;Image" />
-  </owl:NamedIndividual>
-  <imor:Image rdf:about="&imor;VallesCalchaquies">
+  <owl:NamedIndividual rdf:about="&imor;VallesCalchaquies">
     <imor:Content>https://upload.wikimedia.org/wikipedia/commons/5/50/Salta-VallesCalchaquies-P3140151.JPG</imor:Content>
     <imor:description>This mountain is really huge</imor:description>
     <imor:hasA rdf:resource="&imor;ValleysTag" />
-  </imor:Image>
+    <rdf:type rdf:resource="&imor;Image" />
+  </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="&imor;ValleysTag">
     <imor:description rdf:datatype="&xsd;string">This tag describes valleys</imor:description>
     <imor:label rdf:datatype="&xsd;string">Valleys</imor:label>
