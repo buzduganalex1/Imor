@@ -6,10 +6,14 @@
 
   <ItemGroup>
     <None Remove="ImagesOntologyV1.owl" />
+    <None Remove="RdfOntology.owl" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="ImagesOntologyV1.owl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RdfOntology.owl">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>

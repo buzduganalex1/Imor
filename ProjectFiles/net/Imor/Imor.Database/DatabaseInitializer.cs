@@ -7,7 +7,7 @@ namespace Imor.Database
 {
     public static class DatabaseInitializer
     {
-        public static string ontology = "C:\\GitRepositories\\Imor\\ProjectFiles\\database\\ImagesOntologyV1.owl";
+        public static string ontology = "C:\\GitRepositories\\Imor\\ProjectFiles\\database\\RdfOntology.owl";
         
         public static IGraph Initialize()
         {

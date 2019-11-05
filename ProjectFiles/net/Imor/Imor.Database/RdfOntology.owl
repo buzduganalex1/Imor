@@ -1,0 +1,219 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://abuzduga.com/presentation#"
+     xml:base="http://abuzduga.com/presentation"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:presentation="http://abuzduga.com/presentation#">
+    <owl:Ontology rdf:about="http://abuzduga.com/presentation"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://abuzduga.com/presentation#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://abuzduga.com/presentation#definition"/>
+    
+
+
+    <!-- http://abuzduga.com/presentation#describes -->
+
+    <owl:AnnotationProperty rdf:about="http://abuzduga.com/presentation#describes"/>
+    
+
+
+    <!-- http://abuzduga.com/presentation#queries -->
+
+    <owl:AnnotationProperty rdf:about="http://abuzduga.com/presentation#queries"/>
+    
+
+
+    <!-- http://abuzduga.com/presentation#storedIn -->
+
+    <owl:AnnotationProperty rdf:about="http://abuzduga.com/presentation#storedIn"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://abuzduga.com/presentation#Database -->
+
+    <owl:Class rdf:about="http://abuzduga.com/presentation#Database">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <definition>A database is a collection of information that is organized so that it can be easily accessed, managed and updated. Computer databases typically contain aggregations of data records or files, containing information about sales transactions or interactions with specific customers</definition>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Database</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://abuzduga.com/presentation#Framework -->
+
+    <owl:Class rdf:about="http://abuzduga.com/presentation#Framework">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In general, a framework is a real or conceptual structure intended to serve as a support or guide for the building of something that expands the structure into something useful.</definition>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://whatis.techtarget.com/definition/framework</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://abuzduga.com/presentation#GraphDatabase -->
+
+    <owl:Class rdf:about="http://abuzduga.com/presentation#GraphDatabase">
+        <rdfs:subClassOf rdf:resource="http://abuzduga.com/presentation#Database"/>
+        <definition>In computing, a graph database (GDB) is a database that uses graph structures for semantic queries with nodes, edges, and properties to represent and store data.
+
+ A key concept of the system is the graph (or edge or relationship). The graph relates the data items in the store to a collection of nodes and edges, the edges representing the relationships between the nodes.</definition>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Graph_database</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://abuzduga.com/presentation#Language -->
+
+    <owl:Class rdf:about="http://abuzduga.com/presentation#Language">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <definition>A language is a system of communication which consists of a set of sounds and written symbols which are used by the people of a particular country or region for talking or writing.</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://abuzduga.com/presentation#NoSQL -->
+
+    <owl:Class rdf:about="http://abuzduga.com/presentation#NoSQL">
+        <rdfs:subClassOf rdf:resource="http://abuzduga.com/presentation#Database"/>
+        <definition>A NoSQL (originally referring to &quot;non SQL&quot; or &quot;non relational&quot;) database provides a mechanism for storage and retrieval of data that is modeled in means other than the tabular relations used in relational databases. Such databases have existed since the late 1960s, but did not obtain the &quot;NoSQL&quot; moniker until a surge of popularity in the early 21st century,[2] triggered by the needs of Web 2.0 companies.</definition>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/NoSQL</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://abuzduga.com/presentation#Ontology -->
+
+    <owl:Class rdf:about="http://abuzduga.com/presentation#Ontology">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ontology is the philosophical study of being. More broadly, it studies concepts that directly relate to being, in particular becoming, existence, reality, as well as the basic categories of being and their relations. Traditionally listed as a part of the major branch of philosophy known as metaphysics, ontology often deals with questions concerning what entities exist or may be said to exist and how such entities may be grouped, related within a hierarchy, and subdivided according to similarities and differences.</definition>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Ontology</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://abuzduga.com/presentation#ProgrammingLanguage -->
+
+    <owl:Class rdf:about="http://abuzduga.com/presentation#ProgrammingLanguage">
+        <rdfs:subClassOf rdf:resource="http://abuzduga.com/presentation#Language"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">A programming language is a formal language, which comprises a set of instructions that produce various kinds of output. Programming languages are used in computer programming to implement algorithms.</definition>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Programming_language</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://abuzduga.com/presentation#QueryLanguage -->
+
+    <owl:Class rdf:about="http://abuzduga.com/presentation#QueryLanguage">
+        <rdfs:subClassOf rdf:resource="http://abuzduga.com/presentation#Language"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">Query languages or data query languages (DQLs) are computer languages used to make queries in databases and information systems.</definition>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Query_language</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://abuzduga.com/presentation#RelationalDatabase -->
+
+    <owl:Class rdf:about="http://abuzduga.com/presentation#RelationalDatabase">
+        <rdfs:subClassOf rdf:resource="http://abuzduga.com/presentation#Database"/>
+        <definition>A relational database is a digital database based on the relational model of data, as proposed by E. F. Codd in 1970. A software system used to maintain relational databases is a relational database management system (RDBMS). Many relational database systems have an option of using the SQL (Structured Query Language) for querying and maintaining the database.</definition>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Relational_database</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://abuzduga.com/presentation#TripleStore -->
+
+    <owl:Class rdf:about="http://abuzduga.com/presentation#TripleStore">
+        <rdfs:subClassOf rdf:resource="http://abuzduga.com/presentation#Database"/>
+        <definition>A triplestore or RDF store is a purpose-built database for the storage and retrieval of triples through semantic queries. A triple is a data entity composed of subject-predicate-object, like &quot;Bob is 35&quot; or &quot;Bob knows Fred&quot;.</definition>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Triplestore</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://abuzduga.com/presentation#GraphDb -->
+
+    <owl:NamedIndividual rdf:about="http://abuzduga.com/presentation#GraphDb">
+        <rdf:type rdf:resource="http://abuzduga.com/presentation#GraphDatabase"/>
+        <rdf:type rdf:resource="http://abuzduga.com/presentation#TripleStore"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">GraphDB is a family of highly efficient, robust and scalable RDF databases. It streamlines the load and use of linked data cloud datasets, as well as your own resources.</definition>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://graphdb.ontotext.com/documentation/free/index.html</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://abuzduga.com/presentation#OWL -->
+
+    <owl:NamedIndividual rdf:about="http://abuzduga.com/presentation#OWL">
+        <rdf:type rdf:resource="http://abuzduga.com/presentation#Ontology"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The W3C Web Ontology Language (OWL) is a Semantic Web language designed to represent rich and complex knowledge about things, groups of things, and relations between things. OWL is a computational logic-based language such that knowledge expressed in OWL can be exploited by computer programs, e.g., to verify the consistency of that knowledge or to make implicit knowledge explicit. OWL documents, known as ontologies, can be published in the World Wide Web and may refer to or be referred from other OWL ontologies. OWL is part of the W3C’s Semantic Web technology stack, which includes RDF, RDFS, SPARQL, etc.</definition>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.w3.org/OWL/</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://abuzduga.com/presentation#Rdf -->
+
+    <owl:NamedIndividual rdf:about="http://abuzduga.com/presentation#Rdf">
+        <rdf:type rdf:resource="http://abuzduga.com/presentation#Framework"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">RDF is a standard model for data interchange on the Web. RDF has features that facilitate data merging even if the underlying schemas differ, and it specifically supports the evolution of schemas over time without requiring all the data consumers to be changed.</definition>
+        <describes rdf:resource="http://abuzduga.com/presentation#Ontology"/>
+        <storedIn rdf:resource="http://abuzduga.com/presentation#Database"/>
+        <storedIn rdf:resource="http://abuzduga.com/presentation#TripleStore"/>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.w3.org/2001/sw/wiki/RDF</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://abuzduga.com/presentation#SparQL -->
+
+    <owl:NamedIndividual rdf:about="http://abuzduga.com/presentation#SparQL">
+        <rdf:type rdf:resource="http://abuzduga.com/presentation#QueryLanguage"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">This specification defines the syntax and semantics of the SPARQL query language for RDF. SPARQL can be used to express queries across diverse data sources, whether the data is stored natively as RDF or viewed as RDF via middleware.</definition>
+        <queries rdf:resource="http://abuzduga.com/presentation#Rdf"/>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.w3.org/2001/sw/wiki/SPARQL</rdfs:seeAlso>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
+
